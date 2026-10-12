@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Nocturne Key | Curated Luxury Hotel Sanctuaries & Global Capitals Directory</title>
+    <meta name="description" content="An independent editorial compendium of the world's most evocative luxury hotels across global capitals including Paris, Tokyo, London, Rome, Madrid, New York, Bangkok, and Dubai.">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph & Social Cards -->
+    <meta property="og:title" content="The Nocturne Key — Curated Sanctuaries of the Night">
+    <meta property="og:description" content="Directory of the finest luxury hotels and nocturnal retreats in the world's major capitals.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1600&auto=format&fit=crop">
+
+    <!-- Schema.org JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "The Nocturne Key Global Capitals & Luxury Sanctuaries",
+      "description": "Editorial rankings and guides to the top 10 palatial hotels and boutique sanctuaries across the world's flagship capitals."
+    }
+    </script>
+
+    <!-- Tailwind CSS Engine -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: '#08080A',
+                        noir: '#0F1015',
+                        charcoal: '#181A22',
+                        cardSurface: '#12131A',
+                        borderMuted: '#262938',
+                        gold: {
+                            DEFAULT: '#C5A059',
+                            light: '#E5C378',
+                            dark: '#9E7E3C',
+                            glow: 'rgba(197, 160, 89, 0.15)'
+                        },
+                        ivory: '#F7F6F2',
+                        pearl: '#A8ABB8'
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'Playfair Display', 'serif'],
+                        sans: ['"Inter"', 'Montserrat', 'sans-serif'],
+                        editorial: ['"Playfair Display"', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #08080A;
+            color: #F7F6F2;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            letter-spacing: -0.01em;
+        }
+
+        .gold-shimmer {
+            background: linear-gradient(135deg, #F9E7B9 0%, #C5A059 50%, #9E7E3C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gold-border-glow {
+            border: 1px solid rgba(197, 160, 89, 0.28);
+            box-shadow: 0 0 25px rgba(197, 160, 89, 0.08);
+        }
+
+        .gold-border-glow:hover {
+            border-color: rgba(197, 160, 89, 0.6);
+            box-shadow: 0 10px 40px rgba(197, 160, 89, 0.15);
+        }
+
+        .hero-vignette {
+            background: radial-gradient(circle at 50% 40%, rgba(8, 8, 10, 0.1) 0%, rgba(8, 8, 10, 0.75) 60%, #08080A 100%);
+        }
+
+        ::-webkit-scrollbar {
+            width: 7px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #08080A;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #232634;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #C5A059;
+        }
+
+        .transition-soft {
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+    </style>
+</head>
+<body class="selection:bg-gold selection:text-obsidian antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- Navigation Bar -->
+    <header id="mainNav" class="sticky top-0 z-50 bg-obsidian/90 backdrop-blur-md border-b border-borderMuted/60 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Branding -->
+                <a href="index.html" class="flex flex-col text-left group focus:outline-none">
+                    <div class="flex items-center gap-2">
+                        <span class="text-gold text-lg tracking-widest font-serif">❖</span>
+                        <span class="text-xl sm:text-2xl font-serif tracking-widest uppercase text-ivory group-hover:text-gold-light transition-soft">
+                            The Nocturne Key
+                        </span>
+                    </div>
+                    <span class="text-[9px] uppercase tracking-[0.25em] text-pearl font-light pl-6">
+                        Curated Sanctuaries of the Night
+                    </span>
+                </a>
+
+                <!-- Navigation Tabs -->
+                <nav class="hidden md:flex items-center gap-1 lg:gap-2">
+                    <a href="index.html" class="nav-link-btn text-xs uppercase tracking-widest px-3 py-1.5 rounded-full text-pearl hover:text-ivory border border-transparent hover:border-borderMuted transition-soft">Home</a>
+                    
+                    <!-- Dedicated Directory Link to capitols.html -->
+                    <a href="capitols.html" class="nav-link-btn text-xs uppercase tracking-widest px-4 py-1.5 rounded-full text-gold bg-gold/10 border border-gold/40 hover:bg-gold hover:text-obsidian transition-soft font-medium shadow-sm flex items-center gap-1.5">
+                        <span>All Capitols</span>
+                        <!-- <span class="text-[10px] px-1.5 py-0.2 rounded-full bg-gold/20 text-gold-light">Directory</span> -->
+                    </a>
+
+                    <span class="text-borderMuted text-xs px-1">|</span>
+                    
+                    <button onclick="selectCityAndOpenHotels('all')" class="city-filter-btn text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-gold border border-gold/30 bg-gold/5 transition-soft" data-city="all">All</button>
+                    <button onclick="selectCityAndOpenHotels('paris')" class="city-filter-btn text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-pearl hover:text-ivory border border-transparent hover:border-borderMuted transition-soft" data-city="paris">Paris</button>
+                    <button onclick="selectCityAndOpenHotels('tokyo')" class="city-filter-btn text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-pearl hover:text-ivory border border-transparent hover:border-borderMuted transition-soft" data-city="tokyo">Tokyo</button>
+                    <button onclick="selectCityAndOpenHotels('london')" class="city-filter-btn text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-pearl hover:text-ivory border border-transparent hover:border-borderMuted transition-soft" data-city="london">London</button>
+                    <button onclick="selectCityAndOpenHotels('rome')" class="city-filter-btn text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-pearl hover:text-ivory border border-transparent hover:border-borderMuted transition-soft" data-city="rome">Rome</button>
+                    <button onclick="selectCityAndOpenHotels('new-york')" class="city-filter-btn text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-pearl hover:text-ivory border border-transparent hover:border-borderMuted transition-soft" data-city="new-york">New York</button>
+                </nav>
+
+                <!-- Private Circle Callout & Mobile Toggle -->
+                <div class="flex items-center gap-4">
+                    <a href="#keyholder" class="hidden sm:inline-flex items-center text-xs uppercase tracking-widest px-4 py-2 border border-gold/40 text-gold-light hover:bg-gold hover:text-obsidian rounded-full transition-soft font-medium shadow-sm">
+                        <span>VIP Keyholder</span>
+                    </a>
+                    <button id="mobileMenuBtn" aria-label="Toggle Mobile Menu" class="md:hidden p-2 text-pearl hover:text-ivory focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobileDrawer" class="hidden md:hidden bg-cardSurface/95 border-b border-borderMuted px-6 py-4 space-y-3">
+            <p class="text-[10px] uppercase tracking-widest text-gold font-mono">Directory &amp; Destinations</p>
+            <div class="grid grid-cols-2 gap-2">
+                <a href="capitols.html" class="text-left py-2.5 px-3 text-sm text-gold bg-gold/10 rounded border border-gold/30 font-medium">🏛️ All Capitols</a>
+                <a href="index.html" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Home Index</a>
+                <button onclick="selectCityAndOpenHotels('paris'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Paris</button>
+                <button onclick="selectCityAndOpenHotels('tokyo'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Tokyo</button>
+                <button onclick="selectCityAndOpenHotels('london'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">London</button>
+                <button onclick="selectCityAndOpenHotels('rome'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Rome</button>
+                <button onclick="selectCityAndOpenHotels('new-york'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">New York</button>
+                <button onclick="selectCityAndOpenHotels('dubai'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Dubai</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[75vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1920&auto=format&fit=crop" 
+                 alt="Luxury Grand Hotel Exterior" 
+                 class="w-full h-full object-cover brightness-[0.4] filter scale-105 transform duration-1000">
+            <div class="absolute inset-0 hero-vignette"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-6 text-center py-20">
+            <div class="inline-flex items-center gap-2 px-3 py-1 border border-gold/30 rounded-full bg-gold/10 backdrop-blur-sm mb-6">
+                <span class="w-1.5 h-1.5 rounded-full bg-gold animate-pulse"></span>
+                <span class="text-[10px] uppercase tracking-[0.3em] text-gold-light font-medium">Vol. VII • World Capital Editions</span>
+            </div>
+            
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-serif font-light text-ivory tracking-tight mb-6 leading-tight">
+                Sanctuaries for the <span class="italic font-normal gold-shimmer">Discerning Night</span>
+            </h1>
+            
+            <p class="text-pearl text-sm sm:text-base font-light max-w-2xl mx-auto mb-10 leading-relaxed">
+                An authoritative catalog of the world's finest boutique suites, historic palaces, and subterranean wellness temples. Fully curated with privileged direct partner bookings.
+            </p>
+
+            <div class="flex flex-wrap items-center justify-center gap-4">
+                <a href="#hotel-feed" class="px-8 py-3.5 rounded-full bg-gold text-obsidian text-xs uppercase tracking-widest font-semibold hover:bg-gold-light transition-soft shadow-lg shadow-gold/20">
+                    Explore Rankings
+                </a>
+                <a href="capitols.html" class="px-8 py-3.5 rounded-full border border-gold/40 text-gold-light hover:bg-gold/10 text-xs uppercase tracking-widest font-medium transition-soft backdrop-blur-sm">
+                    View All Capitols Directory →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Hotels Feed Section -->
+    <main id="hotel-feed" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <!-- Section Header with active city feedback -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between border-b border-borderMuted/60 pb-8 mb-12 gap-6">
+            <div>
+                <span class="text-xs uppercase tracking-[0.25em] text-gold font-mono block mb-2">Curated Selections</span>
+                <h2 id="currentCategoryTitle" class="text-3xl sm:text-4xl font-serif text-ivory capitalize">Global Capitols Showcase</h2>
+            </div>
+            <div class="flex items-center gap-2 text-xs text-pearl">
+                <span>Showing Top Entries</span>
+                <span class="w-1 h-1 rounded-full bg-gold"></span>
+                <span class="text-gold-light font-mono" id="hotelCount">4 Properties Listed</span>
+            </div>
+        </div>
+
+        <!-- Hotels Cards Container -->
+        <div id="hotelCardsGrid" class="space-y-16">
+            
+            <!-- HOTEL 1: Paris -->
+            <article class="hotel-card bg-cardSurface rounded-xl border border-borderMuted overflow-hidden gold-border-glow transition-soft" data-city="paris">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+                    <!-- Image Carousel Preview -->
+                    <div class="lg:col-span-6 relative group overflow-hidden h-[340px] lg:h-auto">
+                        <img id="img-crillon" 
+                             src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80" 
+                             alt="Hôtel de Crillon exterior" 
+                             class="w-full h-full object-cover transition-soft group-hover:scale-105 duration-700">
+                        <div class="absolute top-4 left-4 bg-obsidian/80 backdrop-blur-md px-3 py-1 rounded border border-gold/30">
+                            <span class="text-xs font-mono text-gold uppercase tracking-widest">#01 • Paris</span>
+                        </div>
+                        <!-- Dual-View Toggle -->
+                        <div class="absolute bottom-4 left-4 right-4 flex gap-2">
+                            <button onclick="swapImage('img-crillon', 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80', this)" class="view-btn flex-1 py-1.5 text-[11px] uppercase tracking-wider rounded bg-obsidian/85 text-gold border border-gold/40 backdrop-blur-sm transition-soft">Property</button>
+                            <button onclick="swapImage('img-crillon', 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80', this)" class="view-btn flex-1 py-1.5 text-[11px] uppercase tracking-wider rounded bg-obsidian/60 text-pearl hover:text-ivory backdrop-blur-sm transition-soft">Duc de Crillon Suite</button>
+                        </div>
+                    </div>
+
+                    <!-- Content Details -->
+                    <div class="lg:col-span-6 p-6 sm:p-10 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-xs font-mono uppercase tracking-widest text-gold">Place de la Concorde • 8th Arr.</span>
+                                <span class="text-xs text-pearl">★★★★★ Palace</span>
+                            </div>
+                            <h3 class="text-2xl sm:text-3xl font-serif text-ivory mb-3">Hôtel de Crillon, A Rosewood Hotel</h3>
+                            <p class="text-pearl text-sm leading-relaxed mb-6 font-light">
+                                An 18th-century architectural masterpiece originally commissioned by Louis XV. Overlooking Place de la Concorde, the palace balances neoclassical Parisian heritage with bespoke contemporary apartments designed by Karl Lagerfeld.
+                            </p>
+                            
+                            <!-- Highlights Pills -->
+                            <div class="flex flex-wrap gap-2 mb-8">
+                                <span class="text-xs px-2.5 py-1 rounded-full bg-obsidian border border-borderMuted text-pearl">Rosewood Spa Sense</span>
+                                <span class="text-xs px-2.5 py-1 rounded-full bg-obsidian border border-borderMuted text-pearl">Michelin-starred L'Écrin</span>
+                                <span class="text-xs px-2.5 py-1 rounded-full bg-obsidian border border-borderMuted text-pearl">Bespoke Butler Service</span>
+                            </div>
+                        </div>
+
+                        <!-- CTA Bar -->
+                        <div class="pt-6 border-t border-borderMuted/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                            <div>
+                                <span class="block text-[11px] text-pearl font-mono uppercase">Premier Nightly Rate</span>
+                                <span class="text-xl font-serif text-ivory">From €1,850 <span class="text-xs font-sans text-pearl">/ night</span></span>
+                            </div>
+                            <div class="w-full sm:w-auto text-right">
+                                <a href="https://partner.booking.com/affiliate?id=YOUR_ID&hotel=crillon_paris" 
+                                   target="_blank" 
+                                   rel="sponsored nofollow noopener" 
+                                   class="inline-block w-full sm:w-auto text-center px-6 py-3 rounded-full bg-gold text-obsidian text-xs uppercase tracking-widest font-semibold hover:bg-gold-light transition-soft shadow-md shadow-gold/10">
+                                    Book via Partner Concierge
+                                </a>
+                                <span class="block text-[10px] text-pearl/60 mt-1">Direct rates & VIP perks applied</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- HOTEL 2: Tokyo -->
+            <article class="hotel-card bg-cardSurface rounded-xl border border-borderMuted overflow-hidden gold-border-glow transition-soft" data-city="tokyo">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+                    <div class="lg:col-span-6 relative group overflow-hidden h-[340px] lg:h-auto">
+                        <img id="img-aman-tokyo" 
+                             src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80" 
+                             alt="Aman Tokyo lobby" 
+                             class="w-full h-full object-cover transition-soft group-hover:scale-105 duration-700">
+                        <div class="absolute top-4 left-4 bg-obsidian/80 backdrop-blur-md px-3 py-1 rounded border border-gold/30">
+                            <span class="text-xs font-mono text-gold uppercase tracking-widest">#01 • Tokyo</span>
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4 flex gap-2">
+                            <button onclick="swapImage('img-aman-tokyo', 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80', this)" class="view-btn flex-1 py-1.5 text-[11px] uppercase tracking-wider rounded bg-obsidian/85 text-gold border border-gold/40 backdrop-blur-sm transition-soft">The Lantern Lobby</button>
+                            <button onclick="swapImage('img-aman-tokyo', 'https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80', this)" class="view-btn flex-1 py-1.5 text-[11px] uppercase tracking-wider rounded bg-obsidian/60 text-pearl hover:text-ivory backdrop-blur-sm transition-soft">Panoramic Suite</button>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-6 p-6 sm:p-10 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-xs font-mono uppercase tracking-widest text-gold">Otemachi • Imperial Gardens</span>
+                                <span class="text-xs text-pearl">★★★★★ Urban Sanctuary</span>
+                            </div>
+                            <h3 class="text-2xl sm:text-3xl font-serif text-ivory mb-3">Aman Tokyo</h3>
+                            <p class="text-pearl text-sm leading-relaxed mb-6 font-light">
+                                Crowning the top six floors of the Otemachi Tower, Aman Tokyo reinterprets traditional Japanese residential aesthetics with washi paper lanterns, camphor wood, and soaring basalt stone baths framing Mount Fuji and the city lights.
+                            </p>
+                            
+                            <div class="flex flex-wrap gap-2 mb-8">
+                                <span class="text-xs px-2.5 py-1 rounded-full bg-obsidian border border-borderMuted text-pearl">Sky-High 30m Basalt Pool</span>
+                                <span class="text-xs px-2.5 py-1 rounded-full bg-obsidian border border-borderMuted text-pearl">Traditional Onsen Spas</span>
+                                <span class="text-xs px-2.5 py-1 rounded-full bg-obsidian border border-borderMuted text-pearl">Musashi Omakase Dining</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-6 border-t border-borderMuted/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                            <div>
+                                <span class="block text-[11px] text-pearl font-mono uppercase">Premier Nightly Rate</span>
+                                <span class="text-xl font-serif text-ivory">From ¥220,000 <span class="text-xs font-sans text-pearl">/ night</span></span>
+                            </div>
+                            <div class="w-full sm:w-auto text-right">
+                                <a href="https://partner.booking.com/affiliate?id=YOUR_ID&hotel=aman_tokyo" 
+                                   target="_blank" 
+                                   rel="sponsored nofollow noopener" 
+                                   class="inline-block w-full sm:w-auto text-center px-6 py-3 rounded-full bg-gold text-obsidian text-xs uppercase tracking-widest font-semibold hover:bg-gold-light transition-soft shadow-md shadow-gold/10">
+                                    Book via Partner Concierge
+                                </a>
+                                <span class="block text-[10px] text-pearl/60 mt-1">Direct rates & VIP perks applied</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- HOTEL 3: London -->
+            <article class="hotel-card bg-cardSurface rounded-xl border border-borderMuted overflow-hidden gold-border-glow transition-soft" data-city="london">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+                    <div class="lg:col-span-6 relative group overflow-hidden h-[340px] lg:h-auto">
+                        <img id="img-connaught" 
+                             src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80" 
+                             alt="The Connaught Hotel" 
+                             class="w-full h-full object-cover transition-soft group-hover:scale-105 duration-700">
+                        <div class="absolute top-4 left-4 bg-obsidian/80 backdrop-blur-md px-3 py-1 rounded border border-gold/30">
+                            <span class="text-xs font-mono text-gold uppercase tracking-widest">#01 • London</span>
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4 flex gap-2">
+                            <button onclick="swapImage('img-connaught', 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80', this)" class="view-btn flex-1 py-1.5 text-[11px] uppercase tracking-wider rounded bg-obsidian/85 text-gold border border-gold/40 backdrop-blur-sm transition-soft">Historic Facade</button>
+                            <button onclick="swapImage('img-connaught', 'https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80', this)" class="view-btn flex-1 py-1.5 text-[11px] uppercase tracking-wider rounded bg-obsidian/60 text-pearl hover:text-ivory backdrop-blur-sm transition-soft">Mews Penthouse</button>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-6 p-6 sm:p-10 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-xs font-mono uppercase tracking-widest text-gold">Carlos Place • Mayfair</span>
+                                <span class="text-xs text-pearl">★★★★★ British Heritage</span>
+                            </div>
+                            <h3 class="text-2xl sm:text-3xl font-serif text-ivory mb-3">The Connaught</h3>
+                            <p class="text-pearl text-sm leading-relaxed mb-6 font-light">
+                                Discretion at its most refined in the epicenter of Mayfair. Renowned for world-class martini rituals at the Connaught Bar, 3-star Michelin cuisine by Hélène Darroze, and genuine residential grandeur.
+                            </p>
+                            
+                            <div class="flex flex-wrap gap-2 mb-8">
+                                <span class="text-xs px-2.5 py-1 rounded-full bg-obsidian border border-borderMuted text-pearl">Aman Spa London</span>
+                                <span class="text-xs px-2.5 py-1 rounded-full bg-obsidian border border-borderMuted text-pearl">Hélène Darroze (3★)</span>
+                                <span class="text-xs px-2.5 py-1 rounded-full bg-obsidian border border-borderMuted text-pearl">World's #1 Martini Cart</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-6 border-t border-borderMuted/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                            <div>
+                                <span class="block text-[11px] text-pearl font-mono uppercase">Premier Nightly Rate</span>
+                                <span class="text-xl font-serif text-ivory">From £1,300 <span class="text-xs font-sans text-pearl">/ night</span></span>
+                            </div>
+                            <div class="w-full sm:w-auto text-right">
+                                <a href="https://partner.booking.com/affiliate?id=YOUR_ID&hotel=the_connaught_london" 
+                                   target="_blank" 
+                                   rel="sponsored nofollow noopener" 
+                                   class="inline-block w-full sm:w-auto text-center px-6 py-3 rounded-full bg-gold text-obsidian text-xs uppercase tracking-widest font-semibold hover:bg-gold-light transition-soft shadow-md shadow-gold/10">
+                                    Book via Partner Concierge
+                                </a>
+                                <span class="block text-[10px] text-pearl/60 mt-1">Direct rates & VIP perks applied</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- HOTEL 4: New York -->
+            <article class="hotel-card bg-cardSurface rounded-xl border border-borderMuted overflow-hidden gold-border-glow transition-soft" data-city="new-york">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+                    <div class="lg:col-span-6 relative group overflow-hidden h-[340px] lg:h-auto">
+                        <img id="img-carlyle" 
+                             src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80" 
+                             alt="The Carlyle Hotel exterior" 
+                             class="w-full h-full object-cover transition-soft group-hover:scale-105 duration-700">
+                        <div class="absolute top-4 left-4 bg-obsidian/80 backdrop-blur-md px-3 py-1 rounded border border-gold/30">
+                            <span class="text-xs font-mono text-gold uppercase tracking-widest">#01 • New York</span>
+                        </div>
+                        <div class="absolute bottom-4 left-4 right-4 flex gap-2">
+                            <button onclick="swapImage('img-carlyle', 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80', this)" class="view-btn flex-1 py-1.5 text-[11px] uppercase tracking-wider rounded bg-obsidian/85 text-gold border border-gold/40 backdrop-blur-sm transition-soft">Tower View</button>
+                            <button onclick="swapImage('img-carlyle', 'https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80', this)" class="view-btn flex-1 py-1.5 text-[11px] uppercase tracking-wider rounded bg-obsidian/60 text-pearl hover:text-ivory backdrop-blur-sm transition-soft">Central Park Suite</button>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-6 p-6 sm:p-10 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="text-xs font-mono uppercase tracking-widest text-gold">Madison Ave • Upper East Side</span>
+                                <span class="text-xs text-pearl">★★★★★ Art Deco Icon</span>
+                            </div>
+                            <h3 class="text-2xl sm:text-3xl font-serif text-ivory mb-3">The Carlyle, A Rosewood Hotel</h3>
+                            <p class="text-pearl text-sm leading-relaxed mb-6 font-light">
+                                A Manhattan landmark since 1930, beloved by royalty and heads of state. Experience classic cabaret at Café Carlyle, hand-painted murals by Ludwig Bemelmans, and white-glove elevator operators.
+                            </p>
+                            
+                            <div class="flex flex-wrap gap-2 mb-8">
+                                <span class="text-xs px-2.5 py-1 rounded-full bg-obsidian border border-borderMuted text-pearl">Bemelmans Bar Murals</span>
+                                <span class="text-xs px-2.5 py-1 rounded-full bg-obsidian border border-borderMuted text-pearl">Valmont Spa</span>
+                                <span class="text-xs px-2.5 py-1 rounded-full bg-obsidian border border-borderMuted text-pearl">Central Park Skyline Views</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-6 border-t border-borderMuted/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                            <div>
+                                <span class="block text-[11px] text-pearl font-mono uppercase">Premier Nightly Rate</span>
+                                <span class="text-xl font-serif text-ivory">From $1,450 <span class="text-xs font-sans text-pearl">/ night</span></span>
+                            </div>
+                            <div class="w-full sm:w-auto text-right">
+                                <a href="https://partner.booking.com/affiliate?id=YOUR_ID&hotel=the_carlyle_nyc" 
+                                   target="_blank" 
+                                   rel="sponsored nofollow noopener" 
+                                   class="inline-block w-full sm:w-auto text-center px-6 py-3 rounded-full bg-gold text-obsidian text-xs uppercase tracking-widest font-semibold hover:bg-gold-light transition-soft shadow-md shadow-gold/10">
+                                    Book via Partner Concierge
+                                </a>
+                                <span class="block text-[10px] text-pearl/60 mt-1">Direct rates & VIP perks applied</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- Lead Capture Section: The Keyholder Circle -->
+    <section id="keyholder" class="bg-cardSurface border-y border-borderMuted py-20 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+            <span class="text-xs font-mono uppercase tracking-[0.3em] text-gold block mb-3">Private Access</span>
+            <h2 class="text-3xl sm:text-5xl font-serif text-ivory mb-4">The Keyholder Circle</h2>
+            <p class="text-pearl text-sm sm:text-base font-light max-w-xl mx-auto mb-8">
+                Receive unlisted private suite privileges, seasonal off-market room reservations, and exclusive editorial hotel monographs twice monthly.
+            </p>
+            <form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="event.preventDefault(); alert('Welcome to The Keyholder Circle.');">
+                <input type="email" required placeholder="Enter your email address..." class="bg-obsidian border border-borderMuted rounded-full px-5 py-3 text-sm text-ivory placeholder-pearl/50 focus:outline-none focus:border-gold flex-1">
+                <button type="submit" class="px-7 py-3 rounded-full bg-gold text-obsidian text-xs uppercase tracking-widest font-semibold hover:bg-gold-light transition-soft">Request Key</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-obsidian border-t border-borderMuted/40 py-12">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+            <div>
+                <span class="font-serif text-lg tracking-widest uppercase text-ivory block mb-1">The Nocturne Key</span>
+                <p class="text-[11px] text-pearl/60 max-w-md">
+                    Editorial curation is independent. We may receive partner commissions on bookings made via affiliate links at no added expense to the guest.
+                </p>
+            </div>
+            <div class="flex flex-wrap items-center justify-center gap-6 text-xs text-pearl">
+                <a href="capitols.html" class="hover:text-gold transition-soft">Capitols Directory</a>
+                <a href="#" class="hover:text-gold transition-soft">FTC Affiliate Policy</a>
+                <a href="#" class="hover:text-gold transition-soft">Privacy Policy</a>
+                <a href="#" class="hover:text-gold transition-soft">Concierge Inquiry</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Logic Script -->
+    <script>
+        // Dual image view switcher (Property vs Suite)
+        function swapImage(imgId, newSrc, btnElement) {
+            const targetImg = document.getElementById(imgId);
+            if (!targetImg) return;
+            
+            targetImg.style.opacity = '0.3';
+            setTimeout(() => {
+                targetImg.src = newSrc;
+                targetImg.style.opacity = '1';
+            }, 150);
+
+            const parentButtons = btnElement.parentElement.querySelectorAll('.view-btn');
+            parentButtons.forEach(btn => {
+                btn.className = "view-btn flex-1 py-1.5 text-[11px] uppercase tracking-wider rounded bg-obsidian/60 text-pearl hover:text-ivory backdrop-blur-sm transition-soft";
+            });
+            btnElement.className = "view-btn flex-1 py-1.5 text-[11px] uppercase tracking-wider rounded bg-obsidian/85 text-gold border border-gold/40 backdrop-blur-sm transition-soft";
+        }
+
+        // City filtering logic
+        function selectCityAndOpenHotels(cityName) {
+            const cards = document.querySelectorAll('.hotel-card');
+            const buttons = document.querySelectorAll('.city-filter-btn');
+            const titleElem = document.getElementById('currentCategoryTitle');
+            const countElem = document.getElementById('hotelCount');
+            
+            let count = 0;
+
+            cards.forEach(card => {
+                const cardCity = card.getAttribute('data-city');
+                if (cityName === 'all' || cardCity === cityName) {
+                    card.style.display = 'block';
+                    count++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // Update title and count pill
+            if (titleElem) {
+                titleElem.textContent = cityName === 'all' ? 'Global Capitols Showcase' : `${cityName.replace('-', ' ')} Curated Guide`;
+            }
+            if (countElem) {
+                countElem.textContent = `${count} ${count === 1 ? 'Property' : 'Properties'} Listed`;
+            }
+
+            // Update active state of buttons
+            buttons.forEach(btn => {
+                if (btn.getAttribute('data-city') === cityName) {
+                    btn.className = "city-filter-btn text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-gold border border-gold/30 bg-gold/5 transition-soft";
+                } else {
+                    btn.className = "city-filter-btn text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-pearl hover:text-ivory border border-transparent hover:border-borderMuted transition-soft";
+                }
+            });
+        }
+
+        // Mobile drawer toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileDrawer = document.getElementById('mobileDrawer');
+        
+        function toggleMobileNav() {
+            if (mobileDrawer) mobileDrawer.classList.toggle('hidden');
+        }
+
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', toggleMobileNav);
+        }
+
+        // Detect ?city= parameter from capitols.html and auto-scroll to the hotel feed
+        window.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const cityParam = params.get('city');
+
+            if (cityParam) {
+                selectCityAndOpenHotels(cityParam);
+                const targetFeed = document.getElementById('hotel-feed');
+                if (targetFeed) {
+                    setTimeout(() => {
+                        targetFeed.scrollIntoView({ behavior: 'smooth' });
+                    }, 200);
+                }
+            }
+        });
+    </script>
+</body>
+</html>
