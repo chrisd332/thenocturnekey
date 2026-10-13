@@ -6,16 +6,21 @@
   <title>Global Capitols & Metropolises | The Nocturne Key</title>
   <meta name="description" content="Explore curated editorial guides to the top luxury hotels across the world's most distinguished cultural capitols and metropolises.">
   
-  <!-- Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
   
+
+  <!-- Web Page Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png?v=4">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png?v=4">
+  <link rel="apple-touch-icon" href="/favicon.png?v=4">
+
   <style>
     :root {
       --bg-midnight: #08080a;
       --bg-surface: #101116;
-      --bg-card: #151720;
+      --bg-card: #12131a;
       --gold-primary: #c5a059;
       --gold-light: #e6ca85;
       --gold-subtle: rgba(197, 160, 89, 0.12);
@@ -28,376 +33,67 @@
       --transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background-color: var(--bg-midnight); color: var(--text-white); font-family: var(--font-sans); line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    a { color: inherit; text-decoration: none; }
 
-    body {
-      background-color: var(--bg-midnight);
-      color: var(--text-white);
-      font-family: var(--font-sans);
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-      overflow-x: hidden;
-    }
+    .site-header { position: sticky; top: 0; z-index: 100; background: rgba(8, 8, 10, 0.92); backdrop-filter: blur(14px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); padding: 1.25rem 2rem; }
+    .header-inner { max-width: 1400px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+    .brand { display: flex; flex-direction: column; }
+    .brand-title { font-family: var(--font-serif); font-size: 1.5rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 400; color: var(--text-white); }
+    .brand-tagline { font-size: 0.65rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--gold-primary); }
+    
+    .back-home-link { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold-light); border: 1px solid var(--border-gold); padding: 0.5rem 1.25rem; border-radius: 999px; transition: var(--transition); background: rgba(197, 160, 89, 0.04); }
+    .back-home-link:hover { background: var(--gold-primary); color: var(--bg-midnight); }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+    .directory-hero { max-width: 1400px; margin: 0 auto; padding: 5rem 2rem 3rem; text-align: center; }
+    .directory-hero-eyebrow { display: inline-block; font-size: 0.7rem; letter-spacing: 0.35em; text-transform: uppercase; color: var(--gold-primary); margin-bottom: 1rem; }
+    .directory-hero-title { font-family: var(--font-serif); font-size: clamp(2.5rem, 5vw, 4.2rem); font-weight: 300; letter-spacing: -0.01em; line-height: 1.15; margin-bottom: 1.25rem; }
+    .directory-hero-title em { font-style: italic; color: var(--gold-light); }
+    .directory-hero-desc { font-size: 1rem; color: var(--text-muted); max-width: 650px; margin: 0 auto 3rem; font-weight: 300; }
 
-    /* Header / Nav */
-    .site-header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: rgba(8, 8, 10, 0.88);
-      backdrop-filter: blur(14px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-      padding: 1.25rem 2rem;
-    }
+    .filter-bar { max-width: 700px; margin: 0 auto; display: flex; flex-direction: column; gap: 1.25rem; }
+    .search-input { width: 100%; background: var(--bg-surface); border: 1px solid var(--border-gold); border-radius: 999px; padding: 0.85rem 1.75rem; font-size: 0.9rem; color: var(--text-white); outline: none; transition: var(--transition); font-family: var(--font-sans); }
+    .search-input:focus { border-color: var(--gold-light); box-shadow: 0 0 20px rgba(197, 160, 89, 0.15); }
+    .search-input::placeholder { color: var(--text-faint); }
+    
+    .continent-pills { display: flex; justify-content: center; flex-wrap: wrap; gap: 0.5rem; }
+    .continent-pill { background: transparent; border: 1px solid rgba(255, 255, 255, 0.08); color: var(--text-muted); padding: 0.4rem 1rem; border-radius: 999px; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; transition: var(--transition); }
+    .continent-pill:hover, .continent-pill.active { border-color: var(--gold-primary); color: var(--text-white); background: var(--gold-subtle); }
 
-    .header-inner {
-      max-width: 1400px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+    .cities-section { max-width: 1400px; margin: 0 auto; padding: 2rem 2rem 6rem; }
+    .cities-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 2rem; }
 
-    .brand {
-      display: flex;
-      flex-direction: column;
-    }
+    .city-card { background: var(--bg-card); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; transition: var(--transition); position: relative; }
+    .city-card:hover { transform: translateY(-6px); border-color: var(--border-gold); box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6); }
 
-    .brand-title {
-      font-family: var(--font-serif);
-      font-size: 1.5rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      font-weight: 400;
-      color: var(--text-white);
-    }
+    .city-image-wrap { position: relative; height: 240px; overflow: hidden; }
+    .city-image { width: 100%; height: 100%; object-fit: cover; transition: transform 0.8s ease; filter: brightness(0.85); }
+    .city-card:hover .city-image { transform: scale(1.05); filter: brightness(0.95); }
 
-    .brand-tagline {
-      font-size: 0.65rem;
-      letter-spacing: 0.28em;
-      text-transform: uppercase;
-      color: var(--gold-primary);
-    }
+    .city-badge { position: absolute; top: 1rem; right: 1rem; background: rgba(8, 8, 10, 0.8); backdrop-filter: blur(8px); border: 1px solid var(--border-gold); color: var(--gold-light); padding: 0.3rem 0.75rem; border-radius: 999px; font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 500; }
+    .city-content { padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1; }
+    .city-header-meta { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem; }
+    .city-country { font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-primary); }
+    .city-hotels-count { font-size: 0.72rem; color: var(--text-faint); font-family: monospace; }
+    .city-name { font-family: var(--font-serif); font-size: 2rem; font-weight: 400; color: var(--text-white); margin-bottom: 0.75rem; line-height: 1.2; }
+    .city-description { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1; }
 
-    .back-home-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-size: 0.75rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--gold-light);
-      border: 1px solid var(--border-gold);
-      padding: 0.5rem 1.25rem;
-      border-radius: 999px;
-      transition: var(--transition);
-      background: rgba(197, 160, 89, 0.04);
-    }
+    .city-highlights { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.5rem; }
+    .city-tag { font-size: 0.68rem; padding: 0.2rem 0.6rem; border-radius: 4px; background: rgba(255, 255, 255, 0.04); color: var(--text-muted); border: 1px solid rgba(255, 255, 255, 0.06); }
 
-    .back-home-link:hover {
-      background: var(--gold-primary);
-      color: var(--bg-midnight);
-    }
+    .city-cta-btn { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 0.85rem 1.25rem; background: rgba(197, 160, 89, 0.06); border: 1px solid var(--border-gold); border-radius: 4px; color: var(--gold-light); font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 500; transition: var(--transition); }
+    .city-cta-btn:hover { background: var(--gold-primary); color: var(--bg-midnight); }
+    .arrow-icon { transition: transform 0.25s ease; }
+    .city-cta-btn:hover .arrow-icon { transform: translateX(4px); }
 
-    /* Hero Section */
-    .directory-hero {
-      max-width: 1400px;
-      margin: 0 auto;
-      padding: 5rem 2rem 3rem;
-      text-align: center;
-    }
-
-    .directory-hero-eyebrow {
-      display: inline-block;
-      font-size: 0.7rem;
-      letter-spacing: 0.35em;
-      text-transform: uppercase;
-      color: var(--gold-primary);
-      margin-bottom: 1rem;
-    }
-
-    .directory-hero-title {
-      font-family: var(--font-serif);
-      font-size: clamp(2.5rem, 5vw, 4.2rem);
-      font-weight: 300;
-      letter-spacing: -0.01em;
-      line-height: 1.15;
-      margin-bottom: 1.25rem;
-    }
-
-    .directory-hero-title em {
-      font-style: italic;
-      color: var(--gold-light);
-    }
-
-    .directory-hero-desc {
-      font-size: 1rem;
-      color: var(--text-muted);
-      max-width: 650px;
-      margin: 0 auto 3rem;
-      font-weight: 300;
-    }
-
-    /* Search & Filter Bar */
-    .filter-bar {
-      max-width: 700px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      gap: 1.25rem;
-    }
-
-    .search-input-wrap {
-      position: relative;
-    }
-
-    .search-input {
-      width: 100%;
-      background: var(--bg-surface);
-      border: 1px solid var(--border-gold);
-      border-radius: 999px;
-      padding: 0.85rem 1.75rem;
-      font-size: 0.9rem;
-      color: var(--text-white);
-      outline: none;
-      transition: var(--transition);
-      font-family: var(--font-sans);
-    }
-
-    .search-input:focus {
-      border-color: var(--gold-light);
-      box-shadow: 0 0 20px rgba(197, 160, 89, 0.15);
-    }
-
-    .search-input::placeholder {
-      color: var(--text-faint);
-    }
-
-    .continent-pills {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-    }
-
-    .continent-pill {
-      background: transparent;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      color: var(--text-muted);
-      padding: 0.4rem 1rem;
-      border-radius: 999px;
-      font-size: 0.72rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      cursor: pointer;
-      transition: var(--transition);
-    }
-
-    .continent-pill:hover,
-    .continent-pill.active {
-      border-color: var(--gold-primary);
-      color: var(--text-white);
-      background: var(--gold-subtle);
-    }
-
-    /* Grid Layout */
-    .cities-section {
-      max-width: 1400px;
-      margin: 0 auto;
-      padding: 2rem 2rem 6rem;
-    }
-
-    .cities-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-      gap: 2rem;
-    }
-
-    /* City Card */
-    .city-card {
-      background: var(--bg-card);
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      border-radius: 8px;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      transition: var(--transition);
-      position: relative;
-    }
-
-    .city-card:hover {
-      transform: translateY(-6px);
-      border-color: var(--border-gold);
-      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5);
-    }
-
-    .city-image-wrap {
-      position: relative;
-      height: 240px;
-      overflow: hidden;
-    }
-
-    .city-image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.8s ease;
-      filter: brightness(0.85);
-    }
-
-    .city-card:hover .city-image {
-      transform: scale(1.05);
-      filter: brightness(0.95);
-    }
-
-    .city-badge {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      background: rgba(8, 8, 10, 0.75);
-      backdrop-filter: blur(8px);
-      border: 1px solid var(--border-gold);
-      color: var(--gold-light);
-      padding: 0.3rem 0.75rem;
-      border-radius: 999px;
-      font-size: 0.65rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      font-weight: 500;
-    }
-
-    .city-content {
-      padding: 1.75rem;
-      display: flex;
-      flex-direction: column;
-      flex-grow: 1;
-    }
-
-    .city-header-meta {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 0.5rem;
-    }
-
-    .city-country {
-      font-size: 0.72rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--gold-primary);
-    }
-
-    .city-hotels-count {
-      font-size: 0.72rem;
-      color: var(--text-faint);
-    }
-
-    .city-name {
-      font-family: var(--font-serif);
-      font-size: 2rem;
-      font-weight: 400;
-      color: var(--text-white);
-      margin-bottom: 0.75rem;
-      line-height: 1.2;
-    }
-
-    .city-description {
-      font-size: 0.88rem;
-      color: var(--text-muted);
-      line-height: 1.6;
-      margin-bottom: 1.5rem;
-      flex-grow: 1;
-    }
-
-    .city-highlights {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .city-tag {
-      font-size: 0.68rem;
-      padding: 0.2rem 0.6rem;
-      border-radius: 4px;
-      background: rgba(255, 255, 255, 0.04);
-      color: var(--text-muted);
-      border: 1px solid rgba(255, 255, 255, 0.06);
-    }
-
-    .city-cta-btn {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-      padding: 0.85rem 1.25rem;
-      background: rgba(197, 160, 89, 0.06);
-      border: 1px solid var(--border-gold);
-      border-radius: 4px;
-      color: var(--gold-light);
-      font-size: 0.78rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      font-weight: 500;
-      transition: var(--transition);
-    }
-
-    .city-cta-btn:hover {
-      background: var(--gold-primary);
-      color: var(--bg-midnight);
-    }
-
-    .arrow-icon {
-      transition: transform 0.25s ease;
-    }
-
-    .city-cta-btn:hover .arrow-icon {
-      transform: translateX(4px);
-    }
-
-    /* Empty state */
-    .no-results {
-      grid-column: 1 / -1;
-      text-align: center;
-      padding: 4rem 1rem;
-      color: var(--text-muted);
-      font-family: var(--font-serif);
-      font-size: 1.4rem;
-      display: none;
-    }
-
-    /* Footer */
-    .site-footer {
-      border-top: 1px solid rgba(255, 255, 255, 0.05);
-      background: #050507;
-      padding: 3rem 2rem;
-      text-align: center;
-    }
-
-    .footer-text {
-      font-size: 0.75rem;
-      color: var(--text-faint);
-      max-width: 600px;
-      margin: 0 auto;
-      letter-spacing: 0.05em;
-    }
+    .no-results { grid-column: 1 / -1; text-align: center; padding: 4rem 1rem; color: var(--text-muted); font-family: var(--font-serif); font-size: 1.4rem; display: none; }
+    .site-footer { border-top: 1px solid rgba(255, 255, 255, 0.05); background: #050507; padding: 3rem 2rem; text-align: center; }
+    .footer-text { font-size: 0.75rem; color: var(--text-faint); max-width: 600px; margin: 0 auto; letter-spacing: 0.05em; }
 
     @media (max-width: 768px) {
-      .cities-grid {
-        grid-template-columns: 1fr;
-      }
-      .directory-hero {
-        padding: 3.5rem 1.5rem 2rem;
-      }
+      .cities-grid { grid-template-columns: 1fr; }
+      .directory-hero { padding: 3.5rem 1.5rem 2rem; }
     }
   </style>
   <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
@@ -412,7 +108,6 @@
 </head>
 <body>
 
-  <!-- Header -->
   <header class="site-header">
     <div class="header-inner">
       <a href="index.html" class="brand">
@@ -429,18 +124,16 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
   <section class="directory-hero">
     <span class="directory-hero-eyebrow">The Global Dossier</span>
     <h1 class="directory-hero-title">Capitols &amp; <em>Metropolises</em></h1>
     <p class="directory-hero-desc">
-      Explore our comprehensive editorial compendiums detailing the top 10 ultra-luxury hotels, private penthouses, and heritage palaces in the world's greatest cities.
+      Explore comprehensive editorial compendiums detailing the verified top 10 luxury sanctuaries, heritage palaces, and private residences across the world's most distinguished cities.
     </p>
 
-    <!-- Filters -->
     <div class="filter-bar">
       <div class="search-input-wrap">
-        <input type="text" id="citySearch" class="search-input" placeholder="Search by city, country, or aesthetic..." />
+        <input type="text" id="citySearch" class="search-input" placeholder="Search by city, country, or keyword..." />
       </div>
       <div class="continent-pills">
         <button class="continent-pill active" data-filter="all">All Capitols</button>
@@ -452,40 +145,38 @@
     </div>
   </section>
 
-  <!-- Cities Grid Section -->
   <main class="cities-section">
     <div class="cities-grid" id="citiesGrid">
 
       <!-- Paris -->
-      <article class="city-card" data-continent="europe" data-keywords="paris france europe palace eiffel tower haussmann gastronomy">
+      <article class="city-card" data-continent="europe" data-keywords="paris france europe palace eiffel tower haussmann gastronomy vendome crillon bristol ritz">
         <div class="city-image-wrap">
-          <img class="city-image" src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80" alt="Paris architecture and streets" loading="lazy">
+          <img class="city-image" src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80" alt="Paris architecture" loading="lazy">
           <span class="city-badge">10 Curated Hotels</span>
         </div>
         <div class="city-content">
           <div class="city-header-meta">
             <span class="city-country">France</span>
-            <span class="city-hotels-count">Top 10 Guide</span>
+            <span class="city-hotels-count">10 Properties Verified</span>
           </div>
           <h2 class="city-name">Paris</h2>
           <p class="city-description">
-            From regal Place de la Concorde palaces to discreet Left Bank havens, explore haute cuisine, Guerlain spas, and balcony views of the Iron Lady.
+            From the regal grandeur of Place de la Concorde to historic Vendôme salons, explore France's official Palace distinctions, Dior spas, and suites framing the Eiffel Tower.
           </p>
           <div class="city-highlights">
             <span class="city-tag">Palace Distinctions</span>
             <span class="city-tag">Haute Cuisine</span>
             <span class="city-tag">Haussmann Suites</span>
           </div>
-          <!-- Link passes city parameter back to index.html -->
           <a href="index.html?city=paris#hotel-feed" class="city-cta-btn">
-            <span>Read Top 10 Guide</span>
+            <span>Explore Top 10 Paris</span>
             <span class="arrow-icon">→</span>
           </a>
         </div>
       </article>
 
       <!-- Tokyo -->
-      <article class="city-card" data-continent="asia" data-keywords="tokyo japan asia aman ryokan skyline onsen otemachi ginza">
+      <article class="city-card" data-continent="asia" data-keywords="tokyo japan asia aman ryokan skyline onsen otemachi ginza hoshinoya bulgari">
         <div class="city-image-wrap">
           <img class="city-image" src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80" alt="Tokyo cityscape at twilight" loading="lazy">
           <span class="city-badge">10 Curated Hotels</span>
@@ -493,65 +184,49 @@
         <div class="city-content">
           <div class="city-header-meta">
             <span class="city-country">Japan</span>
-            <span class="city-hotels-count">Top 10 Guide</span>
+            <span class="city-hotels-count">10 Properties Verified</span>
           </div>
           <h2 class="city-name">Tokyo</h2>
           <p class="city-description">
-            Towering minimalist sanctuaries overlooking the Imperial Gardens, traditional basalt onsens suspended in the clouds, and 3-star Michelin omakase.
+            Towering minimalist sanctuaries overlooking the Imperial Gardens, traditional basalt onsens suspended in the clouds, and 3-star Michelin omakase destinations.
           </p>
           <div class="city-highlights">
             <span class="city-tag">Cloud High Spas</span>
             <span class="city-tag">Minimalist Zen</span>
             <span class="city-tag">Private Onsen</span>
           </div>
+          <!----
           <a href="index.html?city=tokyo#hotel-feed" class="city-cta-btn">
-            <span>Read Top 10 Guide</span>
+            <span>Explore Top 10 Tokyo</span>
             <span class="arrow-icon">→</span>
+          </a> -->
+          <a href="/tokyo_top_five.html" class="explore-btn" style="display: flex; justify-content: space-between; align-items: center; text-decoration: none;">
+            <span>EXPLORE TOKYO MONOGRAPH</span>
+            <span>→</span>
           </a>
         </div>
-      </article>
-
-      <!-- New York -->
-      <article class="city-card" data-continent="north-america" data-keywords="new york nyc united states manhattan upper east side central park art deco">
-        <div class="city-image-wrap">
-          <img class="city-image" src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=800&q=80" alt="New York City skyline" loading="lazy">
-          <span class="city-badge">10 Curated Hotels</span>
+        <!-- Add inside or directly below your Tokyo city card/section 
+        <div class="editorial-spotlight">
+          <span style="color: #C5A059; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase;">Featured Monograph</span>
+          <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; color: #fff; margin: 0.3rem 0;">The 5 Cloud-High Sanctuaries of Tokyo</h3>
+          <a href="/tokyo_top_five.html" style="display: inline-block; margin-top: 0.6rem; color: #C5A059; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; border-bottom: 1px solid #C5A059; padding-bottom: 2px;">Read the Dossier →</a>
         </div>
-        <div class="city-content">
-          <div class="city-header-meta">
-            <span class="city-country">United States</span>
-            <span class="city-hotels-count">Top 10 Guide</span>
-          </div>
-          <h2 class="city-name">New York</h2>
-          <p class="city-description">
-            Legendary Upper East Side institutions, Bemelmans cabaret glamour, Art Deco penthouses, and skyline suites framing Central Park.
-          </p>
-          <div class="city-highlights">
-            <span class="city-tag">Central Park Vistas</span>
-            <span class="city-tag">Classic Jazz Salons</span>
-            <span class="city-tag">White-Glove Butler</span>
-          </div>
-          <a href="index.html?city=new-york#hotel-feed" class="city-cta-btn">
-            <span>Read Top 10 Guide</span>
-            <span class="arrow-icon">→</span>
-          </a>
-        </div>
-      </article>
+      </article> -->
 
       <!-- London -->
-      <article class="city-card" data-continent="europe" data-keywords="london united kingdom mayfair knightsbridge belgravia royal classic">
+      <article class="city-card" data-continent="europe" data-keywords="london united kingdom mayfair knightsbridge belgravia royal classic connaught claridges ritz dorchester">
         <div class="city-image-wrap">
-          <img class="city-image" src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80" alt="London historic architectural view" loading="lazy">
+          <img class="city-image" src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80" alt="London historic view" loading="lazy">
           <span class="city-badge">10 Curated Hotels</span>
         </div>
         <div class="city-content">
           <div class="city-header-meta">
             <span class="city-country">United Kingdom</span>
-            <span class="city-hotels-count">Top 10 Guide</span>
+            <span class="city-hotels-count">10 Properties Verified</span>
           </div>
           <h2 class="city-name">London</h2>
           <p class="city-description">
-            Aristocratic heritage in Mayfair, private cigar parlours, historic Royal Warrant accommodations, and sleek contemporary townhouses.
+            Aristocratic heritage in Mayfair, legendary martini bars, historic Royal Warrant accommodations, and private garden townhouses across Knightsbridge and Belgravia.
           </p>
           <div class="city-highlights">
             <span class="city-tag">Mayfair Heritage</span>
@@ -559,41 +234,41 @@
             <span class="city-tag">Private Gardens</span>
           </div>
           <a href="index.html?city=london#hotel-feed" class="city-cta-btn">
-            <span>Read Top 10 Guide</span>
+            <span>Explore Top 10 London</span>
             <span class="arrow-icon">→</span>
           </a>
         </div>
       </article>
 
-      <!-- Dubai -->
-      <article class="city-card" data-continent="middle-east" data-keywords="dubai uae middle east burj al arab palm jumeirah penthouse ultra luxury">
+      <!-- New York -->
+      <article class="city-card" data-continent="north-america" data-keywords="new york nyc united states manhattan upper east side central park carlyle baccarat mark aman">
         <div class="city-image-wrap">
-          <img class="city-image" src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80" alt="Dubai modern skyline and waterfront" loading="lazy">
+          <img class="city-image" src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=800&q=80" alt="New York City skyline" loading="lazy">
           <span class="city-badge">10 Curated Hotels</span>
         </div>
         <div class="city-content">
           <div class="city-header-meta">
-            <span class="city-country">United Arab Emirates</span>
-            <span class="city-hotels-count">Top 10 Guide</span>
+            <span class="city-country">United States</span>
+            <span class="city-hotels-count">10 Properties Verified</span>
           </div>
-          <h2 class="city-name">Dubai</h2>
+          <h2 class="city-name">New York</h2>
           <p class="city-description">
-            Opulent architectural monuments, private island retreats, submerged aquarium suites, and sky-high infinity pools defying gravity.
+            Upper East Side landmarks, Bemelmans cabaret glamour, crystal-draped crystal salons, and skyline penthouses framing Central Park's canopy.
           </p>
           <div class="city-highlights">
-            <span class="city-tag">Private Helipads</span>
-            <span class="city-tag">Gold Leaf Finishes</span>
-            <span class="city-tag">Private Island</span>
+            <span class="city-tag">Central Park Vistas</span>
+            <span class="city-tag">Classic Jazz Salons</span>
+            <span class="city-tag">White-Glove Butler</span>
           </div>
-          <a href="index.html?city=dubai#hotel-feed" class="city-cta-btn">
-            <span>Read Top 10 Guide</span>
+          <a href="index.html?city=new-york#hotel-feed" class="city-cta-btn">
+            <span>Explore Top 10 New York</span>
             <span class="arrow-icon">→</span>
           </a>
         </div>
       </article>
 
       <!-- Rome -->
-      <article class="city-card" data-continent="europe" data-keywords="rome italy europe historic renaissance villa borghese colosseum">
+      <article class="city-card" data-continent="europe" data-keywords="rome italy europe historic renaissance villa borghese colosseum hassler de russie eden">
         <div class="city-image-wrap">
           <img class="city-image" src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=800&q=80" alt="Historic Rome sunset view" loading="lazy">
           <span class="city-badge">10 Curated Hotels</span>
@@ -601,19 +276,46 @@
         <div class="city-content">
           <div class="city-header-meta">
             <span class="city-country">Italy</span>
-            <span class="city-hotels-count">Top 10 Guide</span>
+            <span class="city-hotels-count">10 Properties Verified</span>
           </div>
           <h2 class="city-name">Rome</h2>
           <p class="city-description">
-            Aristocratic palazzos adorned with 17th-century frescoes, terraced suites fronting the Spanish Steps, and private subterranean Roman baths.
+            Aristocratic palazzos adorned with Renaissance frescoes, terraced suites fronting the Spanish Steps, and secret terraced gardens overlooking St. Peter's Dome.
           </p>
           <div class="city-highlights">
-            <span class="city-tag">17th-Century Frescoes</span>
-            <span class="city-tag">Terrace Dining</span>
-            <span class="city-tag">Roman Baths</span>
+            <span class="city-tag">Renaissance Frescoes</span>
+            <span class="city-tag">Spanish Steps Views</span>
+            <span class="city-tag">Private Roman Spas</span>
           </div>
           <a href="index.html?city=rome#hotel-feed" class="city-cta-btn">
-            <span>Read Top 10 Guide</span>
+            <span>Explore Top 10 Rome</span>
+            <span class="arrow-icon">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Dubai -->
+      <article class="city-card" data-continent="middle-east" data-keywords="dubai uae middle east burj al arab palm jumeirah penthouse ultra luxury atlantis bulgari">
+        <div class="city-image-wrap">
+          <img class="city-image" src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80" alt="Dubai modern skyline" loading="lazy">
+          <span class="city-badge">10 Curated Hotels</span>
+        </div>
+        <div class="city-content">
+          <div class="city-header-meta">
+            <span class="city-country">United Arab Emirates</span>
+            <span class="city-hotels-count">10 Properties Verified</span>
+          </div>
+          <h2 class="city-name">Dubai</h2>
+          <p class="city-description">
+            Opulent architectural monuments, private island retreats, duplex suites with 24-karat gold leaf, and infinity sky-pools hovering 50 stories above the Persian Gulf.
+          </p>
+          <div class="city-highlights">
+            <span class="city-tag">Private Helipads</span>
+            <span class="city-tag">Duplex Suites</span>
+            <span class="city-tag">Private Island</span>
+          </div>
+          <a href="index.html?city=dubai#hotel-feed" class="city-cta-btn">
+            <span>Explore Top 10 Dubai</span>
             <span class="arrow-icon">→</span>
           </a>
         </div>
@@ -626,14 +328,12 @@
     </div>
   </main>
 
-  <!-- Footer -->
   <footer class="site-footer">
     <p class="footer-text">
       The Nocturne Key &copy; 2026. Editorial selections are curated independently. Bookings made via partner portals may yield an affiliate commission.
     </p>
   </footer>
 
-  <!-- Filter & Search Logic -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const searchInput = document.getElementById('citySearch');
@@ -646,11 +346,9 @@
 
       function filterCities() {
         let visibleCount = 0;
-
         cityCards.forEach(card => {
           const continent = card.getAttribute('data-continent');
           const keywords = (card.getAttribute('data-keywords') + ' ' + card.querySelector('.city-name').textContent).toLowerCase();
-          
           const matchesContinent = (currentContinent === 'all' || continent === currentContinent);
           const matchesSearch = !currentQuery || keywords.includes(currentQuery.toLowerCase());
 
@@ -661,17 +359,14 @@
             card.style.display = 'none';
           }
         });
-
         noResults.style.display = visibleCount === 0 ? 'block' : 'none';
       }
 
-      // Search event
       searchInput.addEventListener('input', (e) => {
         currentQuery = e.target.value.trim();
         filterCities();
       });
 
-      // Continent filter buttons
       continentPills.forEach(pill => {
         pill.addEventListener('click', () => {
           continentPills.forEach(p => p.classList.remove('active'));
