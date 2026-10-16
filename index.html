@@ -56,12 +56,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 
-
     <!-- Web Page Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png?v=4">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png?v=4">
     <link rel="apple-touch-icon" href="/favicon.png?v=4">
-
 
     <style>
         body {
@@ -102,7 +100,6 @@
         }
     </style>
     
-    
     <!-- Travelpayouts Drive Auto-monetization script -->
     <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
         (function () {
@@ -113,7 +110,6 @@
             document.head.appendChild(script);
         })();
     </script> 
-
 </head>
 <body class="selection:bg-gold selection:text-obsidian antialiased min-h-screen flex flex-col justify-between">
 
@@ -148,6 +144,9 @@
                 </nav>
 
                 <div class="flex items-center gap-4">
+                    <a href="paris-top-5.html" class="hidden xl:inline-flex items-center text-[11px] uppercase tracking-widest px-3 py-1.5 border border-gold/30 text-gold-light hover:bg-gold/10 rounded-full transition-soft">
+                        Paris Monograph ↗
+                    </a>
                     <a href="#keyholder" class="hidden sm:inline-flex items-center text-xs uppercase tracking-widest px-4 py-2 border border-gold/40 text-gold-light hover:bg-gold hover:text-obsidian rounded-full transition-soft font-medium shadow-sm">
                         <span>VIP Keyholder</span>
                     </a>
@@ -161,7 +160,13 @@
         </div>
 
         <div id="mobileDrawer" class="hidden md:hidden bg-cardSurface/95 border-b border-borderMuted px-6 py-4 space-y-3">
-            <p class="text-[10px] uppercase tracking-widest text-gold font-mono">Top 10 City Guides</p>
+            <p class="text-[10px] uppercase tracking-widest text-gold font-mono">Special Monographs</p>
+            <div class="grid grid-cols-2 gap-2">
+                <a href="paris-top-5.html" class="text-left py-2 px-3 text-xs text-gold-light bg-gold/5 rounded border border-gold/20">⚜️ Paris Top 5</a>
+                <a href="tokyo-top-5.html" class="text-left py-2 px-3 text-xs text-gold-light bg-gold/5 rounded border border-gold/20">🏯 Tokyo Top 5</a>
+            </div>
+
+            <p class="text-[10px] uppercase tracking-widest text-gold font-mono pt-2">Capitols Directory & Rankings</p>
             <div class="grid grid-cols-2 gap-2">
                 <a href="capitols.html" class="text-left py-2.5 px-3 text-sm text-gold bg-gold/10 rounded border border-gold/30 font-medium">🏛️ All Capitols</a>
                 <button onclick="renderCityCategory('paris'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Top 10 Paris</button>
@@ -194,7 +199,7 @@
             </h1>
             
             <p class="text-pearl text-sm sm:text-base font-light max-w-2xl mx-auto mb-10 leading-relaxed">
-                An authoritative editorial compendium of the world's 10 finest boutique suites, historic palaces, and subterranean wellness temples in each global capitol.
+                An authoritative editorial compendium of the world's finest boutique suites, historic palaces, and subterranean wellness temples in each global capitol.
             </p>
 
             <div class="flex flex-wrap items-center justify-center gap-4">
@@ -215,16 +220,22 @@
                 <span class="text-xs uppercase tracking-[0.25em] text-gold font-mono block mb-2" id="editorialSubLabel">Curated Dossier</span>
                 <h2 id="currentCategoryTitle" class="text-3xl sm:text-4xl font-serif text-ivory capitalize">The Top 10 Luxury Hotels of Paris</h2>
             </div>
-            <div class="flex items-center gap-2 text-xs text-pearl">
-                <span id="rankingsStatus">Curated Monograph</span>
-                <span class="w-1 h-1 rounded-full bg-gold"></span>
-                <span class="text-gold-light font-mono" id="hotelCount">10 Properties Verified</span>
+            <div class="flex items-center gap-4 text-xs text-pearl">
+                <a id="monographLinkBadge" href="paris-top-5.html" class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-gold/30 bg-gold/5 text-gold-light hover:bg-gold/15 transition-soft">
+                    <span>View 5-Hotel Monograph</span>
+                    <span>→</span>
+                </a>
+                <div class="flex items-center gap-2">
+                    <span id="rankingsStatus">Curated Monograph</span>
+                    <span class="w-1 h-1 rounded-full bg-gold"></span>
+                    <span class="text-gold-light font-mono" id="hotelCount">10 Properties Verified</span>
+                </div>
             </div>
         </div>
 
         <!-- Dynamic Hotels Container -->
         <div id="hotelCardsGrid" class="space-y-16">
-            <!-- Injected via JavaScript below -->
+            <!-- Injected via JavaScript -->
         </div>
     </main>
 
@@ -266,8 +277,8 @@
             </div>
             <div class="flex flex-wrap items-center justify-center gap-6 text-xs text-pearl">
                 <a href="capitols.html" class="hover:text-gold transition-soft">Capitols Directory</a>
-                <a href="#" class="hover:text-gold transition-soft">FTC Affiliate Disclosure</a>
-                <a href="#" class="hover:text-gold transition-soft">Privacy Policy</a>
+                <a href="paris-top-5.html" class="hover:text-gold transition-soft">Paris Top 5</a>
+                <a href="tokyo-top-5.html" class="hover:text-gold transition-soft">Tokyo Top 5</a>
                 <a href="#" class="hover:text-gold transition-soft">Concierge Desk</a>
             </div>
         </div>
@@ -1010,6 +1021,12 @@
             ]
         };
 
+        // Monograph mapping for cities with dedicated top 5 pages
+        const MONOGRAPH_URLS = {
+            "paris": "paris-top-5.html",
+            "tokyo": "tokyo-top-5.html"
+        };
+
         // Renderer for hotel entries
         function renderCityCategory(cityKey) {
             const hotels = LUXURY_HOTELS_DB[cityKey] || LUXURY_HOTELS_DB["paris"];
@@ -1017,6 +1034,7 @@
             const titleElem = document.getElementById('currentCategoryTitle');
             const countElem = document.getElementById('hotelCount');
             const subLabelElem = document.getElementById('editorialSubLabel');
+            const monographBadge = document.getElementById('monographLinkBadge');
             
             const cityNamesDisplay = {
                 "paris": "Paris",
@@ -1031,6 +1049,17 @@
             titleElem.textContent = `The Top 10 Luxury Hotels of ${cityName}`;
             subLabelElem.textContent = `${cityName} Curated Dossier`;
             countElem.textContent = `${hotels.length} Properties Verified`;
+
+            // Adjust monograph link depending on availability
+            if (monographBadge) {
+                if (MONOGRAPH_URLS[cityKey]) {
+                    monographBadge.href = MONOGRAPH_URLS[cityKey];
+                    monographBadge.innerHTML = `<span>View ${cityName} Top 5 Monograph</span> <span>→</span>`;
+                    monographBadge.classList.remove('hidden');
+                } else {
+                    monographBadge.classList.add('hidden');
+                }
+            }
 
             grid.innerHTML = hotels.map((h, idx) => `
                 <article class="hotel-card bg-cardSurface rounded-xl border border-borderMuted overflow-hidden gold-border-glow transition-soft" data-city="${cityKey}">
