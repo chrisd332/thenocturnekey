@@ -100,7 +100,7 @@
         }
     </style>
     
-    <!-- Travelpayouts Auto-Monetization Script (Interprets Klook links automatically) -->
+    <!-- Travelpayouts Drive Auto-monetization script -->
     <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
         (function () {
             var script = document.createElement("script");
@@ -135,9 +135,8 @@
                         <span>All Capitols</span>
                     </a>
                     <span class="text-borderMuted text-xs px-1">|</span>
-                    <!-- Paris & Tokyo directly lead to their dedicated top 5 monographs -->
-                    <a href="paris-top-5.html" class="city-filter-btn text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-pearl hover:text-gold border border-transparent hover:border-gold/30 transition-soft">Paris ↗</a>
-                    <a href="tokyo-top-5.html" class="city-filter-btn text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-pearl hover:text-gold border border-transparent hover:border-gold/30 transition-soft">Tokyo ↗</a>
+                    <button onclick="renderCityCategory('paris')" class="city-filter-btn text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-pearl hover:text-ivory border border-transparent hover:border-borderMuted transition-soft" data-city="paris">Paris</button>
+                    <button onclick="renderCityCategory('tokyo')" class="city-filter-btn text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-pearl hover:text-ivory border border-transparent hover:border-borderMuted transition-soft" data-city="tokyo">Tokyo</button>
                     <button onclick="renderCityCategory('london')" class="city-filter-btn text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-pearl hover:text-ivory border border-transparent hover:border-borderMuted transition-soft" data-city="london">London</button>
                     <button onclick="renderCityCategory('new-york')" class="city-filter-btn text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-pearl hover:text-ivory border border-transparent hover:border-borderMuted transition-soft" data-city="new-york">New York</button>
                     <button onclick="renderCityCategory('rome')" class="city-filter-btn text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-pearl hover:text-ivory border border-transparent hover:border-borderMuted transition-soft" data-city="rome">Rome</button>
@@ -158,15 +157,11 @@
         </div>
 
         <div id="mobileDrawer" class="hidden md:hidden bg-cardSurface/95 border-b border-borderMuted px-6 py-4 space-y-3">
-            <p class="text-[10px] uppercase tracking-widest text-gold font-mono">Top 5 Monographs</p>
-            <div class="grid grid-cols-2 gap-2">
-                <a href="paris-top-5.html" class="text-left py-2 px-3 text-xs text-gold-light bg-gold/5 rounded border border-gold/30">⚜️ Paris Top 5</a>
-                <a href="tokyo-top-5.html" class="text-left py-2 px-3 text-xs text-gold-light bg-gold/5 rounded border border-gold/30">🏯 Tokyo Top 5</a>
-            </div>
-
-            <p class="text-[10px] uppercase tracking-widest text-gold font-mono pt-2">Global Cities</p>
+            <p class="text-[10px] uppercase tracking-widest text-gold font-mono">Curated Top 5 Compendiums</p>
             <div class="grid grid-cols-2 gap-2">
                 <a href="capitols.html" class="text-left py-2.5 px-3 text-sm text-gold bg-gold/10 rounded border border-gold/30 font-medium">🏛️ All Capitols</a>
+                <button onclick="renderCityCategory('paris'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Top 5 Paris</button>
+                <button onclick="renderCityCategory('tokyo'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Top 5 Tokyo</button>
                 <button onclick="renderCityCategory('london'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Top 5 London</button>
                 <button onclick="renderCityCategory('new-york'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Top 5 New York</button>
                 <button onclick="renderCityCategory('rome'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Top 5 Rome</button>
@@ -176,7 +171,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+    <section class="relative min-h-[72vh] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
             <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1920&auto=format&fit=crop" 
                  alt="Luxury Grand Hotel Exterior" 
@@ -214,7 +209,7 @@
         <div class="flex flex-col md:flex-row md:items-end justify-between border-b border-borderMuted/60 pb-8 mb-12 gap-6">
             <div>
                 <span class="text-xs uppercase tracking-[0.25em] text-gold font-mono block mb-2" id="editorialSubLabel">Curated Dossier</span>
-                <h2 id="currentCategoryTitle" class="text-3xl sm:text-4xl font-serif text-ivory capitalize">The Top 5 Luxury Hotels of London</h2>
+                <h2 id="currentCategoryTitle" class="text-3xl sm:text-4xl font-serif text-ivory capitalize">The Top 5 Luxury Hotels of Paris</h2>
             </div>
             <div class="flex items-center gap-2 text-xs text-pearl">
                 <span id="rankingsStatus">Curated Monograph</span>
@@ -225,7 +220,7 @@
 
         <!-- Dynamic Hotels Container -->
         <div id="hotelCardsGrid" class="space-y-16">
-            <!-- Injected via JavaScript -->
+            <!-- Injected via JavaScript below -->
         </div>
     </main>
 
@@ -267,16 +262,140 @@
             </div>
             <div class="flex flex-wrap items-center justify-center gap-6 text-xs text-pearl">
                 <a href="capitols.html" class="hover:text-gold transition-soft">Capitols Directory</a>
-                <a href="paris-top-5.html" class="hover:text-gold transition-soft">Paris Top 5</a>
-                <a href="tokyo-top-5.html" class="hover:text-gold transition-soft">Tokyo Top 5</a>
+                <a href="paris-top-5.html" class="hover:text-gold transition-soft">Paris Monograph</a>
+                <a href="tokyo-top-5.html" class="hover:text-gold transition-soft">Tokyo Monograph</a>
                 <a href="#" class="hover:text-gold transition-soft">Concierge Desk</a>
             </div>
         </div>
     </footer>
 
-    <!-- Database with Top 5 Curations and Klook Affiliate Links -->
+    <!-- Top 5 Luxury Hotel Database & Application Logic with Klook Affiliate Links -->
     <script>
         const LUXURY_HOTELS_DB = {
+            "paris": [
+                {
+                    rank: "01",
+                    name: "Hôtel de Crillon, A Rosewood Hotel",
+                    location: "Place de la Concorde • 8th Arrondissement",
+                    distinction: "Palace Distinction",
+                    desc: "An 18th-century architectural masterpiece originally commissioned by Louis XV. Overlooking Place de la Concorde, the palace balances neoclassical Parisian heritage with bespoke contemporary apartments designed by Karl Lagerfeld.",
+                    tags: ["Rosewood Spa Sense", "Michelin-starred L'Écrin", "Bespoke Butler Service"],
+                    rate: "€1,850",
+                    imgProperty: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
+                    imgSuite: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/29322-hotel-de-crillon-a-rosewood-hotel/"
+                },
+                {
+                    rank: "02",
+                    name: "Ritz Paris",
+                    location: "15 Place Vendôme • 1st Arrondissement",
+                    distinction: "Historic Icon",
+                    desc: "The quintessential Parisian palace hotel. Home to Bar Hemingway, the grand Salon Proust for afternoon tea, and a subterranean Roman pool lined with azure mosaics.",
+                    tags: ["Bar Hemingway", "Chanel Spa Paris", "Place Vendôme Terrace"],
+                    rate: "€1,900",
+                    imgProperty: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
+                    imgSuite: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/29324-ritz-paris/"
+                },
+                {
+                    rank: "03",
+                    name: "Le Bristol Paris",
+                    location: "112 Rue du Faubourg Saint-Honoré",
+                    distinction: "Oetker Collection Palace",
+                    desc: "A beacon of classic French art de vivre. Famed for its iconic yacht-inspired rooftop pool overlooking Montmartre and Epicure, its legendary 3-star Michelin restaurant.",
+                    tags: ["Epicure (3★ Michelin)", "Yacht-style Pool", "Private 1,200m² Garden"],
+                    rate: "€1,750",
+                    imgProperty: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+                    imgSuite: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/29321-le-bristol-paris-an-oetker-collection-hotel/"
+                },
+                {
+                    rank: "04",
+                    name: "Cheval Blanc Paris",
+                    location: "8 Quai du Louvre • 1st Arrondissement",
+                    distinction: "LVMH Hospitality",
+                    desc: "Perched along the Seine in the revitalized La Samaritaine. Houses Plénitude by chef Arnaud Donckele (3 Michelin stars) and the world's most opulent Dior Spa.",
+                    tags: ["Plénitude (3★ Michelin)", "Dior Spa Cheval Blanc", "Seine River Panoramas"],
+                    rate: "€2,100",
+                    imgProperty: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80",
+                    imgSuite: "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80",
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/858482-cheval-blanc-paris/"
+                },
+                {
+                    rank: "05",
+                    name: "Four Seasons Hotel George V",
+                    location: "31 Avenue George V • 8th Arrondissement",
+                    distinction: "Palace Distinction",
+                    desc: "An Art Deco landmark housing 5 Michelin stars across three world-renowned dining venues, accompanied by Jeff Leatham's dramatic floral artistic installations.",
+                    tags: ["Le Cinq (3★ Michelin)", "Jeff Leatham Florals", "Marble Courtyard"],
+                    rate: "€1,800",
+                    imgProperty: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=80",
+                    imgSuite: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/29320-four-seasons-hotel-george-v-paris/"
+                }
+            ],
+            "tokyo": [
+                {
+                    rank: "01",
+                    name: "Aman Tokyo",
+                    location: "Otemachi Tower • Imperial Palace Gardens",
+                    distinction: "Minimalist Masterpiece",
+                    desc: "Crowning the upper floors of Otemachi Tower, Aman Tokyo reinterprets traditional Japanese architecture with washi paper lanterns, camphor wood, and soaring basalt stone baths framing Mount Fuji.",
+                    tags: ["30m Basalt Sky Pool", "Traditional Onsen", "Musashi Omakase"],
+                    rate: "¥220,000",
+                    imgProperty: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
+                    imgSuite: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/28419-aman-tokyo/"
+                },
+                {
+                    rank: "02",
+                    name: "Bulgari Hotel Tokyo",
+                    location: "Tokyo Midtown Yaesu • 40th-45th Floors",
+                    distinction: "Italian Haute Horlogerie",
+                    desc: "Tokyo's crowning luxury opening, combining Roman Dolce Vita with views of the Imperial Palace. Features Il Ristorante by Niko Romito and an expansive Bulgari Spa.",
+                    tags: ["Il Ristorante Niko Romito", "25m Emerald Mosaic Pool", "Bulgari Suite"],
+                    rate: "¥250,000",
+                    imgProperty: "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1200&q=80",
+                    imgSuite: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/916301-bulgari-hotel-tokyo/"
+                },
+                {
+                    rank: "03",
+                    name: "Hoshinoya Tokyo",
+                    location: "Otemachi Business District",
+                    distinction: "Urban Luxury Ryokan",
+                    desc: "A vertical 17-story Japanese ryokan where guests walk barefoot on tatami mats throughout. Top floor hot spring baths are piped directly from 1,500 meters beneath Tokyo.",
+                    tags: ["Subterranean Geothermal Onsen", "Tatami Living Salons", "Nippon Gastronomy"],
+                    rate: "¥140,000",
+                    imgProperty: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+                    imgSuite: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/28420-hoshinoya-tokyo/"
+                },
+                {
+                    rank: "04",
+                    name: "Palace Hotel Tokyo",
+                    location: "1-1-1 Marunouchi • Imperial Moat",
+                    distinction: "Japanese Grande Dame",
+                    desc: "Directly fronting the Imperial Palace moat, this storied property offers rare private balconies, an Evian Spa, and serene views across the pine-tree lawns of the capital.",
+                    tags: ["Private Park Balconies", "Evian Spa Tokyo", "Amber Bar Club"],
+                    rate: "¥160,000",
+                    imgProperty: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80",
+                    imgSuite: "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80",
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/28418-palace-hotel-tokyo/"
+                },
+                {
+                    rank: "05",
+                    name: "The Tokyo EDITION, Toranomon",
+                    location: "Toranomon Hills • Minato City",
+                    distinction: "Botanical Design Oasis",
+                    desc: "Conceived by Ian Schrager and architect Kengo Kuma. Features an awe-inspiring sky-high lobby jungle overflowing with over 500 plants overlooking Tokyo Tower.",
+                    tags: ["Kengo Kuma Architecture", "Lobby Botanical Garden", "Tokyo Tower Panorama"],
+                    rate: "¥130,000",
+                    imgProperty: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
+                    imgSuite: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/479102-the-tokyo-edition-toranomon/"
+                }
+            ],
             "london": [
                 {
                     rank: "01",
@@ -295,7 +414,7 @@
                     name: "Claridge's",
                     location: "Brook Street • Mayfair",
                     distinction: "Art Deco Crown",
-                    desc: "The beloved retreat of queens, statesmen, and tastemakers. Revered for its gilded Art Deco ballroom, subterranean swimming pool, and storied afternoon tea service.",
+                    desc: "The beloved retreat of queens, statesmen, and tastemakers. Revered for its gilded Art Deco ballroom, subterranean swimming pool, and afternoon tea service.",
                     tags: ["Royal Suite Provenance", "Claridge's ArtSpace", "Subterranean Spa"],
                     rate: "£1,250",
                     imgProperty: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
@@ -527,31 +646,24 @@
             ]
         };
 
+        // Renderer for hotel entries
         function renderCityCategory(cityKey) {
-            // If user selects Paris or Tokyo via URL parameter or script call, redirect to their standalone monograph
-            if (cityKey === 'paris') {
-                window.location.href = 'paris-top-5.html';
-                return;
-            }
-            if (cityKey === 'tokyo') {
-                window.location.href = 'tokyo-top-5.html';
-                return;
-            }
-
-            const hotels = LUXURY_HOTELS_DB[cityKey] || LUXURY_HOTELS_DB["london"];
+            const hotels = LUXURY_HOTELS_DB[cityKey] || LUXURY_HOTELS_DB["paris"];
             const grid = document.getElementById('hotelCardsGrid');
             const titleElem = document.getElementById('currentCategoryTitle');
             const countElem = document.getElementById('hotelCount');
             const subLabelElem = document.getElementById('editorialSubLabel');
             
             const cityNamesDisplay = {
+                "paris": "Paris",
+                "tokyo": "Tokyo",
                 "london": "London",
                 "new-york": "New York",
                 "rome": "Rome",
                 "dubai": "Dubai"
             };
 
-            const cityName = cityNamesDisplay[cityKey] || "London";
+            const cityName = cityNamesDisplay[cityKey] || "Paris";
             titleElem.textContent = `The Top 5 Luxury Hotels of ${cityName}`;
             subLabelElem.textContent = `${cityName} Curated Dossier`;
             countElem.textContent = `${hotels.length} Properties Verified`;
@@ -654,20 +766,12 @@
             mobileMenuBtn.addEventListener('click', toggleMobileNav);
         }
 
+        // URL router: checks ?city= parameter from capitols.html or defaults to Paris
         window.addEventListener('DOMContentLoaded', () => {
             const params = new URLSearchParams(window.location.search);
-            const cityParam = params.get('city');
-
-            if (cityParam === 'paris') {
-                window.location.replace('paris-top-5.html');
-                return;
-            }
-            if (cityParam === 'tokyo') {
-                window.location.replace('tokyo-top-5.html');
-                return;
-            }
+            const cityParam = params.get('city') || 'paris';
             
-            renderCityCategory(cityParam || 'london');
+            renderCityCategory(cityParam);
 
             if (params.get('city')) {
                 const targetFeed = document.getElementById('hotel-feed');
