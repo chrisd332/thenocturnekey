@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Nocturne Key | Top 10 Luxury Hotel Guides & Global Capitols</title>
+    <title>The Nocturne Key | Top 5 Luxury Hotel Guides & Global Capitols</title>
     <meta name="description" content="An independent editorial compendium of the world's most evocative luxury hotels across global capitals including Paris, Tokyo, London, Rome, New York, and Dubai.">
     <meta name="robots" content="index, follow">
     
     <meta property="og:title" content="The Nocturne Key — Curated Sanctuaries of the Night">
-    <meta property="og:description" content="Top 10 luxury hotel guides and nocturnal retreats across the world's flagship metropolises.">
+    <meta property="og:description" content="Top 5 luxury hotel guides and nocturnal retreats across the world's flagship metropolises.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1600&auto=format&fit=crop">
 
@@ -16,8 +16,8 @@
     {
       "@context": "https://schema.org",
       "@type": "ItemList",
-      "name": "The Nocturne Key Global Capitols Top 10 Rankings",
-      "description": "Editorial rankings and guides to the top 10 luxury hotels across Paris, Tokyo, London, New York, Rome, and Dubai."
+      "name": "The Nocturne Key Global Capitols Top 5 Rankings",
+      "description": "Editorial rankings and guides to the top 5 luxury hotels across Paris, Tokyo, London, New York, Rome, and Dubai."
     }
     </script>
 
@@ -56,12 +56,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 
-
     <!-- Web Page Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png?v=4">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png?v=4">
     <link rel="apple-touch-icon" href="/favicon.png?v=4">
-
 
     <style>
         body {
@@ -102,7 +100,6 @@
         }
     </style>
     
-    
     <!-- Travelpayouts Drive Auto-monetization script -->
     <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
         (function () {
@@ -113,7 +110,6 @@
             document.head.appendChild(script);
         })();
     </script> 
-
 </head>
 <body class="selection:bg-gold selection:text-obsidian antialiased min-h-screen flex flex-col justify-between">
 
@@ -161,15 +157,15 @@
         </div>
 
         <div id="mobileDrawer" class="hidden md:hidden bg-cardSurface/95 border-b border-borderMuted px-6 py-4 space-y-3">
-            <p class="text-[10px] uppercase tracking-widest text-gold font-mono">Top 10 City Guides</p>
+            <p class="text-[10px] uppercase tracking-widest text-gold font-mono">Curated Top 5 Compendiums</p>
             <div class="grid grid-cols-2 gap-2">
                 <a href="capitols.html" class="text-left py-2.5 px-3 text-sm text-gold bg-gold/10 rounded border border-gold/30 font-medium">🏛️ All Capitols</a>
-                <button onclick="renderCityCategory('paris'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Top 10 Paris</button>
-                <button onclick="renderCityCategory('tokyo'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Top 10 Tokyo</button>
-                <button onclick="renderCityCategory('london'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Top 10 London</button>
-                <button onclick="renderCityCategory('new-york'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Top 10 New York</button>
-                <button onclick="renderCityCategory('rome'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Top 10 Rome</button>
-                <button onclick="renderCityCategory('dubai'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Top 10 Dubai</button>
+                <button onclick="renderCityCategory('paris'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Top 5 Paris</button>
+                <button onclick="renderCityCategory('tokyo'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Top 5 Tokyo</button>
+                <button onclick="renderCityCategory('london'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Top 5 London</button>
+                <button onclick="renderCityCategory('new-york'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Top 5 New York</button>
+                <button onclick="renderCityCategory('rome'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Top 5 Rome</button>
+                <button onclick="renderCityCategory('dubai'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Top 5 Dubai</button>
             </div>
         </div>
     </header>
@@ -186,7 +182,7 @@
         <div class="relative z-10 max-w-4xl mx-auto px-6 text-center py-20">
             <div class="inline-flex items-center gap-2 px-3 py-1 border border-gold/30 rounded-full bg-gold/10 backdrop-blur-sm mb-6">
                 <span class="w-1.5 h-1.5 rounded-full bg-gold animate-pulse"></span>
-                <span class="text-[10px] uppercase tracking-[0.3em] text-gold-light font-medium">Vol. VII • Top 10 Capital Editions</span>
+                <span class="text-[10px] uppercase tracking-[0.3em] text-gold-light font-medium">Vol. VIII • Curated Top 5 Editions</span>
             </div>
             
             <h1 class="text-4xl sm:text-6xl lg:text-7xl font-serif font-light text-ivory tracking-tight mb-6 leading-tight">
@@ -194,12 +190,12 @@
             </h1>
             
             <p class="text-pearl text-sm sm:text-base font-light max-w-2xl mx-auto mb-10 leading-relaxed">
-                An authoritative editorial compendium of the world's 10 finest boutique suites, historic palaces, and subterranean wellness temples in each global capitol.
+                An authoritative editorial compendium of the world's 5 sovereign suites, heritage palaces, and nocturnal wellness temples in each premier metropolis.
             </p>
 
             <div class="flex flex-wrap items-center justify-center gap-4">
                 <a href="#hotel-feed" class="px-8 py-3.5 rounded-full bg-gold text-obsidian text-xs uppercase tracking-widest font-semibold hover:bg-gold-light transition-soft shadow-lg shadow-gold/20">
-                    Explore Curated Top 10
+                    Explore Curated Top 5
                 </a>
                 <a href="capitols.html" class="px-8 py-3.5 rounded-full border border-gold/40 text-gold-light hover:bg-gold/10 text-xs uppercase tracking-widest font-medium transition-soft backdrop-blur-sm">
                     View All Capitols Directory →
@@ -213,12 +209,12 @@
         <div class="flex flex-col md:flex-row md:items-end justify-between border-b border-borderMuted/60 pb-8 mb-12 gap-6">
             <div>
                 <span class="text-xs uppercase tracking-[0.25em] text-gold font-mono block mb-2" id="editorialSubLabel">Curated Dossier</span>
-                <h2 id="currentCategoryTitle" class="text-3xl sm:text-4xl font-serif text-ivory capitalize">The Top 10 Luxury Hotels of Paris</h2>
+                <h2 id="currentCategoryTitle" class="text-3xl sm:text-4xl font-serif text-ivory capitalize">The Top 5 Luxury Hotels of Paris</h2>
             </div>
             <div class="flex items-center gap-2 text-xs text-pearl">
                 <span id="rankingsStatus">Curated Monograph</span>
                 <span class="w-1 h-1 rounded-full bg-gold"></span>
-                <span class="text-gold-light font-mono" id="hotelCount">10 Properties Verified</span>
+                <span class="text-gold-light font-mono" id="hotelCount">5 Properties Verified</span>
             </div>
         </div>
 
@@ -261,19 +257,19 @@
             <div>
                 <span class="font-serif text-lg tracking-widest uppercase text-ivory block mb-1">The Nocturne Key</span>
                 <p class="text-[11px] text-pearl/60 max-w-md">
-                    Editorial curation is independent. We may receive partner commissions on bookings made via affiliate links at no added expense to the guest.
+                    Editorial curation is independent. Bookings made via Klook affiliate links yield partner commissions at zero added expense to the guest.
                 </p>
             </div>
             <div class="flex flex-wrap items-center justify-center gap-6 text-xs text-pearl">
                 <a href="capitols.html" class="hover:text-gold transition-soft">Capitols Directory</a>
-                <a href="#" class="hover:text-gold transition-soft">FTC Affiliate Disclosure</a>
-                <a href="#" class="hover:text-gold transition-soft">Privacy Policy</a>
+                <a href="paris-top-5.html" class="hover:text-gold transition-soft">Paris Monograph</a>
+                <a href="tokyo-top-5.html" class="hover:text-gold transition-soft">Tokyo Monograph</a>
                 <a href="#" class="hover:text-gold transition-soft">Concierge Desk</a>
             </div>
         </div>
     </footer>
 
-    <!-- Top 10 Luxury Hotel Database & Application Logic -->
+    <!-- Top 5 Luxury Hotel Database & Application Logic with Klook Affiliate Links -->
     <script>
         const LUXURY_HOTELS_DB = {
             "paris": [
@@ -287,7 +283,7 @@
                     rate: "€1,850",
                     imgProperty: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
                     imgSuite: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.rosewoodhotels.com/en/hotel-de-crillon"
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/29322-hotel-de-crillon-a-rosewood-hotel/"
                 },
                 {
                     rank: "02",
@@ -299,7 +295,7 @@
                     rate: "€1,900",
                     imgProperty: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
                     imgSuite: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.ritzparis.com/"
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/29324-ritz-paris/"
                 },
                 {
                     rank: "03",
@@ -311,7 +307,7 @@
                     rate: "€1,750",
                     imgProperty: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
                     imgSuite: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.oetkercollection.com/hotels/le-bristol-paris/"
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/29321-le-bristol-paris-an-oetker-collection-hotel/"
                 },
                 {
                     rank: "04",
@@ -323,7 +319,7 @@
                     rate: "€2,100",
                     imgProperty: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80",
                     imgSuite: "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.chevalblanc.com/en/maison/paris/"
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/858482-cheval-blanc-paris/"
                 },
                 {
                     rank: "05",
@@ -335,67 +331,7 @@
                     rate: "€1,800",
                     imgProperty: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=80",
                     imgSuite: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.fourseasons.com/paris/"
-                },
-                {
-                    rank: "06",
-                    name: "Shangri-La Paris",
-                    location: "10 Avenue d'Iéna • 16th Arrondissement",
-                    distinction: "Prince Bonaparte Palace",
-                    desc: "The former residence of Prince Roland Bonaparte. Boasts arguably the most dramatic, unobstructed terrace vistas of the Eiffel Tower found anywhere in Paris.",
-                    tags: ["Direct Eiffel Views", "Shang Palace (1★)", "Chi The Spa"],
-                    rate: "€1,600",
-                    imgProperty: "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1200&q=80",
-                    imgSuite: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.shangri-la.com/paris/shangrila/"
-                },
-                {
-                    rank: "07",
-                    name: "The Peninsula Paris",
-                    location: "19 Avenue Kléber • 16th Arrondissement",
-                    distinction: "Haussmann Palace",
-                    desc: "Grand 19th-century Haussmann architecture revitalized with cutting-edge touch-screen room automation, a rooftop Aviation-inspired restaurant, and an indoor subterranean pool.",
-                    tags: ["L'Oiseau Blanc (2★)", "Aviation Rooftop", "Subterranean Pool"],
-                    rate: "€1,550",
-                    imgProperty: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1200&q=80",
-                    imgSuite: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.peninsula.com/en/paris/5-star-luxury-hotel-haut-de-gamme"
-                },
-                {
-                    rank: "08",
-                    name: "Le Royal Monceau, Raffles Paris",
-                    location: "37 Avenue Hoche • 8th Arrondissement",
-                    distinction: "Design Palace",
-                    desc: "Philippe Starck-designed artistic retreat equipped with a private 99-seat cinema, an art gallery with a dedicated Art Concierge, and Il Carpaccio Italian dining.",
-                    tags: ["Starck Design", "Katara Cinema", "Clarins Spa"],
-                    rate: "€1,350",
-                    imgProperty: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=1200&q=80",
-                    imgSuite: "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.leroyalmonceau.com/"
-                },
-                {
-                    rank: "09",
-                    name: "Hôtel Plaza Athénée",
-                    location: "25 Avenue Montaigne • 8th Arrondissement",
-                    distinction: "Haute Couture Palace",
-                    desc: "Adorned with signature red geraniums along Avenue Montaigne's haute couture boutiques. Celebrated for its Dior Spa and dramatic courtyard dining.",
-                    tags: ["Haute Couture District", "Dior Spa Plaza", "Signature Red Balconies"],
-                    rate: "€1,700",
-                    imgProperty: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80",
-                    imgSuite: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.dorchestercollection.com/paris/hotel-plaza-athenee"
-                },
-                {
-                    rank: "10",
-                    name: "Bulgari Hotel Paris",
-                    location: "30 Avenue George V • 8th Arrondissement",
-                    distinction: "Boutique Glamour",
-                    desc: "An intimate, jewel-like sanctuary pairing Italian marble opulence with Parisian sophistication. Features Il Ristorante by Niko Romito and a 25-meter golden mosaic pool.",
-                    tags: ["Niko Romito Gastronomy", "Golden Mosaic Pool", "Bespoke Jewelry Valet"],
-                    rate: "€1,950",
-                    imgProperty: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1200&q=80",
-                    imgSuite: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.bulgarihotels.com/en_US/paris"
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/29320-four-seasons-hotel-george-v-paris/"
                 }
             ],
             "tokyo": [
@@ -409,7 +345,7 @@
                     rate: "¥220,000",
                     imgProperty: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
                     imgSuite: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.aman.com/hotels/aman-tokyo"
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/28419-aman-tokyo/"
                 },
                 {
                     rank: "02",
@@ -421,7 +357,7 @@
                     rate: "¥250,000",
                     imgProperty: "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1200&q=80",
                     imgSuite: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.bulgarihotels.com/en_US/tokyo"
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/916301-bulgari-hotel-tokyo/"
                 },
                 {
                     rank: "03",
@@ -433,7 +369,7 @@
                     rate: "¥140,000",
                     imgProperty: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
                     imgSuite: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://hoshinoya.com/tokyo/en/"
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/28420-hoshinoya-tokyo/"
                 },
                 {
                     rank: "04",
@@ -445,7 +381,7 @@
                     rate: "¥160,000",
                     imgProperty: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80",
                     imgSuite: "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://en.palacehoteltokyo.com/"
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/28418-palace-hotel-tokyo/"
                 },
                 {
                     rank: "05",
@@ -457,67 +393,7 @@
                     rate: "¥130,000",
                     imgProperty: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
                     imgSuite: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.editionhotels.com/tokyo-toranomon/"
-                },
-                {
-                    rank: "06",
-                    name: "Four Seasons Hotel Tokyo at Otemachi",
-                    location: "1-2-1 Otemachi • Chiyoda City",
-                    distinction: "Skyline Elegance",
-                    desc: "Hovering high above the financial epicenter, offering dramatic panoramas of Mount Fuji at sunset, Michelin-starred French cuisine at est, and Italian dining at PIGNETO.",
-                    tags: ["est by Guillaume Bracaval (1★)", "Sunset Fuji Views", "25m Skypool"],
-                    rate: "¥170,000",
-                    imgProperty: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=80",
-                    imgSuite: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.fourseasons.com/otemachi/"
-                },
-                {
-                    rank: "07",
-                    name: "Mandarin Oriental, Tokyo",
-                    location: "Nihonbashi Historical Center",
-                    distinction: "Forbes 5-Star Tower",
-                    desc: "An icon of Nihonbashi towering over Tokyo's historical merchant roots. Known for its 37th-floor sky spa water treatments and nine world-class culinary venues.",
-                    tags: ["Sky Spa Floating Baths", "Signature Pizza Bar", "38th-Floor Views"],
-                    rate: "¥150,000",
-                    imgProperty: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1200&q=80",
-                    imgSuite: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.mandarinoriental.com/en/tokyo/nihonbashi"
-                },
-                {
-                    rank: "08",
-                    name: "The Ritz-Carlton, Tokyo",
-                    location: "Tokyo Midtown • Roppongi",
-                    distinction: "Sky-High Luxury",
-                    desc: "Occupying the top 9 floors of Tokyo Midtown Tower. Features a 200-year-old preserved Japanese tea house elevated 45 floors in the sky and legendary club lounge privileges.",
-                    tags: ["200-Year Historic Teahouse", "Club Lounge Floors", "Roppongi Skyline"],
-                    rate: "¥155,000",
-                    imgProperty: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=1200&q=80",
-                    imgSuite: "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.ritzcarlton.com/en/hotels/tyorz-the-ritz-carlton-tokyo/overview/"
-                },
-                {
-                    rank: "09",
-                    name: "The Capitol Hotel Tokyu",
-                    location: "Nagatacho • Adjacent to Hie Shrine",
-                    distinction: "Architectural Zen Heritage",
-                    desc: "Designed by Kengo Kuma, combining peaceful Japanese architectural elements with serene views into the sacred forests of Hie Shrine.",
-                    tags: ["Kengo Kuma Interiors", "Hie Shrine Forest Views", "Club Lounge Sanctuary"],
-                    rate: "¥110,000",
-                    imgProperty: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80",
-                    imgSuite: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.tokyuhotelsjapan.com/global/capitol-h/"
-                },
-                {
-                    rank: "10",
-                    name: "Janu Tokyo",
-                    location: "Azabudai Hills Modern Village",
-                    distinction: "Aman's Sister Brand Flagship",
-                    desc: "The inaugural flagship of Aman's sister brand, Janu. Houses a sprawling 4,000m² wellness facility featuring hydrotherapy pools, banya saunas, and 8 dining venues.",
-                    tags: ["4,000m² Wellness Center", "Azabudai Hills Epicenter", "Banya Saunas"],
-                    rate: "¥190,000",
-                    imgProperty: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1200&q=80",
-                    imgSuite: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.janu.com/janu-tokyo/"
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/479102-the-tokyo-edition-toranomon/"
                 }
             ],
             "london": [
@@ -531,19 +407,19 @@
                     rate: "£1,350",
                     imgProperty: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
                     imgSuite: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.the-connaught.co.uk/"
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/43304-the-connaught-maybourne/"
                 },
                 {
                     rank: "02",
                     name: "Claridge's",
                     location: "Brook Street • Mayfair",
                     distinction: "Art Deco Crown",
-                    desc: "The beloved retreat of queens, statesmen, and tastemakers. Revered for its gilded Art Deco ballroom, subterranean subterranean swimming pool, and afternoon tea service.",
+                    desc: "The beloved retreat of queens, statesmen, and tastemakers. Revered for its gilded Art Deco ballroom, subterranean swimming pool, and afternoon tea service.",
                     tags: ["Royal Suite Provenance", "Claridge's ArtSpace", "Subterranean Spa"],
                     rate: "£1,250",
                     imgProperty: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
                     imgSuite: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.claridges.co.uk/"
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/43292-claridges-maybourne/"
                 },
                 {
                     rank: "03",
@@ -555,7 +431,7 @@
                     rate: "£1,200",
                     imgProperty: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
                     imgSuite: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.theritzlondon.com/"
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/43307-the-ritz-london/"
                 },
                 {
                     rank: "04",
@@ -567,7 +443,7 @@
                     rate: "£1,200",
                     imgProperty: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80",
                     imgSuite: "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.dorchestercollection.com/london/the-dorchester"
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/43310-the-dorchester-dorchester-collection/"
                 },
                 {
                     rank: "05",
@@ -575,71 +451,11 @@
                     location: "Wilton Place • Knightsbridge",
                     distinction: "Contemporary Chic",
                     desc: "Where Knightsbridge luxury meets fashion-forward innovation. Famous for its Prêt-à-Portea runway tea cakes, Bamford Wellness Spa, and rooftop pool overlooking Hyde Park.",
-                    tags: ["Rooftop Pool on Hyde Park", "Cedric Grolet at The Berkeley", "Bamford Spa"],
+                    tags: ["Rooftop Pool on Hyde Park", "Cédric Grolet Pâtisserie", "Bamford Spa"],
                     rate: "£1,100",
                     imgProperty: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=80",
                     imgSuite: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.the-berkeley.co.uk/"
-                },
-                {
-                    rank: "06",
-                    name: "The Lanesborough",
-                    location: "Hyde Park Corner • Belgravia",
-                    distinction: "Regency Palatial",
-                    desc: "A neoclassical Regency masterpiece opposite Hyde Park, offering dedicated 24-hour private butler service for every guest room and a members-only cigar lounge.",
-                    tags: ["24-Hour Butler Service", "The Garden Room Cigar Bar", "Club & Spa Facility"],
-                    rate: "£1,250",
-                    imgProperty: "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1200&q=80",
-                    imgSuite: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.oetkercollection.com/hotels/the-lanesborough/"
-                },
-                {
-                    rank: "07",
-                    name: "Rosewood London",
-                    location: "252 High Holborn • Holborn",
-                    distinction: "Edwardian Courtyard Sanctuary",
-                    desc: "Entered via an Edwardian carriage archway into a peaceful cobblestone courtyard. Boasts Scarfes Bar for live jazz cocktails and classic British Pie Room creations.",
-                    tags: ["Scarfes Bar Jazz", "Private Courtyard", "Sense Spa Holborn"],
-                    rate: "£980",
-                    imgProperty: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1200&q=80",
-                    imgSuite: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.rosewoodhotels.com/en/london"
-                },
-                {
-                    rank: "08",
-                    name: "Raffles London at The OWO",
-                    location: "Old War Office • Whitehall",
-                    distinction: "Historical Monument",
-                    desc: "Winston Churchill's former headquarters transformed into a palatial hotel with 9 restaurants, 3 bars, and a multi-level subterranean Guerlain Spa.",
-                    tags: ["Churchill's Former Office", "Guerlain Spa", "Mauro Colagreco Dining"],
-                    rate: "£1,400",
-                    imgProperty: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=1200&q=80",
-                    imgSuite: "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.raffles.com/london/"
-                },
-                {
-                    rank: "09",
-                    name: "The Peninsula London",
-                    location: "1 Grosvenor Place • Belgravia",
-                    distinction: "Grosvenor Place Grandeur",
-                    desc: "Modern luxury framing Hyde Park Corner. Offers an aviation-themed rooftop venue by Claude Bosi (2 Michelin stars) and Rolls-Royce chauffeur transfers.",
-                    tags: ["Brooklands by Claude Bosi", "Bespoke Rolls-Royce Fleet", "Subterranean Pool"],
-                    rate: "£1,300",
-                    imgProperty: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80",
-                    imgSuite: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.peninsula.com/en/london/5-star-luxury-hotel-belgravia"
-                },
-                {
-                    rank: "10",
-                    name: "Bulgari Hotel London",
-                    location: "171 Knightsbridge • Knightsbridge",
-                    distinction: "Sleek Knightsbridge Haven",
-                    desc: "An intimate haven of understated silver craftsmanship and dark woods, boasting an expansive private 47-seat screening cinema and multi-tiered spa.",
-                    tags: ["Private 47-Seat Cinema", "25m Swimming Pool", "Knightsbridge Luxury"],
-                    rate: "£1,250",
-                    imgProperty: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1200&q=80",
-                    imgSuite: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.bulgarihotels.com/en_US/london"
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/43293-the-berkeley-maybourne/"
                 }
             ],
             "new-york": [
@@ -653,7 +469,7 @@
                     rate: "$1,450",
                     imgProperty: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80",
                     imgSuite: "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.rosewoodhotels.com/en/the-carlyle-new-york"
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/29517-the-carlyle-a-rosewood-hotel/"
                 },
                 {
                     rank: "02",
@@ -665,22 +481,10 @@
                     rate: "$1,500",
                     imgProperty: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
                     imgSuite: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.themarkhotel.com/"
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/29514-the-mark/"
                 },
                 {
                     rank: "03",
-                    name: "Aman New York",
-                    location: "Crown Building • 57th St & 5th Ave",
-                    distinction: "Urban Architectural Sanctuary",
-                    desc: "A $1.4 billion transformation of the historic Crown Building. Features working fireplaces in every guest room, a wraparound Garden Terrace, and a 3-story spa.",
-                    tags: ["In-Room Fireplaces", "3-Story Sky Spa", "Crown Building Terrace"],
-                    rate: "$2,200",
-                    imgProperty: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-                    imgSuite: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.aman.com/hotels/aman-new-york"
-                },
-                {
-                    rank: "04",
                     name: "Baccarat Hotel New York",
                     location: "28 W 53rd St • Midtown Manhattan",
                     distinction: "French Crystal Opulence",
@@ -689,10 +493,10 @@
                     rate: "$1,350",
                     imgProperty: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
                     imgSuite: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.baccarathotels.com/"
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/29505-baccarat-hotel-and-residences-new-york/"
                 },
                 {
-                    rank: "05",
+                    rank: "04",
                     name: "The Greenwich Hotel",
                     location: "375 Greenwich St • Tribeca",
                     distinction: "Discreet Downtown Craft",
@@ -701,22 +505,10 @@
                     rate: "$1,100",
                     imgProperty: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=80",
                     imgSuite: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.thegreenwichhotel.com/"
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/29516-the-greenwich-hotel/"
                 },
                 {
-                    rank: "06",
-                    name: "The Lowell Hotel",
-                    location: "28 E 63rd St • Upper East Side",
-                    distinction: "Private Residential Oasis",
-                    desc: "An intimate townhouse haven on a tree-lined Upper East Side street, offering wood-burning fireplaces, private garden terraces, and Majorelle dining.",
-                    tags: ["Wood-Burning Fireplaces", "Club Room Library", "Majorelle Garden Room"],
-                    rate: "$1,250",
-                    imgProperty: "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1200&q=80",
-                    imgSuite: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.lowellhotel.com/"
-                },
-                {
-                    rank: "07",
+                    rank: "05",
                     name: "The St. Regis New York",
                     location: "Two E 55th St at Fifth Avenue",
                     distinction: "Birthplace of the Bloody Mary",
@@ -725,43 +517,7 @@
                     rate: "$1,300",
                     imgProperty: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1200&q=80",
                     imgSuite: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.marriott.com/en-us/hotels/nycxr-the-st-regis-new-york/overview/"
-                },
-                {
-                    rank: "08",
-                    name: "The Plaza Hotel",
-                    location: "Fifth Ave at Central Park South",
-                    distinction: "Gilded Age Grandeur",
-                    desc: "Overlooking Central Park South, an enduring symbol of Manhattan elegance. Features the Palm Court for afternoon tea and the Champagne Bar.",
-                    tags: ["Central Park South Views", "The Palm Court", "Guerlain Spa at The Plaza"],
-                    rate: "$1,200",
-                    imgProperty: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=1200&q=80",
-                    imgSuite: "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.theplazany.com/"
-                },
-                {
-                    rank: "09",
-                    name: "The Mercer",
-                    location: "147 Mercer St • SoHo",
-                    distinction: "SoHo Loft Living",
-                    desc: "SoHo's pioneering loft hotel designed by Christian Liaigre. Featuring Romanesque revival brickwork, oversized loft windows, and Sartiano's restaurant.",
-                    tags: ["Christian Liaigre Loft Design", "SoHo Cast-Iron Views", "Sartiano's Restaurant"],
-                    rate: "$950",
-                    imgProperty: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80",
-                    imgSuite: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.mercerhotel.com/"
-                },
-                {
-                    rank: "10",
-                    name: "Fouquet's New York",
-                    location: "456 Greenwich St • Tribeca",
-                    distinction: "French Chic in Tribeca",
-                    desc: "Brings Parisian art de vivre to Tribeca's cobblestones. Designed by Martin Brudnizki with pastel toiles, Brasserie Fouquet's, and Spa Diane Barrière.",
-                    tags: ["Martin Brudnizki Interiors", "Brasserie Fouquet's", "Tribeca Screening Room"],
-                    rate: "$1,150",
-                    imgProperty: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1200&q=80",
-                    imgSuite: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.hotelsbarriere.com/en/hotel-fouquets-new-york.html"
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/29512-the-st-regis-new-york/"
                 }
             ],
             "rome": [
@@ -775,7 +531,7 @@
                     rate: "€1,350",
                     imgProperty: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1200&q=80",
                     imgSuite: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-russie/"
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/441104-rocco-forte-hotel-de-russie/"
                 },
                 {
                     rank: "02",
@@ -787,7 +543,7 @@
                     rate: "€1,200",
                     imgProperty: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
                     imgSuite: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.hotelhasslerroma.com/"
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/441103-hotel-hassler-roma/"
                 },
                 {
                     rank: "03",
@@ -799,46 +555,10 @@
                     rate: "€1,250",
                     imgProperty: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
                     imgSuite: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.dorchestercollection.com/rome/hotel-eden"
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/441101-hotel-eden-dorchester-collection/"
                 },
                 {
                     rank: "04",
-                    name: "Bulgari Hotel Roma",
-                    location: "Piazza Augusto Imperatore",
-                    distinction: "Mausoleum of Augustus Monument",
-                    desc: "Bulgari's love letter to Rome, housed in a monumental rationalist building facing the Mausoleum of Emperor Augustus. Handcrafted mosaic baths and Niko Romito dining.",
-                    tags: ["Imperial Mausoleum Views", "Bulgari Gem Vault Spa", "Niko Romito Ristorante"],
-                    rate: "€1,800",
-                    imgProperty: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
-                    imgSuite: "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.bulgarihotels.com/en_US/rome"
-                },
-                {
-                    rank: "05",
-                    name: "Hotel de la Ville, Rocco Forte",
-                    location: "Via Sistina • Spanish Steps",
-                    distinction: "Grand Tour Splendor",
-                    desc: "A 17th-century palazzo at the summit of the Spanish Steps designed with bold 18th-century Grand Tour tapestries, a 3-tier rooftop bar, and Irene Forte spa rituals.",
-                    tags: ["Cielo Rooftop Bar", "Irene Forte Skincare Spa", "Via Sistina Vantage"],
-                    rate: "€1,100",
-                    imgProperty: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80",
-                    imgSuite: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.roccofortehotels.com/hotels-and-resorts/hotel-de-la-ville/"
-                },
-                {
-                    rank: "06",
-                    name: "The Rome EDITION",
-                    location: "Salita di San Nicola da Tolentino",
-                    distinction: "Boutique Italian Modernism",
-                    desc: "An architectural 1940s rationalist stone palazzo transformed into a luxury boutique sanctuary with a lush courtyard garden, The Jade Bar, and a rooftop pool.",
-                    tags: ["Courtyard Cocktail Garden", "The Jade Bar", "Rooftop Plunge Pool"],
-                    rate: "€850",
-                    imgProperty: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=80",
-                    imgSuite: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.editionhotels.com/rome/"
-                },
-                {
-                    rank: "07",
                     name: "Six Senses Rome",
                     location: "Piazza di San Marcello • Via del Corso",
                     distinction: "Urban Wellness Palazzo",
@@ -847,34 +567,10 @@
                     rate: "€1,200",
                     imgProperty: "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1200&q=80",
                     imgSuite: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.sixsenses.com/en/hotels/rome"
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/441112-six-senses-rome/"
                 },
                 {
-                    rank: "08",
-                    name: "Villa Spalletti Trivelli",
-                    location: "Via Piacenza • Quirinale Hill",
-                    distinction: "Aristocratic Residence",
-                    desc: "A secluded historic villa surrounded by private Italian gardens. Furnished with centuries of Spalletti Trivelli family antique tapestries, marble fireplaces, and a rooftop spa.",
-                    tags: ["Private Italian Gardens", "Quirinale Hill Tranquility", "Rooftop Bio-Jacuzzis"],
-                    rate: "€950",
-                    imgProperty: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1200&q=80",
-                    imgSuite: "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.villaspalletti.it/"
-                },
-                {
-                    rank: "09",
-                    name: "The St. Regis Rome",
-                    location: "Via Vittorio Emanuele Orlando",
-                    distinction: "Belle Époque Monument",
-                    desc: "Opened by César Ritz in 1894. A palace adorned with hand-painted fresco halls, Murano glass chandeliers, sabering champagne rituals, and Lumen Bar salons.",
-                    tags: ["Ritz Provenance (1894)", "Murano Glass Chandeliers", "Lumen Cocktail Lounge"],
-                    rate: "€1,150",
-                    imgProperty: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=1200&q=80",
-                    imgSuite: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.marriott.com/en-us/hotels/romxr-the-st-regis-rome/overview/"
-                },
-                {
-                    rank: "10",
+                    rank: "05",
                     name: "Palazzo Manfredi",
                     location: "Via Labicana • Fronting the Colosseum",
                     distinction: "Direct Colosseum Vista",
@@ -883,7 +579,7 @@
                     rate: "€1,050",
                     imgProperty: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80",
                     imgSuite: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.palazzomanfredi.com/"
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/441106-palazzo-manfredi-small-luxury-hotels-of-the-world/"
                 }
             ],
             "dubai": [
@@ -897,7 +593,7 @@
                     rate: "AED 6,500",
                     imgProperty: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80",
                     imgSuite: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.jumeirah.com/en/stay/dubai/burj-al-arab-jumeirah"
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/37841-burj-al-arab-jumeirah/"
                 },
                 {
                     rank: "02",
@@ -909,22 +605,10 @@
                     rate: "AED 4,500",
                     imgProperty: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
                     imgSuite: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.atlantis.com/atlantis-the-royal"
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/916568-atlantis-the-royal/"
                 },
                 {
                     rank: "03",
-                    name: "Bulgari Resort Dubai",
-                    location: "Jumeira Bay Island • Private Seahorse Island",
-                    distinction: "Secluded Island Glamour",
-                    desc: "A low-rise Mediterranean oasis on a private seahorse-shaped island. Houses the world's first Bulgari Marina & Yacht Club, along with Il Ristorante by Niko Romito (2★).",
-                    tags: ["Private Yacht Club Marina", "Niko Romito (2★)", "Private Beach Villas"],
-                    rate: "AED 5,000",
-                    imgProperty: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
-                    imgSuite: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.bulgarihotels.com/en_US/dubai"
-                },
-                {
-                    rank: "04",
                     name: "The Lana, Dorchester Collection",
                     location: "Business Bay • Marasi Bay Marina",
                     distinction: "Canal-Front Architectural Landmark",
@@ -933,10 +617,10 @@
                     rate: "AED 3,200",
                     imgProperty: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
                     imgSuite: "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.dorchestercollection.com/dubai/the-lana"
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/932402-the-lana-dorchester-collection/"
                 },
                 {
-                    rank: "05",
+                    rank: "04",
                     name: "One&Only The Palm",
                     location: "West Crescent • Palm Jumeirah",
                     distinction: "Private Beach Sanctuary",
@@ -945,22 +629,10 @@
                     rate: "AED 4,200",
                     imgProperty: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80",
                     imgSuite: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.oneandonlyresorts.com/the-palm"
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/37848-one-only-the-palm/"
                 },
                 {
-                    rank: "06",
-                    name: "Jumeirah Al Naseem",
-                    location: "Madinat Jumeirah Resort",
-                    distinction: "Contemporary Coastal Luxury",
-                    desc: "The crown jewel of the Madinat Jumeirah complex, featuring oceanfront suites right along the private beach with views of Burj Al Arab and the Turtle Rehabilitation Sanctuary.",
-                    tags: ["Direct Beachfront", "Turtle Lagoon", "Summersalt Beach Club"],
-                    rate: "AED 3,100",
-                    imgProperty: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=80",
-                    imgSuite: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.jumeirah.com/en/stay/dubai/jumeirah-al-naseem"
-                },
-                {
-                    rank: "07",
+                    rank: "05",
                     name: "Armani Hotel Dubai",
                     location: "Burj Khalifa • Downtown Dubai",
                     distinction: "Inside the World's Tallest Tower",
@@ -969,43 +641,7 @@
                     rate: "AED 2,800",
                     imgProperty: "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1200&q=80",
                     imgSuite: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.armanihotels.com/en/hotels/armani-hotel-dubai/"
-                },
-                {
-                    rank: "08",
-                    name: "Four Seasons Resort Dubai at Jumeirah Beach",
-                    location: "Jumeirah Beach Road • Jumeirah 2",
-                    distinction: "Beachfront Prestige",
-                    desc: "Framing both the Arabian Gulf and the downtown skyline, this seaside retreat features Mercury Lounge rooftop cocktails, private beach cabanas, and Sea Fu seafood dining.",
-                    tags: ["Private Jumeirah Beach", "Mercury Rooftop Lounge", "The Pearl Spa"],
-                    rate: "AED 4,000",
-                    imgProperty: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1200&q=80",
-                    imgSuite: "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.fourseasons.com/dubaijb/"
-                },
-                {
-                    rank: "09",
-                    name: "One&Only One Za'abeel",
-                    location: "Za'abeel 1 • Downtown Gateway",
-                    distinction: "Cantilevered Engineering Marvel",
-                    desc: "Home to 'The Link,' the world's longest cantilevered sky building suspended 100 meters in the air, featuring infinity sky pools and Michelin-star dining pavilions.",
-                    tags: ["The Link Cantilever", "Longest Infinity Sky Pool", "Longevity Spa"],
-                    rate: "AED 2,600",
-                    imgProperty: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=1200&q=80",
-                    imgSuite: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.oneandonlyresorts.com/one-zaabeel"
-                },
-                {
-                    rank: "10",
-                    name: "Mandarin Oriental Jumeira, Dubai",
-                    location: "Jumeirah Beach Road • Jumeirah 1",
-                    distinction: "Modern Coastal Chic",
-                    desc: "Overlooking the Arabian Gulf with an expansive canopy of brass light trees in the lobby, featuring Tasca by José Avillez (1★) and private seaside plunge pools.",
-                    tags: ["Tasca by José Avillez (1★)", "Brass Light Tree Lobby", "Seaside Spa Cabanas"],
-                    rate: "AED 3,800",
-                    imgProperty: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1200&q=80",
-                    imgSuite: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-                    bookingUrl: "https://www.mandarinoriental.com/en/dubai/jumeira"
+                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/37839-armani-hotel-dubai/"
                 }
             ]
         };
@@ -1028,7 +664,7 @@
             };
 
             const cityName = cityNamesDisplay[cityKey] || "Paris";
-            titleElem.textContent = `The Top 10 Luxury Hotels of ${cityName}`;
+            titleElem.textContent = `The Top 5 Luxury Hotels of ${cityName}`;
             subLabelElem.textContent = `${cityName} Curated Dossier`;
             countElem.textContent = `${hotels.length} Properties Verified`;
 
@@ -1084,7 +720,7 @@
                                        target="_blank" 
                                        rel="noopener noreferrer sponsored" 
                                        class="inline-block w-full sm:w-auto text-center px-6 py-3 rounded-full bg-gold text-obsidian text-xs uppercase tracking-widest font-semibold hover:bg-gold-light transition-soft shadow-md shadow-gold/10">
-                                        Reserve Sanctuary
+                                        Reserve on Klook
                                     </a>
                                     <span class="block text-[10px] text-pearl/60 mt-1">Direct rates & perks applied</span>
                                 </div>
@@ -1098,7 +734,7 @@
             document.querySelectorAll('.city-filter-btn').forEach(btn => {
                 if (btn.getAttribute('data-city') === cityKey) {
                     btn.className = "city-filter-btn text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-gold border border-gold/30 bg-gold/5 transition-soft";
-                } else {
+                } else if (btn.getAttribute('data-city')) {
                     btn.className = "city-filter-btn text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-pearl hover:text-ivory border border-transparent hover:border-borderMuted transition-soft";
                 }
             });

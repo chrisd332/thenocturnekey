@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Top 5 Luxury Hotels in Rome | The Nocturne Key Monograph</title>
+    <meta name="description" content="An exclusive monograph curating Rome's five most aristocratic hotels: Hotel de Russie, Hotel Hassler Roma, Hotel Eden, Six Senses Rome, and Palazzo Manfredi.">
+    
+    <meta property="og:title" content="The Top 5 Luxury Hotels in Rome — The Nocturne Key">
+    <meta property="og:description" content="Curated editorial review of Rome's secret terraced gardens, Spanish Steps vistas, and Roman wellness baths.">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Tailwind CSS Engine -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: '#08080A',
+                        noir: '#0F1015',
+                        charcoal: '#181A22',
+                        cardSurface: '#12131A',
+                        borderMuted: '#262938',
+                        gold: {
+                            DEFAULT: '#C5A059',
+                            light: '#E5C378',
+                            dark: '#9E7E3C',
+                            glow: 'rgba(197, 160, 89, 0.15)'
+                        },
+                        ivory: '#F7F6F2',
+                        pearl: '#A8ABB8'
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'Playfair Display', 'serif'],
+                        sans: ['"Inter"', 'Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Web Page Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png?v=4">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png?v=4">
+    <link rel="apple-touch-icon" href="/favicon.png?v=4">
+
+    <style>
+        body {
+            background-color: #08080A;
+            color: #F7F6F2;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            letter-spacing: -0.01em;
+        }
+
+        .gold-shimmer {
+            background: linear-gradient(135deg, #F9E7B9 0%, #C5A059 50%, #9E7E3C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gold-border-glow {
+            border: 1px solid rgba(197, 160, 89, 0.28);
+            box-shadow: 0 0 25px rgba(197, 160, 89, 0.08);
+        }
+
+        .gold-border-glow:hover {
+            border-color: rgba(197, 160, 89, 0.6);
+            box-shadow: 0 10px 40px rgba(197, 160, 89, 0.15);
+        }
+
+        .hero-vignette {
+            background: radial-gradient(circle at 50% 40%, rgba(8, 8, 10, 0.15) 0%, rgba(8, 8, 10, 0.8) 60%, #08080A 100%);
+        }
+
+        ::-webkit-scrollbar { width: 7px; }
+        ::-webkit-scrollbar-track { background: #08080A; }
+        ::-webkit-scrollbar-thumb { background: #232634; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #C5A059; }
+
+        .transition-soft {
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+    </style>
+
+    <!-- Travelpayouts Drive Auto-monetization script -->
+    <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
+        (function () {
+            var script = document.createElement("script");
+            script.async = 1;
+            script.setAttribute("data-cmp-ab","2");
+            script.src = 'https://tpembars.com/NTg1MDk5.js?t=585099';
+            document.head.appendChild(script);
+        })();
+    </script>
+</head>
+<body class="selection:bg-gold selection:text-obsidian antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-obsidian/90 backdrop-blur-md border-b border-borderMuted/60 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex flex-col text-left group focus:outline-none">
+                    <div class="flex items-center gap-2">
+                        <span class="text-gold text-lg tracking-widest font-serif">❖</span>
+                        <span class="text-xl sm:text-2xl font-serif tracking-widest uppercase text-ivory group-hover:text-gold-light transition-soft">
+                            The Nocturne Key
+                        </span>
+                    </div>
+                    <span class="text-[9px] uppercase tracking-[0.25em] text-pearl font-light pl-6">
+                        Curated Sanctuaries of the Night
+                    </span>
+                </a>
+
+                <div class="flex items-center gap-3">
+                    <a href="capitols.html" class="text-xs uppercase tracking-widest px-4 py-1.5 rounded-full text-pearl hover:text-ivory border border-borderMuted hover:border-gold transition-soft">
+                        ← All Capitols
+                    </a>
+                    <a href="index.html" class="text-xs uppercase tracking-widest px-4 py-1.5 rounded-full text-gold bg-gold/10 border border-gold/40 hover:bg-gold hover:text-obsidian transition-soft">
+                        Global Compendium
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Monograph Hero -->
+    <section class="relative min-h-[55vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1920&q=80" 
+                 alt="Historic Rome Architecture" 
+                 class="w-full h-full object-cover brightness-[0.35] filter scale-105 transform duration-1000">
+            <div class="absolute inset-0 hero-vignette"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-6 text-center py-16">
+            <div class="inline-flex items-center gap-2 px-3 py-1 border border-gold/30 rounded-full bg-gold/10 backdrop-blur-sm mb-4">
+                <span class="w-1.5 h-1.5 rounded-full bg-gold animate-pulse"></span>
+                <span class="text-[10px] uppercase tracking-[0.3em] text-gold-light font-medium">Eternal City Sovereign Monograph</span>
+            </div>
+            
+            <h1 class="text-4xl sm:text-6xl font-serif font-light text-ivory tracking-tight mb-4 leading-tight">
+                The Top 5 Sanctuaries of <span class="italic font-normal gold-shimmer">Rome</span>
+            </h1>
+            
+            <p class="text-pearl text-sm sm:text-base font-light max-w-2xl mx-auto leading-relaxed">
+                Secret terraced pine gardens, aristocratic palazzos overlooking the Spanish Steps, ancient Roman bath circuits, and Michelin terraces fronting the Colosseum arches.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Monograph List -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+        <div id="monographCardsGrid" class="space-y-16"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-obsidian border-t border-borderMuted/40 py-12">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+            <div>
+                <span class="font-serif text-lg tracking-widest uppercase text-ivory block mb-1">The Nocturne Key</span>
+                <p class="text-[11px] text-pearl/60 max-w-md">
+                    Editorial curation is independent. Bookings made via Klook affiliate links yield partner commissions at zero added expense to the guest.
+                </p>
+            </div>
+            <div class="flex flex-wrap items-center justify-center gap-6 text-xs text-pearl">
+                <a href="capitols.html" class="hover:text-gold transition-soft">Capitols Directory</a>
+                <a href="paris-top-5.html" class="hover:text-gold transition-soft">Paris Top 5</a>
+                <a href="tokyo-top-5.html" class="hover:text-gold transition-soft">Tokyo Top 5</a>
+                <a href="index.html" class="hover:text-gold transition-soft">Global Top 5 Feed</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const ROME_TOP_5 = [
+            {
+                rank: "01",
+                name: "Hotel de Russie, Rocco Forte",
+                location: "Via del Babuino • Spanish Steps",
+                distinction: "Secret Tiered Gardens",
+                desc: "Tucked between Piazza del Popolo and the Spanish Steps. Beloved for its secret terraced pine gardens, Stravinskij Bar cocktails, and Roman saltwater pools[cite: 2].",
+                tags: ["Le Jardin de Russie", "Stravinskij Cocktail Bar", "Historic Terraced Gardens"],
+                rate: "€1,350",
+                imgProperty: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1200&q=80",
+                imgSuite: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
+                bookingUrl: "https://www.klook.com/en-US/hotels/detail/441104-rocco-forte-hotel-de-russie/"
+            },
+            {
+                rank: "02",
+                name: "Hotel Hassler Roma",
+                location: "Piazza Trinità dei Monti • Top of Spanish Steps",
+                distinction: "Aristocratic Italian Flagship",
+                desc: "Commanding the Spanish Steps, Hassler Roma has hosted royals and tastemakers for generations. Offers Michelin-starred panoramic dining at Imàgo[cite: 2].",
+                tags: ["Imàgo Panoramic Dining (1★)", "Trinità dei Monti Vista", "Salone Eva Salon"],
+                rate: "€1,200",
+                imgProperty: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80",
+                imgSuite: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
+                bookingUrl: "https://www.klook.com/en-US/hotels/detail/441103-hotel-hassler-roma/"
+            },
+            {
+                rank: "03",
+                name: "Hotel Eden, Dorchester Collection",
+                location: "Via Ludovisi • Villa Borghese",
+                distinction: "Dolce Vita Heritage",
+                desc: "An authentic Roman institution since 1889 overlooking the city from Villa Borghese. Houses La Terrazza for rooftop gastronomy and an opulent Roman bath spa[cite: 2].",
+                tags: ["La Terrazza Rooftop", "Villa Borghese Panorama", "Bespoke Marble Baths"],
+                rate: "€1,250",
+                imgProperty: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
+                imgSuite: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
+                bookingUrl: "https://www.klook.com/en-US/hotels/detail/441101-hotel-eden-dorchester-collection/"
+            },
+            {
+                rank: "04",
+                name: "Six Senses Rome",
+                location: "Piazza di San Marcello • Via del Corso",
+                distinction: "Urban Wellness Palazzo",
+                desc: "A restored UNESCO-protected palazzo steps from the Trevi Fountain. Centered on ancestral Roman baths (caldarium, tepidarium, frigidarium) and rooftop farm dining[cite: 2].",
+                tags: ["Ancient Roman Baths", "San Marcello Courtyard", "NOTOS Rooftop Herb Garden"],
+                rate: "€1,200",
+                imgProperty: "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1200&q=80",
+                imgSuite: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
+                bookingUrl: "https://www.klook.com/en-US/hotels/detail/441112-six-senses-rome/"
+            },
+            {
+                rank: "05",
+                name: "Palazzo Manfredi",
+                location: "Via Labicana • Fronting the Colosseum",
+                distinction: "Direct Colosseum Vista",
+                desc: "Directly overlooking the ancient gladiatorial Ludus Magnus and the Colosseum arches. Offers 1-star Michelin rooftop dining at Aroma with unobstructed monument views[cite: 2].",
+                tags: ["Aroma Restaurant (1★)", "Direct Colosseum Terraces", "Gladiator School Ruins"],
+                rate: "€1,050",
+                imgProperty: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80",
+                imgSuite: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
+                bookingUrl: "https://www.klook.com/en-US/hotels/detail/441106-palazzo-manfredi-small-luxury-hotels-of-the-world/"
+            }
+        ];
+
+        function renderMonograph() {
+            const grid = document.getElementById('monographCardsGrid');
+            grid.innerHTML = ROME_TOP_5.map((h, idx) => `
+                <article class="bg-cardSurface rounded-xl border border-borderMuted overflow-hidden gold-border-glow transition-soft">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+                        <div class="lg:col-span-6 relative group overflow-hidden h-[340px] lg:h-auto">
+                            <img id="monograph-img-${idx}" 
+                                 src="${h.imgProperty}" 
+                                 alt="${h.name}" 
+                                 loading="lazy"
+                                 class="w-full h-full object-cover transition-soft group-hover:scale-105 duration-700">
+                            
+                            <div class="absolute top-4 left-4 bg-obsidian/85 backdrop-blur-md px-3 py-1 rounded border border-gold/30">
+                                <span class="text-xs font-mono text-gold uppercase tracking-widest">#${h.rank} • Rome</span>
+                            </div>
+                            
+                            <div class="absolute bottom-4 left-4 right-4 flex gap-2">
+                                <button onclick="swapMonographImage('monograph-img-${idx}', '${h.imgProperty}', this)" 
+                                        class="view-btn flex-1 py-1.5 text-[11px] uppercase tracking-wider rounded bg-obsidian/85 text-gold border border-gold/40 backdrop-blur-sm transition-soft">
+                                    Property
+                                </button>
+                                <button onclick="swapMonographImage('monograph-img-${idx}', '${h.imgSuite}', this)" 
+                                        class="view-btn flex-1 py-1.5 text-[11px] uppercase tracking-wider rounded bg-obsidian/60 text-pearl hover:text-ivory backdrop-blur-sm transition-soft">
+                                    Premier Suite
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="lg:col-span-6 p-6 sm:p-10 flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center justify-between mb-3">
+                                    <span class="text-xs font-mono uppercase tracking-widest text-gold">${h.location}</span>
+                                    <span class="text-xs text-pearl">★★★★★ ${h.distinction}</span>
+                                </div>
+                                <h3 class="text-2xl sm:text-3xl font-serif text-ivory mb-3">${h.name}</h3>
+                                <p class="text-pearl text-sm leading-relaxed mb-6 font-light">
+                                    ${h.desc}
+                                </p>
+                                
+                                <div class="flex flex-wrap gap-2 mb-8">
+                                    ${h.tags.map(t => `<span class="text-xs px-2.5 py-1 rounded-full bg-obsidian border border-borderMuted text-pearl">${t}</span>`).join('')}
+                                </div>
+                            </div>
+
+                            <div class="pt-6 border-t border-borderMuted/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                                <div>
+                                    <span class="block text-[11px] text-pearl font-mono uppercase">Premier Nightly Rate</span>
+                                    <span class="text-xl font-serif text-ivory">From ${h.rate} <span class="text-xs font-sans text-pearl">/ night</span></span>
+                                </div>
+                                <div class="w-full sm:w-auto text-right">
+                                    <a href="${h.bookingUrl}" 
+                                       target="_blank" 
+                                       rel="noopener noreferrer sponsored" 
+                                       class="inline-block w-full sm:w-auto text-center px-6 py-3 rounded-full bg-gold text-obsidian text-xs uppercase tracking-widest font-semibold hover:bg-gold-light transition-soft shadow-md shadow-gold/10">
+                                        Reserve on Klook
+                                    </a>
+                                    <span class="block text-[10px] text-pearl/60 mt-1">Direct rates & perks applied</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            `).join('');
+        }
+
+        function swapMonographImage(imgId, newSrc, btnElement) {
+            const targetImg = document.getElementById(imgId);
+            if (!targetImg) return;
+            
+            targetImg.style.opacity = '0.3';
+            setTimeout(() => {
+                targetImg.src = newSrc;
+                targetImg.style.opacity = '1';
+            }, 150);
+
+            const parentButtons = btnElement.parentElement.querySelectorAll('.view-btn');
+            parentButtons.forEach(btn => {
+                btn.className = "view-btn flex-1 py-1.5 text-[11px] uppercase tracking-wider rounded bg-obsidian/60 text-pearl hover:text-ivory backdrop-blur-sm transition-soft";
+            });
+            btnElement.className = "view-btn flex-1 py-1.5 text-[11px] uppercase tracking-wider rounded bg-obsidian/85 text-gold border border-gold/40 backdrop-blur-sm transition-soft";
+        }
+
+        document.addEventListener('DOMContentLoaded', renderMonograph);
+    </script>
+</body>
+</html>

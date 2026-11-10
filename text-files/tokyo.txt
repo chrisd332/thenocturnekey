@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The 5 Cloud-High Sanctuaries of Tokyo | The Nocturne Key</title>
+  <meta name="description" content="An independent architectural dossier on Tokyo's five most evocative luxury hotels. Curated after dark.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png?v=4">
+  <link rel="apple-touch-icon" href="/favicon.png?v=4">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-midnight: #08080A;
+      --bg-surface: #111218;
+      --bg-card: #151720;
+      --bg-card-hover: #191c28;
+      --border-subtle: #242738;
+      --border-gold: rgba(197, 160, 89, 0.35);
+      --gold-primary: #C5A059;
+      --gold-bright: #E5C378;
+      --gold-glow: rgba(197, 160, 89, 0.15);
+      --text-main: #EDEDED;
+      --text-muted: #8E92A4;
+      --text-dim: #5E6274;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-midnight);
+      color: var(--text-main);
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* -------------------------------- NAV BAR -------------------------------- */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(8, 8, 10, 0.88);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-subtle);
+      transition: all 0.3s ease;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1.1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.35rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      color: var(--gold-bright);
+      text-transform: uppercase;
+    }
+
+    .brand-subtitle {
+      font-size: 0.65rem;
+      letter-spacing: 0.18em;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .nav-link {
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      transition: color 0.2s ease;
+    }
+
+    .nav-link:hover {
+      color: var(--gold-bright);
+    }
+
+    /* ------------------------------- HERO SECTION ------------------------------- */
+    .hero {
+      position: relative;
+      padding: 6.5rem 2rem 4.5rem;
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .edition-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold-primary);
+      border: 1px solid var(--border-gold);
+      background: var(--gold-glow);
+      padding: 0.35rem 1.1rem;
+      border-radius: 999px;
+      margin-bottom: 1.8rem;
+    }
+
+    .hero-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.4rem, 5.5vw, 4rem);
+      font-weight: 400;
+      line-height: 1.15;
+      letter-spacing: 0.04em;
+      color: #FFFFFF;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-lead {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 680px;
+      margin: 0 auto 2.2rem;
+      font-weight: 300;
+    }
+
+    .hero-meta {
+      display: flex;
+      justify-content: center;
+      gap: 2.5rem;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+    }
+
+    .hero-meta span strong {
+      color: var(--text-muted);
+      font-weight: 400;
+    }
+
+    /* ------------------------------- MAIN DOSSIER ------------------------------- */
+    main {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem;
+    }
+
+    .hotel-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      margin-bottom: 5.5rem;
+      overflow: hidden;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hotel-card:hover {
+      border-color: var(--border-gold);
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45);
+    }
+
+    /* Card Header Bar */
+    .card-topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.4rem 2rem;
+      border-bottom: 1px solid var(--border-subtle);
+      background: rgba(17, 18, 24, 0.6);
+    }
+
+    .ranking-badge {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--gold-bright);
+      letter-spacing: 0.12em;
+    }
+
+    .district-pill {
+      font-size: 0.7rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    /* Media Visualizer */
+    .media-container {
+      position: relative;
+      width: 100%;
+      height: 480px;
+      background: #0B0C10;
+      overflow: hidden;
+    }
+
+    .media-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: opacity 0.45s ease-in-out;
+      filter: brightness(0.88) contrast(1.04);
+    }
+
+    .view-toggles {
+      position: absolute;
+      bottom: 1.25rem;
+      right: 1.5rem;
+      display: flex;
+      gap: 0.45rem;
+      background: rgba(8, 8, 10, 0.82);
+      backdrop-filter: blur(10px);
+      padding: 0.3rem;
+      border-radius: 6px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      z-index: 10;
+    }
+
+    .toggle-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-size: 0.68rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 0.4rem 0.9rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .toggle-btn.active {
+      background: var(--gold-primary);
+      color: #08080A;
+      font-weight: 500;
+    }
+
+    /* Card Content */
+    .card-body {
+      padding: 2.8rem 2.4rem 2.4rem;
+    }
+
+    .property-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.1rem;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      color: #FFFFFF;
+      margin-bottom: 0.4rem;
+    }
+
+    .architectural-subhead {
+      font-size: 0.8rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold-bright);
+      margin-bottom: 1.6rem;
+    }
+
+    .editorial-prose {
+      font-size: 0.98rem;
+      color: #C8CCD8;
+      line-height: 1.85;
+      margin-bottom: 2rem;
+    }
+
+    .spec-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 6px;
+      padding: 1.4rem 1.6rem;
+      margin-bottom: 2.4rem;
+    }
+
+    .spec-item h4 {
+      font-size: 0.68rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold-primary);
+      margin-bottom: 0.4rem;
+      font-weight: 500;
+    }
+
+    .spec-item p {
+      font-size: 0.88rem;
+      color: var(--text-main);
+    }
+
+    /* Card Footer Bar */
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 1.6rem;
+      border-top: 1px solid var(--border-subtle);
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .rate-meta {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .rate-label {
+      font-size: 0.65rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+    }
+
+    .rate-value {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.45rem;
+      color: #FFFFFF;
+      font-weight: 500;
+    }
+
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: linear-gradient(135deg, #C5A059 0%, #A8833B 100%);
+      color: #08080A;
+      font-size: 0.76rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-weight: 600;
+      padding: 0.95rem 2rem;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      box-shadow: 0 4px 18px rgba(197, 160, 89, 0.25);
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(197, 160, 89, 0.42);
+      filter: brightness(1.08);
+    }
+
+    /* ----------------------- EXPERIENCES / TRANSFERS ----------------------- */
+    .experience-section {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 3.5rem 2.5rem;
+      margin-bottom: 5.5rem;
+    }
+
+    .experience-header {
+      text-align: center;
+      max-width: 620px;
+      margin: 0 auto 3rem;
+    }
+
+    .experience-header h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.2rem;
+      color: #FFFFFF;
+      margin-bottom: 0.6rem;
+      font-weight: 400;
+    }
+
+    .experience-header p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    .experience-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.8rem;
+    }
+
+    .experience-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 6px;
+      padding: 1.8rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .experience-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      color: var(--gold-bright);
+      margin-bottom: 0.6rem;
+      font-weight: 500;
+    }
+
+    .experience-card p {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 1.4rem;
+    }
+
+    .experience-link {
+      font-size: 0.72rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold-primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    .experience-link:hover {
+      color: #FFFFFF;
+    }
+
+    /* ----------------------- KEYHOLDER NEWSLETTER ----------------------- */
+    .newsletter-card {
+      background: linear-gradient(180deg, #12131A 0%, #0C0D12 100%);
+      border: 1px solid var(--border-gold);
+      border-radius: 8px;
+      padding: 3.5rem 2rem;
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 5rem;
+      box-shadow: 0 0 50px rgba(197, 160, 89, 0.05);
+    }
+
+    .newsletter-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.2rem;
+      color: #FFFFFF;
+      margin-bottom: 0.7rem;
+      font-weight: 400;
+    }
+
+    .newsletter-card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      max-width: 480px;
+      margin: 0 auto 2rem;
+    }
+
+    .newsletter-form {
+      display: flex;
+      justify-content: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    .newsletter-input {
+      background: #08080A;
+      border: 1px solid var(--border-subtle);
+      color: #FFFFFF;
+      padding: 0.9rem 1.4rem;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      outline: none;
+      flex: 1 1 260px;
+      transition: border-color 0.2s ease;
+    }
+
+    .newsletter-input:focus {
+      border-color: var(--gold-primary);
+    }
+
+    .newsletter-btn {
+      background: var(--gold-primary);
+      color: #08080A;
+      border: none;
+      border-radius: 999px;
+      padding: 0.9rem 1.8rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+
+    .newsletter-btn:hover {
+      background: var(--gold-bright);
+    }
+
+    /* ----------------------------- FOOTER ----------------------------- */
+    footer {
+      border-top: 1px solid var(--border-subtle);
+      background: #050507;
+      padding: 4rem 2rem 3rem;
+      color: var(--text-dim);
+      font-size: 0.75rem;
+    }
+
+    .footer-content {
+      max-width: 1040px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      text-align: center;
+    }
+
+    .footer-nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+    }
+
+    .footer-nav a:hover {
+      color: var(--gold-primary);
+    }
+
+    .footer-disclosure {
+      line-height: 1.8;
+      max-width: 760px;
+      margin: 0 auto;
+      font-size: 0.7rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .media-container {
+        height: 320px;
+      }
+      .card-body {
+        padding: 2rem 1.5rem;
+      }
+      .spec-grid {
+        grid-template-columns: 1fr;
+      }
+      .card-footer {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+      }
+      .cta-button {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Editorial Nav -->
+  <header>
+    <div class="nav-container">
+      <div class="brand-group">
+        <a href="/" class="brand-title">The Nocturne Key</a>
+        <span class="brand-subtitle">Curated Sanctuaries of the Night</span>
+      </div>
+      <nav class="nav-links">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/capitols.html" class="nav-link">Capitols</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Editorial Hero -->
+  <section class="hero">
+    <div class="edition-tag">Tokyo Monograph • Vol. I</div>
+    <h1 class="hero-title">The 5 Cloud-High Sanctuaries of Tokyo</h1>
+    <p class="hero-lead">An architectural exploration of basalt stone hot springs, suspended cedar tea houses, and private sky balconies hovering above Japan's historic capital.</p>
+    <div class="hero-meta">
+      <span>Curated By <strong>Editorial Desk</strong></span>
+      <span>Reading Time <strong>7 Minutes</strong></span>
+      <span>Edition <strong>Autumn 2026</strong></span>
+    </div>
+  </section>
+
+  <!-- Dossier Main Content -->
+  <main>
+
+    <!-- HOTEL #01: AMAN TOKYO -->
+    <article class="hotel-card" id="aman-tokyo">
+      <div class="card-topbar">
+        <span class="ranking-badge">#01</span>
+        <span class="district-pill">Otemachi • Imperial Palace District</span>
+      </div>
+      <div class="media-container">
+        <img 
+          id="img-aman"
+          class="media-img"
+          src="https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1600&auto=format&fit=crop" 
+          alt="Aman Tokyo Sanctuary"
+          data-property="https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1600&auto=format&fit=crop"
+          data-suite="https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1600&auto=format&fit=crop"
+        >
+        <div class="view-toggles">
+          <button class="toggle-btn active" onclick="switchMedia('img-aman', 'property', this)">Property</button>
+          <button class="toggle-btn" onclick="switchMedia('img-aman', 'suite', this)">Premier Suite</button>
+        </div>
+      </div>
+      <div class="card-body">
+        <h2 class="property-title">Aman Tokyo</h2>
+        <p class="architectural-subhead">Minimalist Zen Sanctuary Above the Clouds</p>
+        <p class="editorial-prose">
+          Occupying the premier six levels of Otemachi Tower, Aman Tokyo redefines Japanese residential minimalism on a monumental scale. Its defining masterstroke is the towering 30-meter washi paper lantern atrium that captures shifting twilight shadows, accented with tranquil indoor stone gardens and engawa wooden verandas framing Mount Fuji at sunset.
+        </p>
+
+        <div class="spec-grid">
+          <div class="spec-item">
+            <h4>Thermal Spa & Wellness</h4>
+            <p>30-meter heated basalt sky pool and traditional private onsen granite steam baths.</p>
+          </div>
+          <div class="spec-item">
+            <h4>Nocturnal Gastronomy</h4>
+            <p>Musashi by Aman — an intimate 8-seat master omakase counter; The Lounge by Aman.</p>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <div class="rate-meta">
+            <span class="rate-label">Nightly Rate Benchmark</span>
+            <span class="rate-value">From ¥220,000 / Night</span>
+          </div>
+          <a href="https://klook.tpx.lv/t6IUAxt6" target="_blank" rel="sponsored noopener" class="cta-button">
+            Reserve Sanctuary on Klook <span>🗝️</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- HOTEL #02: THE RITZ-CARLTON, TOKYO -->
+    <article class="hotel-card" id="ritz-carlton-tokyo">
+      <div class="card-topbar">
+        <span class="ranking-badge">#02</span>
+        <span class="district-pill">Tokyo Midtown • Roppongi</span>
+      </div>
+      <div class="media-container">
+        <img 
+          id="img-ritz"
+          class="media-img"
+          src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1600&auto=format&fit=crop" 
+          alt="The Ritz-Carlton Tokyo"
+          data-property="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1600&auto=format&fit=crop"
+          data-suite="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=1600&auto=format&fit=crop"
+        >
+        <div class="view-toggles">
+          <button class="toggle-btn active" onclick="switchMedia('img-ritz', 'property', this)">Property</button>
+          <button class="toggle-btn" onclick="switchMedia('img-ritz', 'suite', this)">Premier Suite</button>
+        </div>
+      </div>
+      <div class="card-body">
+        <h2 class="property-title">The Ritz-Carlton, Tokyo</h2>
+        <p class="architectural-subhead">Sky-High Classical Grandeur in Roppongi</p>
+        <p class="editorial-prose">
+          Perched across floors 45 through 53 of Midtown Tower, this beacon of classical elegance commands uninterrupted 360-degree panoramas of Tokyo Tower and Roppongi's skyline. Its crowning cultural triumph is an authentic 200-year-old Japanese tea house meticulously reassembled on the 45th floor, marrying centuries-old ceremonial heritage with sky-scraping modern luxury.
+        </p>
+
+        <div class="spec-grid">
+          <div class="spec-item">
+            <h4>Skyline Wellness</h4>
+            <p>46th-floor holistic spa with panoramic indoor lap pool and private treatment suites.</p>
+          </div>
+          <div class="spec-item">
+            <h4>Culinary Destination</h4>
+            <p>Azure 45 (contemporary Michelin-caliber French dining) and Hinokizaka multi-concept Japanese dining.</p>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <div class="rate-meta">
+            <span class="rate-label">Nightly Rate Benchmark</span>
+            <span class="rate-value">From ¥145,000 / Night</span>
+          </div>
+          <a href="https://klook.tpx.lv/nZTgRgMx" target="_blank" rel="sponsored noopener" class="cta-button">
+            Reserve Sanctuary on Klook <span>🗝️</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- HOTEL #03: BVLGARI HOTEL TOKYO -->
+    <article class="hotel-card" id="bvlgari-hotel-tokyo">
+      <div class="card-topbar">
+        <span class="ranking-badge">#03</span>
+        <span class="district-pill">Tokyo Midtown Yaesu • Ginza Border</span>
+      </div>
+      <div class="media-container">
+        <img 
+          id="img-bvlgari"
+          class="media-img"
+          src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=1600&auto=format&fit=crop" 
+          alt="Bvlgari Hotel Tokyo"
+          data-property="https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=1600&auto=format&fit=crop"
+          data-suite="https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=1600&auto=format&fit=crop"
+        >
+        <div class="view-toggles">
+          <button class="toggle-btn active" onclick="switchMedia('img-bvlgari', 'property', this)">Property</button>
+          <button class="toggle-btn" onclick="switchMedia('img-bvlgari', 'suite', this)">Premier Suite</button>
+        </div>
+      </div>
+      <div class="card-body">
+        <h2 class="property-title">Bvlgari Hotel Tokyo</h2>
+        <p class="architectural-subhead">Italian High Jewellery Glamour Hovering Over Yaesu</p>
+        <p class="editorial-prose">
+          Crafted by renowned Italian firm ACPV Architects (Antonio Citterio Patricia Viel), Bvlgari Hotel Tokyo occupies the top floors of Tokyo Midtown Yaesu. Black granite, Vicenza stone, and opulent gold mosaic treatments converge into a 25-meter emerald mosaic indoor pool, flanked by terrace gardens with sweeping vistas toward Ginza.
+        </p>
+
+        <div class="spec-grid">
+          <div class="spec-item">
+            <h4>Bvlgari Spa & Solarium</h4>
+            <p>Gemstone-inspired spa therapies and gold-tiled vitality pools overlooking the skyline.</p>
+          </div>
+          <div class="spec-item">
+            <h4>Gastronomy & Salons</h4>
+            <p>Il Ristorante - Niko Romito, paired with the iconic rooftop Bvlgari Bar.</p>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <div class="rate-meta">
+            <span class="rate-label">Nightly Rate Benchmark</span>
+            <span class="rate-value">From ¥250,000 / Night</span>
+          </div>
+          <a href="https://klook.tpx.lv/KSrQSPAC" target="_blank" rel="sponsored noopener" class="cta-button">
+            Reserve Sanctuary on Klook <span>🗝️</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- HOTEL #04: PALACE HOTEL TOKYO -->
+    <article class="hotel-card" id="palace-hotel-tokyo">
+      <div class="card-topbar">
+        <span class="ranking-badge">#04</span>
+        <span class="district-pill">1-1-1 Marunouchi • Imperial Moat</span>
+      </div>
+      <div class="media-container">
+        <img 
+          id="img-palace"
+          class="media-img"
+          src="https://images.unsplash.com/photo-1540541338287-41700207dee6?q=80&w=1600&auto=format&fit=crop" 
+          alt="Palace Hotel Tokyo"
+          data-property="https://images.unsplash.com/photo-1540541338287-41700207dee6?q=80&w=1600&auto=format&fit=crop"
+          data-suite="https://images.unsplash.com/photo-1566665797739-1674de7a421a?q=80&w=1600&auto=format&fit=crop"
+        >
+        <div class="view-toggles">
+          <button class="toggle-btn active" onclick="switchMedia('img-palace', 'property', this)">Property</button>
+          <button class="toggle-btn" onclick="switchMedia('img-palace', 'suite', this)">Premier Suite</button>
+        </div>
+      </div>
+      <div class="card-body">
+        <h2 class="property-title">Palace Hotel Tokyo</h2>
+        <p class="architectural-subhead">The Grande Dame of Marunouchi with Private Balconies</p>
+        <p class="editorial-prose">
+          Fronting the historic Imperial Palace moat at 1-1-1 Marunouchi, this landmark property provides a rarity in Tokyo: spacious open-air guest room balconies looking out across swans and historic pine groves. The interior radiates calm residential refinement, home to Japan's only Evian Spa.
+        </p>
+
+        <div class="spec-grid">
+          <div class="spec-item">
+            <h4>Evian Spa Tokyo</h4>
+            <p>French-Alpine hydrotherapy routines and alpine-inspired wellness rituals.</p>
+          </div>
+          <div class="spec-item">
+            <h4>Palace Gastronomy</h4>
+            <p>Esterre by Ducasse Paris; Wadakura kaiseki; the storied Royal Bar.</p>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <div class="rate-meta">
+            <span class="rate-label">Nightly Rate Benchmark</span>
+            <span class="rate-value">From ¥130,000 / Night</span>
+          </div>
+          <a href="https://klook.tpx.lv/IzjOMzXH" target="_blank" rel="sponsored noopener" class="cta-button">
+            Reserve Sanctuary on Klook <span>🗝️</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- HOTEL #05: THE OKURA TOKYO -->
+    <article class="hotel-card" id="the-okura-tokyo">
+      <div class="card-topbar">
+        <span class="ranking-badge">#05</span>
+        <span class="district-pill">Toranomon • Diplomatic Quarter</span>
+      </div>
+      <div class="media-container">
+        <img 
+          id="img-okura"
+          class="media-img"
+          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1600&auto=format&fit=crop" 
+          alt="The Okura Tokyo"
+          data-property="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1600&auto=format&fit=crop"
+          data-suite="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?q=80&w=1600&auto=format&fit=crop"
+        >
+        <div class="view-toggles">
+          <button class="toggle-btn active" onclick="switchMedia('img-okura', 'property', this)">Property</button>
+          <button class="toggle-btn" onclick="switchMedia('img-okura', 'suite', this)">Premier Suite</button>
+        </div>
+      </div>
+      <div class="card-body">
+        <h2 class="property-title">The Okura Tokyo (Prestige Tower)</h2>
+        <p class="architectural-subhead">Iconic Japanese Mid-Century Modernism Reborn</p>
+        <p class="editorial-prose">
+          The Okura Tokyo’s Prestige Tower preserves the revered modernist spirit of architect Yoshiro Taniguchi, reconstructed under the guidance of his son Yoshio Taniguchi. Featuring signature hexagonal hanging lanterns, exquisite Urushi lacquer, and peaceful city bath suites, it remains an understated sanctuary for global diplomats and discerning travelers.
+        </p>
+
+        <div class="spec-grid">
+          <div class="spec-item">
+            <h4>Okura Fitness & Spa</h4>
+            <p>27th-floor 25m panoramic indoor lap pool and bespoke Annick Goutal botanical treatments.</p>
+          </div>
+          <div class="spec-item">
+            <h4>Heritage Dining</h4>
+            <p>Yamazato (celebrated historic kaiseki), paired with the 41st-floor Starlight cocktail lounge.</p>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <div class="rate-meta">
+            <span class="rate-label">Nightly Rate Benchmark</span>
+            <span class="rate-value">From ¥110,000 / Night</span>
+          </div>
+          <a href="https://klook.tpx.lv/QnmqoEEW" target="_blank" rel="sponsored noopener" class="cta-button">
+            Reserve Sanctuary on Klook <span>🗝️</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- CURATED EXPERIENCES / TRANSFERS -->
+    <section class="experience-section">
+      <div class="experience-header">
+        <h2>Privileged Arrivals & Evening Experiences</h2>
+        <p>Complete your nocturnal stay in Tokyo with seamless private transport and chartered transit privileges across the capital.</p>
+      </div>
+
+      <div class="experience-grid">
+        <div class="experience-card">
+          <div>
+            <h3>VIP Airport Chauffeur</h3>
+            <p>Private limousine and Alphard transfers from Haneda (HND) and Narita (NRT) directly to your hotel porte-cochère.</p>
+          </div>
+          <a href="https://klook.tpx.lv/t6IUAxt6" target="_blank" rel="sponsored noopener" class="experience-link">
+            Reserve Chauffeur Transfer →
+          </a>
+        </div>
+
+        <div class="experience-card">
+          <div>
+            <h3>Shinkansen First-Class Green Car</h3>
+            <p>Direct bullet train reservations from Tokyo to Kyoto, Osaka, and Kanazawa with dedicated luggage allowances.</p>
+          </div>
+          <a href="https://klook.tpx.lv/t6IUAxt6" target="_blank" rel="sponsored noopener" class="experience-link">
+            Book Rail Privileges →
+          </a>
+        </div>
+
+        <div class="experience-card">
+          <div>
+            <h3>Private Evening Helicopter Charter</h3>
+            <p>Chartered nocturnal flights over Tokyo Tower, the Rainbow Bridge, and the illuminated bay.</p>
+          </div>
+          <a href="https://klook.tpx.lv/t6IUAxt6" target="_blank" rel="sponsored noopener" class="experience-link">
+            Explore Private Charters →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEYHOLDER NEWSLETTER -->
+    <section class="newsletter-card">
+      <h3>The Keyholder Circle</h3>
+      <p>Receive discreet private suite monographs, architectural hotel openings, and exclusive nocturnal dossiers directly to your inbox.</p>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Your key has been issued. Welcome to the circle.');">
+        <input type="email" placeholder="Enter your email address" class="newsletter-input" required>
+        <button type="submit" class="newsletter-btn">Request Access</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-nav">
+        <a href="/">Home</a>
+        <a href="/capitols.html">Capitols</a>
+        <a href="#aman-tokyo">Aman Tokyo</a>
+        <a href="#ritz-carlton-tokyo">Ritz-Carlton</a>
+        <a href="#bvlgari-hotel-tokyo">Bvlgari</a>
+      </div>
+      <p class="footer-disclosure">
+        <strong>Editorial Disclosure:</strong> The Nocturne Key is an independently operated luxury hospitality journal. Links featured within our dossiers are affiliated via verified booking engines, including Klook. Reservations made through our portals may earn an editorial commission at zero additional expense to you, supporting our ongoing independent architectural monographs.
+      </p>
+      <p style="color: #404456; font-size: 0.68rem; letter-spacing: 0.12em;">
+        &copy; 2026 THE NOCTURNE KEY. ALL RIGHTS RESERVED.
+      </p>
+    </div>
+  </footer>
+
+  <!-- DUAL IMAGE SWITCHER JS -->
+  <script>
+    function switchMedia(imageId, viewType, clickedBtn) {
+      const img = document.getElementById(imageId);
+      if (!img) return;
+
+      // Update button visual state
+      const buttonGroup = clickedBtn.parentElement;
+      buttonGroup.querySelectorAll('.toggle-btn').forEach(btn => btn.classList.remove('active'));
+      clickedBtn.classList.add('active');
+
+      // Smooth image transition
+      img.style.opacity = '0.35';
+      setTimeout(() => {
+        if (viewType === 'property') {
+          img.src = img.getAttribute('data-property');
+        } else if (viewType === 'suite') {
+          img.src = img.getAttribute('data-suite');
+        }
+        img.style.opacity = '1';
+      }, 160);
+    }
+  </script>
+</body>
+</html>
