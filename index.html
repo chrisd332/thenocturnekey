@@ -135,12 +135,12 @@
                         <span>All Capitols</span>
                     </a>
                     <span class="text-borderMuted text-xs px-1">|</span>
-                    <button onclick="renderCityCategory('paris')" class="city-filter-btn text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-pearl hover:text-ivory border border-transparent hover:border-borderMuted transition-soft" data-city="paris">Paris</button>
-                    <button onclick="renderCityCategory('tokyo')" class="city-filter-btn text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-pearl hover:text-ivory border border-transparent hover:border-borderMuted transition-soft" data-city="tokyo">Tokyo</button>
-                    <button onclick="renderCityCategory('london')" class="city-filter-btn text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-pearl hover:text-ivory border border-transparent hover:border-borderMuted transition-soft" data-city="london">London</button>
-                    <button onclick="renderCityCategory('new-york')" class="city-filter-btn text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-pearl hover:text-ivory border border-transparent hover:border-borderMuted transition-soft" data-city="new-york">New York</button>
-                    <button onclick="renderCityCategory('rome')" class="city-filter-btn text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-pearl hover:text-ivory border border-transparent hover:border-borderMuted transition-soft" data-city="rome">Rome</button>
-                    <button onclick="renderCityCategory('dubai')" class="city-filter-btn text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-pearl hover:text-ivory border border-transparent hover:border-borderMuted transition-soft" data-city="dubai">Dubai</button>
+                    <button type="button" onclick="handleCityNav('paris')" class="city-filter-btn text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-pearl hover:text-ivory border border-transparent hover:border-borderMuted transition-soft" data-city="paris">Paris</button>
+                    <button type="button" onclick="handleCityNav('tokyo')" class="city-filter-btn text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-pearl hover:text-ivory border border-transparent hover:border-borderMuted transition-soft" data-city="tokyo">Tokyo</button>
+                    <button type="button" onclick="handleCityNav('london')" class="city-filter-btn text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-pearl hover:text-ivory border border-transparent hover:border-borderMuted transition-soft" data-city="london">London</button>
+                    <button type="button" onclick="handleCityNav('new-york')" class="city-filter-btn text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-pearl hover:text-ivory border border-transparent hover:border-borderMuted transition-soft" data-city="new-york">New York</button>
+                    <button type="button" onclick="handleCityNav('rome')" class="city-filter-btn text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-pearl hover:text-ivory border border-transparent hover:border-borderMuted transition-soft" data-city="rome">Rome</button>
+                    <button type="button" onclick="handleCityNav('dubai')" class="city-filter-btn text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-pearl hover:text-ivory border border-transparent hover:border-borderMuted transition-soft" data-city="dubai">Dubai</button>
                 </nav>
 
                 <div class="flex items-center gap-4">
@@ -160,12 +160,12 @@
             <p class="text-[10px] uppercase tracking-widest text-gold font-mono">Curated Top 5 Compendiums</p>
             <div class="grid grid-cols-2 gap-2">
                 <a href="capitols.html" class="text-left py-2.5 px-3 text-sm text-gold bg-gold/10 rounded border border-gold/30 font-medium">🏛️ All Capitols</a>
-                <button onclick="renderCityCategory('paris'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Top 5 Paris</button>
-                <button onclick="renderCityCategory('tokyo'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Top 5 Tokyo</button>
-                <button onclick="renderCityCategory('london'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Top 5 London</button>
-                <button onclick="renderCityCategory('new-york'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Top 5 New York</button>
-                <button onclick="renderCityCategory('rome'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Top 5 Rome</button>
-                <button onclick="renderCityCategory('dubai'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Top 5 Dubai</button>
+                <button type="button" onclick="handleCityNav('paris'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Top 5 Paris</button>
+                <button type="button" onclick="handleCityNav('tokyo'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Top 5 Tokyo</button>
+                <button type="button" onclick="handleCityNav('london'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Top 5 London</button>
+                <button type="button" onclick="handleCityNav('new-york'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Top 5 New York</button>
+                <button type="button" onclick="handleCityNav('rome'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Top 5 Rome</button>
+                <button type="button" onclick="handleCityNav('dubai'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Top 5 Dubai</button>
             </div>
         </div>
     </header>
@@ -934,22 +934,22 @@
                                 <span id="counter-${cardKey}" class="text-xs font-mono text-pearl">${activeIdx + 1} / ${totalImages}</span>
                             </div>
 
-                            <!-- Carousel Navigation Controls -->
-                            <button onclick="changeSlide('${cardKey}', ${h.images.length}, -1)" 
+                            <!-- Carousel Navigation Controls with type="button" -->
+                            <button type="button" onclick="changeSlide('${cardKey}', ${h.images.length}, -1, event)" 
                                     aria-label="Previous Image" 
                                     class="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-obsidian/80 hover:bg-gold text-ivory hover:text-obsidian border border-borderMuted hover:border-gold flex items-center justify-center backdrop-blur-md transition-soft opacity-80 group-hover:opacity-100 z-10">
                                 ❮
                             </button>
-                            <button onclick="changeSlide('${cardKey}', ${h.images.length}, 1)" 
+                            <button type="button" onclick="changeSlide('${cardKey}', ${h.images.length}, 1, event)" 
                                     aria-label="Next Image" 
                                     class="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-obsidian/80 hover:bg-gold text-ivory hover:text-obsidian border border-borderMuted hover:border-gold flex items-center justify-center backdrop-blur-md transition-soft opacity-80 group-hover:opacity-100 z-10">
                                 ❯
                             </button>
 
-                            <!-- Dot Indicators -->
+                            <!-- Dot Indicators with type="button" -->
                             <div class="absolute bottom-4 left-0 right-0 flex justify-center gap-1.5 z-10 px-4 flex-wrap">
                                 ${h.images.map((_, imgIdx) => `
-                                    <button onclick="setSlide('${cardKey}', ${imgIdx})" 
+                                    <button type="button" onclick="setSlide('${cardKey}', ${imgIdx}, event)" 
                                             class="w-2 h-2 rounded-full transition-soft ${imgIdx === activeIdx ? 'bg-gold w-5' : 'bg-pearl/40 hover:bg-pearl'}" 
                                             aria-label="Jump to slide ${imgIdx + 1}">
                                     </button>
@@ -1005,13 +1005,22 @@
                     btn.className = "city-filter-btn text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-pearl hover:text-ivory border border-transparent hover:border-borderMuted transition-soft";
                 }
             });
-
-            // Smooth scroll back to top of the page
-            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        // Carousel Slide Management Functions
-        function changeSlide(cardKey, totalImages, direction) {
+        // Top navigation button click handler (scrolls to top & switches category)
+        function handleCityNav(cityKey) {
+            renderCityCategory(cityKey);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            
+            // Update URL search query without reloading page
+            const newUrl = cityKey ? `?city=${cityKey}` : window.location.pathname;
+            window.history.pushState({ city: cityKey }, '', newUrl);
+        }
+
+        // Carousel Slide Management Functions (Direct update without page reload or scrolling)
+        function changeSlide(cardKey, totalImages, direction, event) {
+            if (event) event.stopPropagation();
+            
             if (currentSlideIndices[cardKey] === undefined) {
                 currentSlideIndices[cardKey] = 0;
             }
@@ -1021,15 +1030,62 @@
             if (newIdx < 0) newIdx = totalImages - 1;
             
             currentSlideIndices[cardKey] = newIdx;
-            
-            const urlParams = new URLSearchParams(window.location.search);
-            renderCityCategory(urlParams.get('city'));
+            updateCarouselDOM(cardKey);
         }
 
-        function setSlide(cardKey, targetIdx) {
+        function setSlide(cardKey, targetIdx, event) {
+            if (event) event.stopPropagation();
             currentSlideIndices[cardKey] = targetIdx;
-            const urlParams = new URLSearchParams(window.location.search);
-            renderCityCategory(urlParams.get('city'));
+            updateCarouselDOM(cardKey);
+        }
+
+        function updateCarouselDOM(cardKey) {
+            const parts = cardKey.split('-');
+            // Extract city name and index safely
+            const hotelIdx = parseInt(parts.pop());
+            const cityKey = parts.join('-');
+            
+            // Find correct hotel object across cities if needed
+            let hotel = null;
+            for (let key in LUXURY_HOTELS_DB) {
+                const found = LUXURY_HOTELS_DB[key].find(h => `${h.cityName}-${LUXURY_HOTELS_DB[key].indexOf(h)}` === cardKey);
+                if (found) {
+                    hotel = found;
+                    break;
+                }
+            }
+            if (!hotel) return;
+
+            const activeIdx = currentSlideIndices[cardKey];
+            const totalImages = hotel.images.length;
+            
+            const imgElem = document.getElementById(`carousel-img-${cardKey}`);
+            const counterElem = document.getElementById(`counter-${cardKey}`);
+            
+            if (imgElem) {
+                imgElem.style.opacity = '0.3';
+                setTimeout(() => {
+                    imgElem.src = hotel.images[activeIdx];
+                    imgElem.style.opacity = '1';
+                }, 100);
+            }
+            
+            if (counterElem) {
+                counterElem.textContent = `${activeIdx + 1} / ${totalImages}`;
+            }
+
+            // Update dot indicators active states directly
+            const cardArticle = imgElem.closest('article');
+            if (cardArticle) {
+                const dots = cardArticle.querySelectorAll('button[type="button"][aria-label^="Jump to slide"]');
+                dots.forEach((dot, dotIdx) => {
+                    if (dotIdx === activeIdx) {
+                        dot.className = "w-5 h-2 rounded-full bg-gold transition-soft";
+                    } else {
+                        dot.className = "w-2 h-2 rounded-full bg-pearl/40 hover:bg-pearl transition-soft";
+                    }
+                });
+            }
         }
 
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
@@ -1041,12 +1097,17 @@
             mobileMenuBtn.addEventListener('click', toggleMobileNav);
         }
 
-        // URL router: checks ?city= parameter from top bar clicks or updates URL state
+        // URL router on load
         window.addEventListener('DOMContentLoaded', () => {
             const params = new URLSearchParams(window.location.search);
             const cityParam = params.get('city');
-            
             renderCityCategory(cityParam);
+        });
+
+        // Handle back/forward browser navigation smoothly
+        window.addEventListener('popstate', (e) => {
+            const params = new URLSearchParams(window.location.search);
+            renderCityCategory(params.get('city'));
         });
     </script>
 </body>
