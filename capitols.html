@@ -1,369 +1,425 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Global Capitols & Metropolises | The Nocturne Key</title>
-  <meta name="description" content="Explore curated editorial guides to the top luxury hotels across the world's most distinguished cultural capitols and metropolises.">
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
-
-  <!-- Web Page Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png?v=4">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png?v=4">
-  <link rel="apple-touch-icon" href="/favicon.png?v=4">
-
-  <style>
-    :root {
-      --bg-midnight: #08080a;
-      --bg-surface: #101116;
-      --bg-card: #12131a;
-      --gold-primary: #c5a059;
-      --gold-light: #e6ca85;
-      --gold-subtle: rgba(197, 160, 89, 0.12);
-      --border-gold: rgba(197, 160, 89, 0.28);
-      --text-white: #f5f4f0;
-      --text-muted: #9c9aa1;
-      --text-faint: #605f66;
-      --font-serif: 'Cormorant Garamond', Georgia, serif;
-      --font-sans: 'Inter', -apple-system, sans-serif;
-      --transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body { background-color: var(--bg-midnight); color: var(--text-white); font-family: var(--font-sans); line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
-    a { color: inherit; text-decoration: none; }
-
-    .site-header { position: sticky; top: 0; z-index: 100; background: rgba(8, 8, 10, 0.92); backdrop-filter: blur(14px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); padding: 1.25rem 2rem; }
-    .header-inner { max-width: 1400px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
-    .brand { display: flex; flex-direction: column; }
-    .brand-title { font-family: var(--font-serif); font-size: 1.5rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 400; color: var(--text-white); }
-    .brand-tagline { font-size: 0.65rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--gold-primary); }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Capitols & Metropolises | The Nocturne Key</title>
+    <meta name="description" content="Explore curated editorial guides to the top luxury hotels across the world's most distinguished cultural capitols and metropolises.">
+    <meta name="robots" content="index, follow">
     
-    .back-home-link { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold-light); border: 1px solid var(--border-gold); padding: 0.5rem 1.25rem; border-radius: 999px; transition: var(--transition); background: rgba(197, 160, 89, 0.04); }
-    .back-home-link:hover { background: var(--gold-primary); color: var(--bg-midnight); }
+    <meta property="og:title" content="Global Capitols & Metropolises — The Nocturne Key">
+    <meta property="og:description" content="Explore curated editorial guides to the top luxury hotels across the world's most distinguished cultural capitols.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="Nocturne%20Key%20Photos/Paris/Four%20Seasons%20Hotel%20George%20V/IMG_4317.JPG">
 
-    .directory-hero { max-width: 1400px; margin: 0 auto; padding: 5rem 2rem 3rem; text-align: center; }
-    .directory-hero-eyebrow { display: inline-block; font-size: 0.7rem; letter-spacing: 0.35em; text-transform: uppercase; color: var(--gold-primary); margin-bottom: 1rem; }
-    .directory-hero-title { font-family: var(--font-serif); font-size: clamp(2.5rem, 5vw, 4.2rem); font-weight: 300; letter-spacing: -0.01em; line-height: 1.15; margin-bottom: 1.25rem; }
-    .directory-hero-title em { font-style: italic; color: var(--gold-light); }
-    .directory-hero-desc { font-size: 1rem; color: var(--text-muted); max-width: 650px; margin: 0 auto 3rem; font-weight: 300; }
+    <!-- Tailwind CSS Engine -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: '#08080A',
+                        noir: '#0F1015',
+                        charcoal: '#181A22',
+                        cardSurface: '#12131A',
+                        borderMuted: '#262938',
+                        gold: {
+                            DEFAULT: '#C5A059',
+                            light: '#E5C378',
+                            dark: '#9E7E3C',
+                            glow: 'rgba(197, 160, 89, 0.15)'
+                        },
+                        ivory: '#F7F6F2',
+                        pearl: '#A8ABB8'
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'Playfair Display', 'serif'],
+                        sans: ['"Inter"', 'Montserrat', 'sans-serif'],
+                        editorial: ['"Playfair Display"', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
 
-    .filter-bar { max-width: 700px; margin: 0 auto; display: flex; flex-direction: column; gap: 1.25rem; }
-    .search-input { width: 100%; background: var(--bg-surface); border: 1px solid var(--border-gold); border-radius: 999px; padding: 0.85rem 1.75rem; font-size: 0.9rem; color: var(--text-white); outline: none; transition: var(--transition); font-family: var(--font-sans); }
-    .search-input:focus { border-color: var(--gold-light); box-shadow: 0 0 20px rgba(197, 160, 89, 0.15); }
-    .search-input::placeholder { color: var(--text-faint); }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Web Page Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png?v=4">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png?v=4">
+    <link rel="apple-touch-icon" href="/favicon.png?v=4">
+
+    <style>
+        body {
+            background-color: #08080A;
+            color: #F7F6F2;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            letter-spacing: -0.01em;
+        }
+
+        .gold-shimmer {
+            background: linear-gradient(135deg, #F9E7B9 0%, #C5A059 50%, #9E7E3C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gold-border-glow {
+            border: 1px solid rgba(197, 160, 89, 0.28);
+            box-shadow: 0 0 25px rgba(197, 160, 89, 0.08);
+        }
+
+        .gold-border-glow:hover {
+            border-color: rgba(197, 160, 89, 0.6);
+            box-shadow: 0 10px 40px rgba(197, 160, 89, 0.15);
+        }
+
+        .hero-vignette {
+            background: radial-gradient(circle at 50% 40%, rgba(8, 8, 10, 0.1) 0%, rgba(8, 8, 10, 0.75) 60%, #08080A 100%);
+        }
+
+        ::-webkit-scrollbar { width: 7px; }
+        ::-webkit-scrollbar-track { background: #08080A; }
+        ::-webkit-scrollbar-thumb { background: #232634; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #C5A059; }
+
+        .transition-soft {
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+    </style>
     
-    .continent-pills { display: flex; justify-content: center; flex-wrap: wrap; gap: 0.5rem; }
-    .continent-pill { background: transparent; border: 1px solid rgba(255, 255, 255, 0.08); color: var(--text-muted); padding: 0.4rem 1rem; border-radius: 999px; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; transition: var(--transition); }
-    .continent-pill:hover, .continent-pill.active { border-color: var(--gold-primary); color: var(--text-white); background: var(--gold-subtle); }
-
-    .cities-section { max-width: 1400px; margin: 0 auto; padding: 2rem 2rem 6rem; }
-    .cities-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 2rem; }
-
-    .city-card { background: var(--bg-card); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; transition: var(--transition); position: relative; }
-    .city-card:hover { transform: translateY(-6px); border-color: var(--border-gold); box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6); }
-
-    .city-image-wrap { position: relative; height: 240px; overflow: hidden; }
-    .city-image { width: 100%; height: 100%; object-fit: cover; transition: transform 0.8s ease; filter: brightness(0.85); }
-    .city-card:hover .city-image { transform: scale(1.05); filter: brightness(0.95); }
-
-    .city-badge { position: absolute; top: 1rem; right: 1rem; background: rgba(8, 8, 10, 0.8); backdrop-filter: blur(8px); border: 1px solid var(--border-gold); color: var(--gold-light); padding: 0.3rem 0.75rem; border-radius: 999px; font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 500; }
-    .city-content { padding: 1.75rem; display: flex; flex-direction: column; flex-grow: 1; }
-    .city-header-meta { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem; }
-    .city-country { font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-primary); }
-    .city-hotels-count { font-size: 0.72rem; color: var(--text-faint); font-family: monospace; }
-    .city-name { font-family: var(--font-serif); font-size: 2rem; font-weight: 400; color: var(--text-white); margin-bottom: 0.75rem; line-height: 1.2; }
-    .city-description { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1; }
-
-    .city-highlights { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.5rem; }
-    .city-tag { font-size: 0.68rem; padding: 0.2rem 0.6rem; border-radius: 4px; background: rgba(255, 255, 255, 0.04); color: var(--text-muted); border: 1px solid rgba(255, 255, 255, 0.06); }
-
-    .city-cta-btn { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 0.85rem 1.25rem; background: rgba(197, 160, 89, 0.06); border: 1px solid var(--border-gold); border-radius: 4px; color: var(--gold-light); font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 500; transition: var(--transition); }
-    .city-cta-btn:hover { background: var(--gold-primary); color: var(--bg-midnight); }
-    .arrow-icon { transition: transform 0.25s ease; }
-    .city-cta-btn:hover .arrow-icon { transform: translateX(4px); }
-
-    .no-results { grid-column: 1 / -1; text-align: center; padding: 4rem 1rem; color: var(--text-muted); font-family: var(--font-serif); font-size: 1.4rem; display: none; }
-    .site-footer { border-top: 1px solid rgba(255, 255, 255, 0.05); background: #050507; padding: 3rem 2rem; text-align: center; }
-    .footer-text { font-size: 0.75rem; color: var(--text-faint); max-width: 600px; margin: 0 auto; letter-spacing: 0.05em; }
-
-    @media (max-width: 768px) {
-      .cities-grid { grid-template-columns: 1fr; }
-      .directory-hero { padding: 3.5rem 1.5rem 2rem; }
-    }
-  </style>
-  <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
-    (function () {
-        var script = document.createElement("script");
-        script.async = 1;
-        script.setAttribute("data-cmp-ab","2");
-        script.src = 'https://tpembars.com/NTg1MDk5.js?t=585099';
-        document.head.appendChild(script);
-    })();
-  </script>
+    <!-- Travelpayouts Drive Auto-monetization script -->
+    <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
+        (function () {
+            var script = document.createElement("script");
+            script.async = 1;
+            script.setAttribute("data-cmp-ab","2");
+            script.src = 'https://tpembars.com/NTg1MDk5.js?t=585099';
+            document.head.appendChild(script);
+        })();
+    </script>
 </head>
-<body>
+<body class="selection:bg-gold selection:text-obsidian antialiased min-h-screen flex flex-col justify-between">
 
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="index.html" class="brand">
-        <span class="brand-title">The Nocturne Key</span>
-        <span class="brand-tagline">Curated Sanctuaries of the Night</span>
-      </a>
-      <a href="index.html" class="back-home-link">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="19" y1="12" x2="5" y2="12"></line>
-          <polyline points="12 19 5 12 12 5"></polyline>
-        </svg>
-        <span>Back to Journal</span>
-      </a>
-    </div>
-  </header>
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-obsidian/90 backdrop-blur-md border-b border-borderMuted/60 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex flex-col text-left group focus:outline-none">
+                    <div class="flex items-center gap-2">
+                        <span class="text-gold text-lg tracking-widest font-serif">❖</span>
+                        <span class="text-xl sm:text-2xl font-serif tracking-widest uppercase text-ivory group-hover:text-gold-light transition-soft">
+                            The Nocturne Key
+                        </span>
+                    </div>
+                    <span class="text-[9px] uppercase tracking-[0.25em] text-pearl font-light pl-6">
+                        Curated Sanctuaries of the Night
+                    </span>
+                </a>
 
-  <section class="directory-hero">
-    <span class="directory-hero-eyebrow">The Global Dossier</span>
-    <h1 class="directory-hero-title">Capitols &amp; <em>Metropolises</em></h1>
-    <p class="directory-hero-desc">
-      Explore comprehensive editorial compendiums detailing verified luxury sanctuaries, heritage palaces, and private residences across the world's most distinguished cities.
-    </p>
+                <nav class="hidden md:flex items-center gap-1 lg:gap-2">
+                    <a href="index.html" class="text-xs uppercase tracking-widest px-3 py-1.5 rounded-full text-pearl hover:text-ivory border border-transparent hover:border-borderMuted transition-soft">Home</a>
+                    <a href="capitols.html" class="text-xs uppercase tracking-widest px-4 py-1.5 rounded-full text-gold bg-gold/10 border border-gold/40 hover:bg-gold hover:text-obsidian transition-soft font-medium shadow-sm flex items-center gap-1.5">
+                        <span>All Capitols</span>
+                    </a>
+                </nav>
 
-    <div class="filter-bar">
-      <div class="search-input-wrap">
-        <input type="text" id="citySearch" class="search-input" placeholder="Search by city, country, or keyword..." />
-      </div>
-      <div class="continent-pills">
-        <button class="continent-pill active" data-filter="all">All Capitols</button>
-        <button class="continent-pill" data-filter="europe">Europe</button>
-        <button class="continent-pill" data-filter="asia">Asia</button>
-        <button class="continent-pill" data-filter="north-america">North America</button>
-        <button class="continent-pill" data-filter="middle-east">Middle East</button>
-      </div>
-    </div>
-  </section>
-
-  <main class="cities-section">
-    <div class="cities-grid" id="citiesGrid">
-
-      <!-- Paris -->
-      <article class="city-card" data-continent="europe" data-keywords="paris france europe palace eiffel tower haussmann gastronomy vendome crillon bristol ritz cheval blanc george v">
-        <div class="city-image-wrap">
-          <img class="city-image" src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80" alt="Paris architecture" loading="lazy">
-          <span class="city-badge">5 Curated Hotels</span>
+                <div class="flex items-center gap-4">
+                    <a href="index.html" class="inline-flex items-center gap-2 text-xs uppercase tracking-widest px-4 py-2 border border-gold/40 text-gold-light hover:bg-gold hover:text-obsidian rounded-full transition-soft font-medium shadow-sm">
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="19" y1="12" x2="5" y2="12"></line>
+                            <polyline points="12 19 5 12 12 5"></polyline>
+                        </svg>
+                        <span>Back to Journal</span>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="city-content">
-          <div class="city-header-meta">
-            <span class="city-country">France</span>
-            <span class="city-hotels-count">5 Properties Verified</span>
-          </div>
-          <h2 class="city-name">Paris</h2>
-          <p class="city-description">
-            From the regal grandeur of Place de la Concorde to historic Vendôme salons, explore France's official Palace distinctions, Dior spas, and suites framing the Eiffel Tower.
-          </p>
-          <div class="city-highlights">
-            <span class="city-tag">Palace Distinctions</span>
-            <span class="city-tag">Haute Cuisine</span>
-            <span class="city-tag">Haussmann Suites</span>
-          </div>
-          <a href="paris-top-5.html" class="city-cta-btn">
-            <span>Explore Paris Monograph</span>
-            <span class="arrow-icon">→</span>
-          </a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-6 pt-16 pb-12 text-center">
+        <span class="text-xs font-mono uppercase tracking-[0.3em] text-gold block mb-3">The Global Dossier</span>
+        <h1 class="text-4xl sm:text-6xl font-serif font-light text-ivory tracking-tight mb-6 leading-tight">
+            Capitols &amp; <span class="italic font-normal gold-shimmer">Metropolises</span>
+        </h1>
+        <p class="text-pearl text-sm sm:text-base font-light max-w-2xl mx-auto mb-12 leading-relaxed">
+            Explore comprehensive editorial compendiums detailing verified luxury sanctuaries, heritage palaces, and private residences across the world's most distinguished cities.
+        </p>
+
+        <!-- Filter Bar -->
+        <div class="max-w-xl mx-auto flex flex-col gap-6">
+            <input type="text" id="citySearch" class="w-full bg-cardSurface border border-borderMuted rounded-full px-6 py-3.5 text-sm text-ivory placeholder-pearl/50 focus:outline-none focus:border-gold transition-soft" placeholder="Search by city, country, or keyword..." />
+            
+            <div class="flex justify-center flex-wrap gap-2">
+                <button class="continent-pill active px-4 py-2 rounded-full text-xs uppercase tracking-widest border border-gold/40 text-gold bg-gold/10 transition-soft cursor-pointer" data-filter="all">All Capitols</button>
+                <button class="continent-pill px-4 py-2 rounded-full text-xs uppercase tracking-widest border border-borderMuted text-pearl hover:text-ivory transition-soft cursor-pointer" data-filter="europe">Europe</button>
+                <button class="continent-pill px-4 py-2 rounded-full text-xs uppercase tracking-widest border border-borderMuted text-pearl hover:text-ivory transition-soft cursor-pointer" data-filter="asia">Asia</button>
+                <button class="continent-pill px-4 py-2 rounded-full text-xs uppercase tracking-widest border border-borderMuted text-pearl hover:text-ivory transition-soft cursor-pointer" data-filter="north-america">North America</button>
+                <button class="continent-pill px-4 py-2 rounded-full text-xs uppercase tracking-widest border border-borderMuted text-pearl hover:text-ivory transition-soft cursor-pointer" data-filter="middle-east">Middle East</button>
+            </div>
         </div>
-      </article>
+    </section>
 
-      <!-- Tokyo -->
-      <article class="city-card" data-continent="asia" data-keywords="tokyo japan asia aman ryokan skyline onsen otemachi ginza hoshinoya bulgari">
-        <div class="city-image-wrap">
-          <img class="city-image" src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80" alt="Tokyo cityscape at twilight" loading="lazy">
-          <span class="city-badge">5 Curated Hotels</span>
+    <!-- Cities Grid Section -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex-grow">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="citiesGrid">
+
+            <!-- Paris -->
+            <article class="city-card bg-cardSurface rounded-xl border border-borderMuted overflow-hidden gold-border-glow transition-soft flex flex-col relative group" data-continent="europe" data-keywords="paris france europe palace eiffel tower haussmann gastronomy vendome crillon bristol ritz cheval blanc george v">
+                <div class="relative h-60 overflow-hidden">
+                    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter brightness-90" src="Nocturne%20Key%20Photos/Paris/Four%20Seasons%20Hotel%20George%20V/IMG_4317.JPG" alt="Paris architecture" loading="lazy">
+                    <span class="absolute top-4 right-4 bg-obsidian/85 backdrop-blur-md px-3 py-1 rounded border border-gold/30 text-[10px] font-mono text-gold uppercase tracking-widest">5 Curated Hotels</span>
+                </div>
+                <div class="p-8 flex flex-col flex-grow justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-mono uppercase tracking-widest text-gold">France</span>
+                            <span class="text-[11px] font-mono text-pearl/60">5 Verified</span>
+                        </div>
+                        <h2 class="text-3xl font-serif text-ivory mb-3">Paris</h2>
+                        <p class="text-pearl text-sm font-light leading-relaxed mb-6">
+                            From the regal grandeur of Place de la Concorde to historic Vendôme salons, explore France's official Palace distinctions, Dior spas, and suites framing the Eiffel Tower.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="text-[11px] px-2.5 py-1 rounded bg-obsidian border border-borderMuted text-pearl">Palace Distinctions</span>
+                            <span class="text-[11px] px-2.5 py-1 rounded bg-obsidian border border-borderMuted text-pearl">Haute Cuisine</span>
+                            <span class="text-[11px] px-2.5 py-1 rounded bg-obsidian border border-borderMuted text-pearl">Haussmann Suites</span>
+                        </div>
+                    </div>
+                    <a href="index.html?city=paris#hotel-feed" class="flex items-center justify-between w-full px-5 py-3 rounded-full bg-gold/10 border border-gold/40 text-gold-light hover:bg-gold hover:text-obsidian text-xs uppercase tracking-widest font-semibold transition-soft">
+                        <span>Explore Paris Top 5</span>
+                        <span>→</span>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Tokyo -->
+            <article class="city-card bg-cardSurface rounded-xl border border-borderMuted overflow-hidden gold-border-glow transition-soft flex flex-col relative group" data-continent="asia" data-keywords="tokyo japan asia aman ryokan skyline onsen otemachi ginza hoshinoya bulgari">
+                <div class="relative h-60 overflow-hidden">
+                    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter brightness-90" src="Nocturne%20Key%20Photos/Tokyo/Aman%20Tokyo/IMG_4339.JPG" alt="Tokyo cityscape at twilight" loading="lazy">
+                    <span class="absolute top-4 right-4 bg-obsidian/85 backdrop-blur-md px-3 py-1 rounded border border-gold/30 text-[10px] font-mono text-gold uppercase tracking-widest">5 Curated Hotels</span>
+                </div>
+                <div class="p-8 flex flex-col flex-grow justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-mono uppercase tracking-widest text-gold">Japan</span>
+                            <span class="text-[11px] font-mono text-pearl/60">5 Verified</span>
+                        </div>
+                        <h2 class="text-3xl font-serif text-ivory mb-3">Tokyo</h2>
+                        <p class="text-pearl text-sm font-light leading-relaxed mb-6">
+                            Towering minimalist sanctuaries overlooking the Imperial Gardens, traditional basalt onsens suspended in the clouds, and 3-star Michelin omakase destinations.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="text-[11px] px-2.5 py-1 rounded bg-obsidian border border-borderMuted text-pearl">Cloud High Spas</span>
+                            <span class="text-[11px] px-2.5 py-1 rounded bg-obsidian border border-borderMuted text-pearl">Minimalist Zen</span>
+                            <span class="text-[11px] px-2.5 py-1 rounded bg-obsidian border border-borderMuted text-pearl">Private Onsen</span>
+                        </div>
+                    </div>
+                    <a href="index.html?city=tokyo#hotel-feed" class="flex items-center justify-between w-full px-5 py-3 rounded-full bg-gold/10 border border-gold/40 text-gold-light hover:bg-gold hover:text-obsidian text-xs uppercase tracking-widest font-semibold transition-soft">
+                        <span>Explore Tokyo Top 5</span>
+                        <span>→</span>
+                    </a>
+                </div>
+            </article>
+
+            <!-- London -->
+            <article class="city-card bg-cardSurface rounded-xl border border-borderMuted overflow-hidden gold-border-glow transition-soft flex flex-col relative group" data-continent="europe" data-keywords="london united kingdom mayfair knightsbridge belgravia royal classic connaught claridges ritz dorchester">
+                <div class="relative h-60 overflow-hidden">
+                    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter brightness-90" src="Nocturne%20Key%20Photos/London/The%20Connaught/IMG_4363.AVIF" alt="London historic view" loading="lazy">
+                    <span class="absolute top-4 right-4 bg-obsidian/85 backdrop-blur-md px-3 py-1 rounded border border-gold/30 text-[10px] font-mono text-gold uppercase tracking-widest">5 Curated Hotels</span>
+                </div>
+                <div class="p-8 flex flex-col flex-grow justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-mono uppercase tracking-widest text-gold">United Kingdom</span>
+                            <span class="text-[11px] font-mono text-pearl/60">5 Verified</span>
+                        </div>
+                        <h2 class="text-3xl font-serif text-ivory mb-3">London</h2>
+                        <p class="text-pearl text-sm font-light leading-relaxed mb-6">
+                            Aristocratic heritage in Mayfair, legendary martini bars, historic Royal Warrant accommodations, and private garden townhouses across Knightsbridge and Belgravia.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="text-[11px] px-2.5 py-1 rounded bg-obsidian border border-borderMuted text-pearl">Mayfair Heritage</span>
+                            <span class="text-[11px] px-2.5 py-1 rounded bg-obsidian border border-borderMuted text-pearl">Martini Bars</span>
+                            <span class="text-[11px] px-2.5 py-1 rounded bg-obsidian border border-borderMuted text-pearl">Private Gardens</span>
+                        </div>
+                    </div>
+                    <a href="index.html?city=london#hotel-feed" class="flex items-center justify-between w-full px-5 py-3 rounded-full bg-gold/10 border border-gold/40 text-gold-light hover:bg-gold hover:text-obsidian text-xs uppercase tracking-widest font-semibold transition-soft">
+                        <span>Explore London Top 5</span>
+                        <span>→</span>
+                    </a>
+                </div>
+            </article>
+
+            <!-- New York -->
+            <article class="city-card bg-cardSurface rounded-xl border border-borderMuted overflow-hidden gold-border-glow transition-soft flex flex-col relative group" data-continent="north-america" data-keywords="new york nyc united states manhattan upper east side central park carlyle baccarat mark aman">
+                <div class="relative h-60 overflow-hidden">
+                    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter brightness-90" src="Nocturne%20Key%20Photos/New%20York/The%20Carlyle,%20A%20Rosewood%20Hotel/IMG_4391.AVIF" alt="New York City skyline" loading="lazy">
+                    <span class="absolute top-4 right-4 bg-obsidian/85 backdrop-blur-md px-3 py-1 rounded border border-gold/30 text-[10px] font-mono text-gold uppercase tracking-widest">5 Curated Hotels</span>
+                </div>
+                <div class="p-8 flex flex-col flex-grow justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-mono uppercase tracking-widest text-gold">United States</span>
+                            <span class="text-[11px] font-mono text-pearl/60">5 Verified</span>
+                        </div>
+                        <h2 class="text-3xl font-serif text-ivory mb-3">New York</h2>
+                        <p class="text-pearl text-sm font-light leading-relaxed mb-6">
+                            Upper East Side landmarks, Bemelmans cabaret glamour, crystal salons, and skyline penthouses framing Central Park's canopy.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="text-[11px] px-2.5 py-1 rounded bg-obsidian border border-borderMuted text-pearl">Central Park Vistas</span>
+                            <span class="text-[11px] px-2.5 py-1 rounded bg-obsidian border border-borderMuted text-pearl">Classic Jazz Salons</span>
+                            <span class="text-[11px] px-2.5 py-1 rounded bg-obsidian border border-borderMuted text-pearl">White-Glove Butler</span>
+                        </div>
+                    </div>
+                    <a href="index.html?city=new-york#hotel-feed" class="flex items-center justify-between w-full px-5 py-3 rounded-full bg-gold/10 border border-gold/40 text-gold-light hover:bg-gold hover:text-obsidian text-xs uppercase tracking-widest font-semibold transition-soft">
+                        <span>Explore New York Top 5</span>
+                        <span>→</span>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Rome -->
+            <article class="city-card bg-cardSurface rounded-xl border border-borderMuted overflow-hidden gold-border-glow transition-soft flex flex-col relative group" data-continent="europe" data-keywords="rome italy europe historic renaissance villa borghese colosseum hassler de russie eden">
+                <div class="relative h-60 overflow-hidden">
+                    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter brightness-90" src="Nocturne%20Key%20Photos/Rome/Rocco%20Forte%20Hotel%20De%20Russie/IMG_4417.WEBP" alt="Historic Rome sunset view" loading="lazy">
+                    <span class="absolute top-4 right-4 bg-obsidian/85 backdrop-blur-md px-3 py-1 rounded border border-gold/30 text-[10px] font-mono text-gold uppercase tracking-widest">5 Curated Hotels</span>
+                </div>
+                <div class="p-8 flex flex-col flex-grow justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-mono uppercase tracking-widest text-gold">Italy</span>
+                            <span class="text-[11px] font-mono text-pearl/60">5 Verified</span>
+                        </div>
+                        <h2 class="text-3xl font-serif text-ivory mb-3">Rome</h2>
+                        <p class="text-pearl text-sm font-light leading-relaxed mb-6">
+                            Aristocratic palazzos adorned with Renaissance frescoes, terraced suites fronting the Spanish Steps, and secret terraced gardens overlooking St. Peter's Dome.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="text-[11px] px-2.5 py-1 rounded bg-obsidian border border-borderMuted text-pearl">Renaissance Frescoes</span>
+                            <span class="text-[11px] px-2.5 py-1 rounded bg-obsidian border border-borderMuted text-pearl">Spanish Steps Views</span>
+                            <span class="text-[11px] px-2.5 py-1 rounded bg-obsidian border border-borderMuted text-pearl">Private Roman Spas</span>
+                        </div>
+                    </div>
+                    <a href="index.html?city=rome#hotel-feed" class="flex items-center justify-between w-full px-5 py-3 rounded-full bg-gold/10 border border-gold/40 text-gold-light hover:bg-gold hover:text-obsidian text-xs uppercase tracking-widest font-semibold transition-soft">
+                        <span>Explore Rome Top 5</span>
+                        <span>→</span>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Dubai -->
+            <article class="city-card bg-cardSurface rounded-xl border border-borderMuted overflow-hidden gold-border-glow transition-soft flex flex-col relative group" data-continent="middle-east" data-keywords="dubai uae middle east burj al arab palm jumeirah penthouse ultra luxury atlantis bulgari">
+                <div class="relative h-60 overflow-hidden">
+                    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter brightness-90" src="Nocturne%20Key%20Photos/Dubai/Burj%20Al%20Arab%20Jumeirah/IMG_4443.JPG" alt="Dubai modern skyline" loading="lazy">
+                    <span class="absolute top-4 right-4 bg-obsidian/85 backdrop-blur-md px-3 py-1 rounded border border-gold/30 text-[10px] font-mono text-gold uppercase tracking-widest">5 Curated Hotels</span>
+                </div>
+                <div class="p-8 flex flex-col flex-grow justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-mono uppercase tracking-widest text-gold">United Arab Emirates</span>
+                            <span class="text-[11px] font-mono text-pearl/60">5 Verified</span>
+                        </div>
+                        <h2 class="text-3xl font-serif text-ivory mb-3">Dubai</h2>
+                        <p class="text-pearl text-sm font-light leading-relaxed mb-6">
+                            Opulent architectural monuments, private island retreats, duplex suites with 24-karat gold leaf, and infinity sky-pools hovering 50 stories above the Persian Gulf.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="text-[11px] px-2.5 py-1 rounded bg-obsidian border border-borderMuted text-pearl">Private Helipads</span>
+                            <span class="text-[11px] px-2.5 py-1 rounded bg-obsidian border border-borderMuted text-pearl">Duplex Suites</span>
+                            <span class="text-[11px] px-2.5 py-1 rounded bg-obsidian border border-borderMuted text-pearl">Private Island</span>
+                        </div>
+                    </div>
+                    <a href="index.html?city=dubai#hotel-feed" class="flex items-center justify-between w-full px-5 py-3 rounded-full bg-gold/10 border border-gold/40 text-gold-light hover:bg-gold hover:text-obsidian text-xs uppercase tracking-widest font-semibold transition-soft">
+                        <span>Explore Dubai Top 5</span>
+                        <span>→</span>
+                    </a>
+                </div>
+            </article>
+
+            <!-- No Results Message -->
+            <div class="col-span-full text-center py-16 text-pearl font-serif text-xl hidden" id="noResults">
+                No luxury capitols match your inquiry.
+            </div>
+
         </div>
-        <div class="city-content">
-          <div class="city-header-meta">
-            <span class="city-country">Japan</span>
-            <span class="city-hotels-count">5 Properties Verified</span>
-          </div>
-          <h2 class="city-name">Tokyo</h2>
-          <p class="city-description">
-            Towering minimalist sanctuaries overlooking the Imperial Gardens, traditional basalt onsens suspended in the clouds, and 3-star Michelin omakase destinations.
-          </p>
-          <div class="city-highlights">
-            <span class="city-tag">Cloud High Spas</span>
-            <span class="city-tag">Minimalist Zen</span>
-            <span class="city-tag">Private Onsen</span>
-          </div>
-          <a href="tokyo-top-5.html" class="city-cta-btn">
-            <span>Explore Tokyo Monograph</span>
-            <span class="arrow-icon">→</span>
-          </a>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-obsidian border-t border-borderMuted/40 py-12 mt-auto">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+            <div>
+                <span class="font-serif text-lg tracking-widest uppercase text-ivory block mb-1">The Nocturne Key</span>
+                <p class="text-[11px] text-pearl/60 max-w-md">
+                    Editorial curation is independent. Bookings made via Klook affiliate links yield partner commissions at zero added expense to the guest.
+                </p>
+            </div>
+            <div class="flex flex-wrap items-center justify-center gap-6 text-xs text-pearl">
+                <a href="index.html" class="hover:text-gold transition-soft">Home Journal</a>
+                <a href="capitols.html" class="hover:text-gold transition-soft">Capitols Directory</a>
+                <a href="index.html?city=paris#hotel-feed" class="hover:text-gold transition-soft">Paris Top 5</a>
+                <a href="index.html?city=tokyo#hotel-feed" class="hover:text-gold transition-soft">Tokyo Top 5</a>
+            </div>
         </div>
-      </article>
+    </footer>
 
-      <!-- London -->
-      <article class="city-card" data-continent="europe" data-keywords="london united kingdom mayfair knightsbridge belgravia royal classic connaught claridges ritz dorchester berkeley">
-        <div class="city-image-wrap">
-          <img class="city-image" src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80" alt="London historic view" loading="lazy">
-          <span class="city-badge">5 Curated Hotels</span>
-        </div>
-        <div class="city-content">
-          <div class="city-header-meta">
-            <span class="city-country">United Kingdom</span>
-            <span class="city-hotels-count">5 Properties Verified</span>
-          </div>
-          <h2 class="city-name">London</h2>
-          <p class="city-description">
-            Aristocratic heritage in Mayfair, legendary martini bars, historic Royal Warrant accommodations, and private garden townhouses across Knightsbridge and Belgravia.
-          </p>
-          <div class="city-highlights">
-            <span class="city-tag">Mayfair Heritage</span>
-            <span class="city-tag">Martini Bars</span>
-            <span class="city-tag">Private Gardens</span>
-          </div>
-          <a href="london-top-5.html" class="city-cta-btn">
-            <span>Explore London Monograph</span>
-            <span class="arrow-icon">→</span>
-          </a>
-        </div>
-      </article>
+    <!-- Filter & Search Logic -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.getElementById('citySearch');
+            const continentPills = document.querySelectorAll('.continent-pill');
+            const cityCards = document.querySelectorAll('.city-card');
+            const noResults = document.getElementById('noResults');
 
-      <!-- New York -->
-      <article class="city-card" data-continent="north-america" data-keywords="new york nyc united states manhattan upper east side central park carlyle baccarat mark aman st regis greenwich">
-        <div class="city-image-wrap">
-          <img class="city-image" src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=800&q=80" alt="New York City skyline" loading="lazy">
-          <span class="city-badge">5 Curated Hotels</span>
-        </div>
-        <div class="city-content">
-          <div class="city-header-meta">
-            <span class="city-country">United States</span>
-            <span class="city-hotels-count">5 Properties Verified</span>
-          </div>
-          <h2 class="city-name">New York</h2>
-          <p class="city-description">
-            Upper East Side landmarks, Bemelmans cabaret glamour, crystal-draped crystal salons, and skyline penthouses framing Central Park's canopy.
-          </p>
-          <div class="city-highlights">
-            <span class="city-tag">Central Park Vistas</span>
-            <span class="city-tag">Classic Jazz Salons</span>
-            <span class="city-tag">White-Glove Butler</span>
-          </div>
-          <a href="new-york-top-5.html" class="city-cta-btn">
-            <span>Explore New York Monograph</span>
-            <span class="arrow-icon">→</span>
-          </a>
-        </div>
-      </article>
+            let currentContinent = 'all';
+            let currentQuery = '';
 
-      <!-- Rome -->
-      <article class="city-card" data-continent="europe" data-keywords="rome italy europe historic renaissance villa borghese colosseum hassler de russie eden six senses manfredi">
-        <div class="city-image-wrap">
-          <img class="city-image" src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=800&q=80" alt="Historic Rome sunset view" loading="lazy">
-          <span class="city-badge">5 Curated Hotels</span>
-        </div>
-        <div class="city-content">
-          <div class="city-header-meta">
-            <span class="city-country">Italy</span>
-            <span class="city-hotels-count">5 Properties Verified</span>
-          </div>
-          <h2 class="city-name">Rome</h2>
-          <p class="city-description">
-            Aristocratic palazzos adorned with Renaissance frescoes, terraced suites fronting the Spanish Steps, and secret terraced gardens overlooking St. Peter's Dome.
-          </p>
-          <div class="city-highlights">
-            <span class="city-tag">Renaissance Frescoes</span>
-            <span class="city-tag">Spanish Steps Views</span>
-            <span class="city-tag">Private Roman Spas</span>
-          </div>
-          <a href="rome-top-5.html" class="city-cta-btn">
-            <span>Explore Rome Monograph</span>
-            <span class="arrow-icon">→</span>
-          </a>
-        </div>
-      </article>
+            function filterCities() {
+                let visibleCount = 0;
+                cityCards.forEach(card => {
+                    const continent = card.getAttribute('data-continent');
+                    const keywords = (card.getAttribute('data-keywords') + ' ' + card.querySelector('h2').textContent).toLowerCase();
+                    const matchesContinent = (currentContinent === 'all' || continent === currentContinent);
+                    const matchesSearch = !currentQuery || keywords.includes(currentQuery.toLowerCase());
 
-      <!-- Dubai -->
-      <article class="city-card" data-continent="middle-east" data-keywords="dubai uae middle east burj al arab palm jumeirah penthouse ultra luxury atlantis the royal lana armani">
-        <div class="city-image-wrap">
-          <img class="city-image" src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80" alt="Dubai modern skyline" loading="lazy">
-          <span class="city-badge">5 Curated Hotels</span>
-        </div>
-        <div class="city-content">
-          <div class="city-header-meta">
-            <span class="city-country">United Arab Emirates</span>
-            <span class="city-hotels-count">5 Properties Verified</span>
-          </div>
-          <h2 class="city-name">Dubai</h2>
-          <p class="city-description">
-            Opulent architectural monuments, private island retreats, duplex suites with 24-karat gold leaf, and infinity sky-pools hovering 50 stories above the Persian Gulf.
-          </p>
-          <div class="city-highlights">
-            <span class="city-tag">Private Helipads</span>
-            <span class="city-tag">Duplex Suites</span>
-            <span class="city-tag">Private Island</span>
-          </div>
-          <a href="dubai-top-5.html" class="city-cta-btn">
-            <span>Explore Dubai Monograph</span>
-            <span class="arrow-icon">→</span>
-          </a>
-        </div>
-      </article>
+                    if (matchesContinent && matchesSearch) {
+                        card.style.display = 'flex';
+                        visibleCount++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+                if (noResults) {
+                    noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+                }
+            }
 
-      <div class="no-results" id="noResults">
-        No luxury capitols match your inquiry.
-      </div>
+            if (searchInput) {
+                searchInput.addEventListener('input', (e) => {
+                    currentQuery = e.target.value.trim();
+                    filterCities();
+                });
+            }
 
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <p class="footer-text">
-      The Nocturne Key &copy; 2026. Editorial selections are curated independently. Bookings made via partner portals may yield an affiliate commission.
-    </p>
-  </footer>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const searchInput = document.getElementById('citySearch');
-      const continentPills = document.querySelectorAll('.continent-pill');
-      const cityCards = document.querySelectorAll('.city-card');
-      const noResults = document.getElementById('noResults');
-
-      let currentContinent = 'all';
-      let currentQuery = '';
-
-      function filterCities() {
-        let visibleCount = 0;
-        cityCards.forEach(card => {
-          const continent = card.getAttribute('data-continent');
-          const keywords = (card.getAttribute('data-keywords') + ' ' + card.querySelector('.city-name').textContent).toLowerCase();
-          const matchesContinent = (currentContinent === 'all' || continent === currentContinent);
-          const matchesSearch = !currentQuery || keywords.includes(currentQuery.toLowerCase());
-
-          if (matchesContinent && matchesSearch) {
-            card.style.display = 'flex';
-            visibleCount++;
-          } else {
-            card.style.display = 'none';
-          }
+            continentPills.forEach(pill => {
+                pill.addEventListener('click', () => {
+                    continentPills.forEach(p => {
+                        p.classList.remove('active', 'border-gold/40', 'text-gold', 'bg-gold/10');
+                        p.classList.add('border-borderMuted', 'text-pearl');
+                    });
+                    pill.classList.add('active', 'border-gold/40', 'text-gold', 'bg-gold/10');
+                    pill.classList.remove('border-borderMuted', 'text-pearl');
+                    
+                    currentContinent = pill.getAttribute('data-filter');
+                    filterCities();
+                });
+            });
         });
-        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
-      }
-
-      searchInput.addEventListener('input', (e) => {
-        currentQuery = e.target.value.trim();
-        filterCities();
-      });
-
-      continentPills.forEach(pill => {
-        pill.addEventListener('click', () => {
-          continentPills.forEach(p => p.classList.remove('active'));
-          pill.classList.add('active');
-          currentContinent = pill.getAttribute('data-filter');
-          filterCities();
-        });
-      });
-    });
-  </script>
+    </script>
 </body>
 </html>
