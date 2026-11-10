@@ -831,13 +831,13 @@
                 return `
                 <article class="hotel-card bg-cardSurface rounded-xl border border-borderMuted overflow-hidden gold-border-glow transition-soft" data-city="${cityKey}">
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
-                        <!-- Image Carousel Container -->
-                        <div class="lg:col-span-6 relative group overflow-hidden h-[360px] lg:h-auto bg-obsidian flex items-center justify-center">
+                        <!-- Uniform Image Carousel Container -->
+                        <div class="lg:col-span-6 relative group overflow-hidden h-[300px] sm:h-[350px] lg:h-[380px] bg-obsidian flex items-center justify-center">
                             <img id="carousel-img-${cardKey}" 
                                  src="${h.images[activeIdx]}" 
                                  alt="${h.name}" 
                                  loading="lazy"
-                                 class="w-full h-full object-cover transition-all duration-500">
+                                 class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105">
                             
                             <div class="absolute top-4 left-4 bg-obsidian/85 backdrop-blur-md px-3 py-1 rounded border border-gold/30 z-10">
                                 <span class="text-xs font-mono text-gold uppercase tracking-widest">#${h.rank} • ${cityName}</span>
@@ -896,7 +896,7 @@
                                     <a href="${h.bookingUrl}" 
                                        target="_blank" 
                                        rel="noopener noreferrer sponsored" 
-                                       class="inline-block sm:w-auto text-center px-6 py-3 rounded-full bg-gold text-obsidian text-xs uppercase tracking-widest font-semibold hover:bg-gold-light transition-soft shadow-md shadow-gold/10">
+                                       class="inline-block w-full sm:w-auto text-center px-6 py-3 rounded-full bg-gold text-obsidian text-xs uppercase tracking-widest font-semibold hover:bg-gold-light transition-soft shadow-md shadow-gold/10">
                                         Reserve on Klook
                                     </a>
                                     <span class="block text-[10px] text-pearl/60 mt-1">Direct rates & perks applied</span>
@@ -938,22 +938,6 @@
         }
 
         function updateCarouselDOM(cityKey, hotelIdx) {
-            const cardKey = `${cityKey}-${hotelIdx}`;
-            const hotel = LUXURY_HOTELS_DB[cityKey][hotelIdx];
-            const activeIdx = currentSlideIndices[cardKey];
-            
-            const imgElem = document.getElementById(`carousel-img-${cardKey}`);
-            const counterElem = document.getElementById(`counter-${cardKey}`);
-            
-            if (imgElem) {
-                imgElem.style.opacity = '0.3';
-                setTimeout(() => {
-                    imgElem.src = hotel.images[activeIdx];
-                    imgElem.style.opacity = '1';
-                }, 150);
-            }
-
-            // Re-render the specific card or update indicators seamlessly
             renderCityCategory(cityKey);
         }
 
