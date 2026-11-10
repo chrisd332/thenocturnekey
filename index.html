@@ -553,7 +553,7 @@
                     desc: "A legendary Madison Avenue landmark on the Upper East Side since 1930, The Carlyle is the quintessential embodiment of Manhattan sophistication and Old World glamour. Beloved by royalty, presidents, and literary icons, the hotel preserves an aura of timeless residential elegance infused with classic New York charm.\n\nThe guest rooms and suites are styled with European classicism, featuring antique furnishings, fine chintz fabrics, original art prints, and deep soaking tubs. Elevator attendants in white-glove uniforms add a delightful touch of historic pageantry to every arrival.\n\nThe hotel is globally famous for its legendary nightlife venues: Bemelmans Bar, adorned with Ludwig Bemelmans' whimsical murals, and Café Carlyle, where jazz legends perform in intimate cabaret settings. Paired with the Valmont Spa, The Carlyle is an unmatched New York sanctuary.",
                     tags: ["Bemelmans Bar", "Café Carlyle Cabaret", "Valmont Spa"],
                     rate: "$1,450",
-                    usdRate: "Native USD",
+                    usdRate: "",
                     images: [
                         "Nocturne%20Key%20Photos/New%20York/The%20Carlyle,%20A%20Rosewood%20Hotel/IMG_4391.AVIF",
                         "Nocturne%20Key%20Photos/New%20York/The%20Carlyle,%20A%20Rosewood%20Hotel/IMG_4392.JPG",
@@ -571,7 +571,7 @@
                     desc: "Located on the corner of Madison Avenue and 77th Street, The Mark Hotel is Manhattan's boldest and most avant-garde luxury epicentre, famously serving as the unofficial staging ground for the Met Gala. Conceived by visionary designer Jacques Grange, the hotel merges Parisian chic with classic New York audacity.\n\nThe interiors showcase striking black-and-white marble lobbies, custom geometric furnishings, and vibrant contemporary art pieces. The guest suites offer ultimate comfort with bespoke lighting, custom copper bathtubs, and state-of-the-art entertainment systems.\n\nGuests enjoy world-class dining by Jean-Georges Vongerichten, hair styling at the Frédéric Fekkai salon, and complimentary rides around Central Park in custom black-and-white pedicabs. The Mark represents the pinnacle of modern Manhattan lifestyle luxury.",
                     tags: ["Met Gala Hub", "Jean-Georges Restaurant", "Frédéric Fekkai Salon"],
                     rate: "$1,500",
-                    usdRate: "Native USD",
+                    usdRate: "",
                     images: [
                         "Nocturne%20Key%20Photos/New%20York/The%20Mark%20Hotel/IMG_4396.AVIF",
                         "Nocturne%20Key%20Photos/New%20York/The%20Mark%20Hotel/IMG_4397.AVIF",
@@ -590,7 +590,7 @@
                     desc: "Situated directly opposite the Museum of Modern Art in Midtown Manhattan, Baccarat Hotel New York is a shimmering temple of French crystal opulence. Inspired by the legendary 250-year-old crystal maker, the hotel dazzles visitors with over 15,000 pieces of hand-cut crystal shimmering throughout its public salons and guest spaces.\n\nThe accommodations pair crisp white minimalist architecture with rich crimson accents, crushed velvet upholstery, and custom Baccarat crystal decanters filled with artisanal treats. Floor-to-ceiling windows frame dramatic midtown streetscapes while maintaining absolute acoustic serenity.\n\nThe Grand Salon serves champagne and afternoon tea under cascading crystal chandeliers, while the subterranean Spa de La Mer offers ultra-luxurious marine-based wellness treatments. Baccarat is an unforgettable celebration of luminous French luxury.",
                     tags: ["Spa de La Mer", "Grand Salon Crystal Decor", "Custom Baccarat Flutes"],
                     rate: "$1,350",
-                    usdRate: "Native USD",
+                    usdRate: "",
                     images: [
                         "Nocturne%20Key%20Photos/New%20York/Baccarat%20Hotel%20New%20York/IMG_4403.JPG",
                         "Nocturne%20Key%20Photos/New%20York/Baccarat%20Hotel%20New%20York/IMG_4404.JPG",
@@ -609,7 +609,7 @@
                     desc: "Co-founded by Academy Award-winning actor Robert De Niro in the heart of cobblestoned Tribeca, The Greenwich Hotel is a masterclass in discreet downtown craftsmanship. The property feels less like a hotel and more like the private residence of an avid art collector, blending rustic warmth with global artisanal antiques.\n\nThe guest rooms and suites feature exposed brick walls, handmade Moroccan tilework, Scottish leather armchairs, and beds draped in organic linens. Every room is unique, radiating cozy residential intimacy and unparalleled acoustic privacy.\n\nThe hotel is home to Locanda Verde, a bustling neighborhood trattoria, and the serene Shibui Spa, where guests can swim in a lantern-lit indoor pool set beneath a 250-year-old Japanese timber farmhouse roof. The Greenwich is downtown Manhattan at its absolute finest.",
                     tags: ["Robert De Niro Founded", "Shibui Japanese Spa", "Locanda Verde"],
                     rate: "$1,100",
-                    usdRate: "Native USD",
+                    usdRate: "",
                     images: [
                         "Nocturne%20Key%20Photos/New%20York/The%20Greenwich%20Hotel/IMG_4409.JPG",
                         "Nocturne%20Key%20Photos/New%20York/The%20Greenwich%20Hotel/IMG_4410.JPG",
@@ -626,7 +626,7 @@
                     desc: "Founded by visionary tycoon John Jacob Astor IV in 1904, The St. Regis New York is a Beaux-Arts masterpiece located at the corner of Fifth Avenue and 55th Street. For over a century, the hotel has set the global standard for gilded-age luxury and impeccable white-glove hospitality in Manhattan.\n\nThe guest accommodations showcase rich silk wall coverings, crystal chandeliers, ornate crown moldings, and spacious marble bathrooms. The signature St. Regis Butler Service provides 24-hour unpacking, garment pressing, and beverage service tailored to every guest's exact preference.\n\nThe hotel is celebrated worldwide as the birthplace of the Bloody Mary, originally crafted in 1934 at the iconic King Cole Bar beneath Maxfield Parrish's legendary mural. The St. Regis remains an enduring monument to New York aristocracy.",
                     tags: ["Original Bloody Mary Bar", "Astor Butler Service", "Fifth Avenue Address"],
                     rate: "$1,300",
-                    usdRate: "Native USD",
+                    usdRate: "",
                     images: [
                         "Nocturne%20Key%20Photos/New%20York/The%20St.%20Regis%20New%20York/IMG_4413.JPG",
                         "Nocturne%20Key%20Photos/New%20York/The%20St.%20Regis%20New%20York/IMG_4414.AVIF",
@@ -857,12 +857,13 @@
                 }
                 const activeIdx = currentSlideIndices[cardKey];
                 const totalImages = h.images.length;
+                const usdDisplay = h.usdRate ? `<span class="block text-xs font-mono text-gold-light mt-0.5">${h.usdRate}</span>` : '';
 
                 return `
                 <article class="hotel-card bg-cardSurface rounded-xl border border-borderMuted overflow-hidden gold-border-glow transition-soft" data-city="${cityKey}">
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-0 items-stretch">
                         <!-- Fully Stretched Uniform Image Carousel Container -->
-                        <div class="lg:col-span-6 relative group overflow-hidden h-[300px] sm:h-[350px] lg:h-full min-h-[420px] bg-obsidian flex items-center justify-center">
+                        <div class="lg:col-span-6 relative group overflow-hidden h-[300px] sm:h-[350px] lg:h-auto min-h-[420px] bg-obsidian flex items-center justify-center">
                             <img id="carousel-img-${cardKey}" 
                                  src="${h.images[activeIdx]}" 
                                  alt="${h.name}" 
@@ -921,7 +922,7 @@
                                 <div>
                                     <span class="block text-[11px] text-pearl font-mono uppercase">Premier Nightly Rate</span>
                                     <span class="text-xl font-serif text-ivory">From ${h.rate} <span class="text-xs font-sans text-pearl">/ night</span></span>
-                                    <span class="block text-xs font-mono text-gold-light mt-0.5">${h.usdRate}</span>
+                                    ${usdDisplay}
                                 </div>
                                 <div class="w-full sm:w-auto text-right">
                                     <a href="${h.bookingUrl}" 
