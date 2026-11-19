@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top 5 Luxury Hotels | The Nocturne Key</title>
+    <title>Top 5 Luxury Hotels in London | The Nocturne Key</title>
+    <meta name="description" content="An editorial monograph of the top 5 luxury hotels in London, including The Connaught, Claridge's, The Ritz London, The Dorchester, and The Berkeley.">
     <meta name="robots" content="index, follow">
 
     <!-- Tailwind CSS Engine -->
@@ -122,71 +123,115 @@
     </footer>
 
     <script>
-        // 1. SET THIS KEY PER FILE: "paris" | "tokyo" | "london" | "new-york" | "rome" | "dubai"
         const PAGE_CITY_KEY = "london";
 
         const CITY_EDITORIAL_META = {
-            "paris": {
-                name: "Paris",
-                country: "France",
-                subtitle: "Palace Distinctions, Place Vendôme Heritage & Haute Cuisine Sanctuaries",
-                intro: "From 18th-century neoclassical residences along Place de la Concorde to intimate salons on Rue du Faubourg Saint-Honoré, Paris sets the global standard for palace hospitality and nocturnal elegance."
-            },
-            "tokyo": {
-                name: "Tokyo",
-                country: "Japan",
-                subtitle: "Skyline Sanctuaries, Geothermal Onsens & Minimalist Craft",
-                intro: "High above Tokyo's imperial moats and financial towers, these five properties distill Japanese stillness and precision into sky-high retreats with basalt bathing rituals and intimate omakase dining."
-            },
             "london": {
                 name: "London",
                 country: "United Kingdom",
                 subtitle: "Mayfair & Knightsbridge Landmarks, Classic Bars & Royal Heritage",
-                intro: "Anchored across Mayfair, St James's, and Knightsbridge, London's leading luxury addresses balance storied British provenance with contemporary design and iconic cocktail lounges."
-            },
-            "new-york": {
-                name: "New York",
-                country: "United States",
-                subtitle: "Upper East Side Icons, Crystal Salons & Downtown Craft",
-                intro: "Spanning Madison Avenue, Fifth Avenue, Midtown, and Tribeca, these five Manhattan sanctuaries capture New York's after-hours allure—from cabaret lounges to lantern-lit indoor pools."
-            },
-            "rome": {
-                name: "Rome",
-                country: "Italy",
-                subtitle: "Terraced Gardens, Spanish Steps Vistas & Roman Palazzos",
-                intro: "Set among pine-shaded hills, Baroque piazzas, and ancient ruins, Rome's top five stays unite centuries of Italian artistry with panoramic rooftop dining and restorative Roman baths."
-            },
-            "dubai": {
-                name: "Dubai",
-                country: "United Arab Emirates",
-                subtitle: "Architectural Icons, Private Islands & Sky-High Retreats",
-                intro: "From private offshore islands and the Palm Jumeirah crescent to soaring towers overlooking Downtown Dubai, these five properties showcase dramatic architecture and full-scale luxury."
+                intro: "Anchored across Mayfair, St James's, and Knightsbridge, London's leading luxury addresses balance storied British provenance with contemporary design, iconic cocktail lounges, and tranquil wellness retreats."
             }
         };
 
-        // 2. PASTE ONLY THIS CITY'S ARRAY (or the full LUXURY_HOTELS_DB object) FROM index.html HERE:
         const HOTELS_DATA = {
-            "paris": [
+            "london": [
                 {
                     rank: "01",
-                    cityName: "Paris",
-                    name: "Hôtel de Crillon, A Rosewood Hotel",
-                    location: "Place de la Concorde • 8th Arrondissement",
-                    distinction: "Palace Distinction",
-                    desc: "An 18th-century architectural masterpiece originally commissioned by Louis XV, Hôtel de Crillon stands majestically at the foot of Place de la Concorde, embodying the pinnacle of neoclassical French elegance. Over the centuries, its storied limestone halls have welcomed royalty, statesmen, and cultural icons, preserving an unmatched legacy of Parisian prestige.\n\nBehind its historic Gabriel-designed facade, the palace seamlessly bridges classical heritage with contemporary flair, featuring bespoke suites designed by luminaries such as Karl Lagerfeld. Guests are enveloped in ultimate refinement, complete with custom Carrara marble bathrooms, hand-carved moldings, and private balconies framing the vibrant obelisk and fountains below.\n\nThe culinary and wellness programs further elevate the guest experience to extraordinary heights. Visitors can indulge in Michelin-starred gastronomic artistry at L'Écrin, unwind in the serene subterranean sanctuary of Rosewood Spa Sense, or experience signature treatments enhanced by French organic botanicals and bespoke butler services.",
-                    tags: ["Rosewood Spa Sense", "Michelin-starred L'Écrin", "Bespoke Butler Service"],
-                    rate: "€1,850",
-                    usdRate: "≈ $2,070 USD",
+                    cityName: "London",
+                    name: "The Connaught",
+                    location: "Carlos Place • Mayfair",
+                    distinction: "Aristocratic Mayfair",
+                    desc: "Nestled in the quiet, village-like ambiance of Carlos Place in Mayfair, The Connaught is the epitome of discreet British aristocracy. For over a century, this legendary red-brick sanctuary has welcomed royalty, diplomats, and connoisseurs of refinement, offering a seamless blend of heritage architecture and contemporary art.\n\nThe guest accommodations are individually designed, pairing classic English Georgian and Victorian elements with avant-garde modern furnishings, plush velvets, and pristine marble bathrooms. Every detail reflects an uncompromising dedication to bespoke luxury and personalized guest service.\n\nThe hotel is internationally famed for its legendary Connaught Bar, where martinis are theatrically whipped from custom silver trolleys, and Hélène Darroze's 3-star Michelin restaurant. Guests also enjoy ultimate tranquility at the subterranean Aman Spa, London's premier holistic wellness retreat.",
+                    tags: ["Connaught Martini Trolley", "Hélène Darroze (3★)", "Aman Spa London"],
+                    rate: "£1,350",
+                    usdRate: "≈ $1,800 USD",
                     images: [
-                        "Nocturne%20Key%20Photos/Paris/H%C3%B4tel%20de%20Crillon,%20A%20Rosewood%20Hotel/IMG_4334.JPG",
-                        "Nocturne%20Key%20Photos/Paris/H%C3%B4tel%20de%20Crillon,%20A%20Rosewood%20Hotel/IMG_4335.JPG",
-                        "Nocturne%20Key%20Photos/Paris/H%C3%B4tel%20de%20Crillon,%20A%20Rosewood%20Hotel/IMG_4336.JPG",
-                        "Nocturne%20Key%20Photos/Paris/H%C3%B4tel%20de%20Crillon,%20A%20Rosewood%20Hotel/IMG_4337.JPG",
-                        "Nocturne%20Key%20Photos/Paris/H%C3%B4tel%20de%20Crillon,%20A%20Rosewood%20Hotel/IMG_4338.JPG"
+                        "Nocturne%20Key%20Photos/London/The%20Connaught/IMG_4363.AVIF",
+                        "Nocturne%20Key%20Photos/London/The%20Connaught/IMG_4365.PNG",
+                        "Nocturne%20Key%20Photos/London/The%20Connaught/IMG_4367.AVIF",
+                        "Nocturne%20Key%20Photos/London/The%20Connaught/IMG_4368.JPG",
+                        "Nocturne%20Key%20Photos/London/The%20Connaught/IMG_4369.JPG"
                     ],
-                    bookingUrl: "https://klook.tpx.lv/va75wRR8"
+                    bookingUrl: "https://klook.tpx.lv/sFXZxzfo"
+                },
+                {
+                    rank: "02",
+                    cityName: "London",
+                    name: "Claridge's",
+                    location: "Brook Street • Mayfair",
+                    distinction: "Art Deco Crown",
+                    desc: "Revered as the art deco crown jewel of Mayfair, Claridge's has been the ultimate London residence for monarchs, statesmen, and international fashion icons since the 19th century. Its iconic checkerboard lobby and revolving doors introduce visitors to a world of unmatched theatrical glamour and quintessential British tradition.\n\nThe guest rooms and suites showcase stunning signature art deco or Victorian interiors, curated by legendary designers who celebrate the hotel's storied heritage. Sumptuous fabrics, bespoke furniture, and magnificent marble bathrooms create an atmosphere of timeless regal comfort.\n\nAfternoon tea at Claridge's in the magnificent Foyer & Reading Room is a legendary institution, while the subterranean Claridge's Spa offers cutting-edge holistic wellness. From private dining to impeccable butler service, Claridge's remains an peerless London landmark.",
+                    tags: ["Royal Suite Provenance", "Claridge's ArtSpace", "Subterranean Spa"],
+                    rate: "£1,250",
+                    usdRate: "≈ $1,668 USD",
+                    images: [
+                        "Nocturne%20Key%20Photos/London/Claridge_s/IMG_4370.AVIF",
+                        "Nocturne%20Key%20Photos/London/Claridge_s/IMG_4371.JPG",
+                        "Nocturne%20Key%20Photos/London/Claridge_s/IMG_4372.JPG",
+                        "Nocturne%20Key%20Photos/London/Claridge_s/IMG_4373.JPG",
+                        "Nocturne%20Key%20Photos/London/Claridge_s/IMG_4374.JPG"
+                    ],
+                    bookingUrl: "https://klook.tpx.lv/rkgGeo4J"
+                },
+                {
+                    rank: "03",
+                    cityName: "London",
+                    name: "The Ritz London",
+                    location: "150 Piccadilly • St James's",
+                    distinction: "Royal Warrant Institution",
+                    desc: "An architectural masterpiece of Louis XVI neoclassical style overlooking Green Park, The Ritz London is an immortal symbol of Edwardian elegance. Opened in 1906 by César Ritz, the hotel has proudly held Royal Warrants of Appointment, serving as the preferred playground for British royalty and global elites.\n\nThe interiors are breathtaking, featuring gilded moldings, crystal chandeliers, floor-to-ceiling frescoed ceilings, and opulent antique furnishings. The guest rooms evoke the lavish feel of French châteaux, offering supreme comfort paired with views over Piccadilly or the tranquil park canopy.\n\nThe Palm Court is world-famous for its traditional afternoon tea accompanied by resident pianists, while the Rivoli Bar offers 1920s jazz-age cocktail glamour. Combined with Michelin-starred dining, The Ritz delivers an unforgettable slice of British history.",
+                    tags: ["Royal Warrant Holder", "Palm Court Tea", "Rivoli Cocktail Lounge"],
+                    rate: "£1,200",
+                    usdRate: "≈ $1,600 USD",
+                    images: [
+                        "Nocturne%20Key%20Photos/London/The%20Ritz%20London/IMG_4375.JPG",
+                        "Nocturne%20Key%20Photos/London/The%20Ritz%20London/IMG_4376.JPG",
+                        "Nocturne%20Key%20Photos/London/The%20Ritz%20London/IMG_4377.AVIF",
+                        "Nocturne%20Key%20Photos/London/The%20Ritz%20London/IMG_4378.JPG",
+                        "Nocturne%20Key%20Photos/London/The%20Ritz%20London/IMG_4379.JPG"
+                    ],
+                    bookingUrl: "https://klook.tpx.lv/GRXNdFnl"
+                },
+                {
+                    rank: "04",
+                    cityName: "London",
+                    name: "The Dorchester",
+                    location: "53 Park Lane • Mayfair",
+                    distinction: "Park Lane Legend",
+                    desc: "Reigning majestically over Hyde Park along Park Lane since 1931, The Dorchester is a legendary Mayfair icon that has recently undergone a stunning, meticulous renovation to elevate its glamorous heritage. Blending 1930s Art Deco touches with sophisticated contemporary English style, the hotel remains a magnet for global tastemakers.\n\nThe accommodations feature plush carpets, bespoke silk wall coverings, and luxurious marble bathrooms, with many rooms offering sweeping vistas across the green canopy of Hyde Park. The atmosphere is one of serene residential luxury combined with legendary white-glove service.\n\nThe hotel houses the vibrant Promenade champagne lounge and Alain Ducasse at The Dorchester, holder of 3 Michelin stars. Accompanied by in-house floral masterpieces and a world-class spa, The Dorchester is a masterclass in timeless British prestige.",
+                    tags: ["Alain Ducasse (3★)", "Promenade Champagne Lounge", "Mayfair Park Views"],
+                    rate: "£1,200",
+                    usdRate: "≈ $1,600 USD",
+                    images: [
+                        "Nocturne%20Key%20Photos/London/The%20Dorchester/IMG_4380.AVIF",
+                        "Nocturne%20Key%20Photos/London/The%20Dorchester/IMG_4381.WEBP",
+                        "Nocturne%20Key%20Photos/London/The%20Dorchester/IMG_4382.AVIF",
+                        "Nocturne%20Key%20Photos/London/The%20Dorchester/IMG_4383.JPG",
+                        "Nocturne%20Key%20Photos/London/The%20Dorchester/IMG_4384.JPG",
+                        "Nocturne%20Key%20Photos/London/The%20Dorchester/IMG_4385.JPG"
+                    ],
+                    bookingUrl: "https://klook.tpx.lv/xGFngg8V"
+                },
+                {
+                    rank: "05",
+                    cityName: "London",
+                    name: "The Berkeley",
+                    location: "Wilton Place • Knightsbridge",
+                    distinction: "Contemporary Chic",
+                    desc: "Situated at the crossroads of Knightsbridge and Belgravia, The Berkeley is where timeless British tradition meets fashion-forward contemporary design. Famed for its innovative spirit and sleek architectural lines, the hotel is a favorite among international style icons and modern luxury travelers.\n\nThe guest rooms and suites are designed by leading visionaries, featuring clean modern aesthetics, soothing color palettes, and cutting-edge technology. Many suites open up to private terraces overlooking the leafy residential squares of Knightsbridge.\n\nThe hotel is celebrated for its culinary and wellness innovations, including the world-famous Prêt-à-Portea runway-inspired afternoon tea, pastries by Cédric Grolet, and the Bamford Wellness Spa. Crowning it all is the stunning rooftop pool overlooking Hyde Park.",
+                    tags: ["Rooftop Pool on Hyde Park", "Cédric Grolet Pâtisserie", "Bamford Spa"],
+                    rate: "£1,100",
+                    usdRate: "≈ $1,468 USD",
+                    images: [
+                        "Nocturne%20Key%20Photos/London/The%20Berkeley/IMG_4386.AVIF",
+                        "Nocturne%20Key%20Photos/London/The%20Berkeley/IMG_4387.AVIF",
+                        "Nocturne%20Key%20Photos/London/The%20Berkeley/IMG_4388.AVIF",
+                        "Nocturne%20Key%20Photos/London/The%20Berkeley/IMG_4389.AVIF",
+                        "Nocturne%20Key%20Photos/London/The%20Berkeley/IMG_4390.AVIF"
+                    ],
+                    bookingUrl: "https://klook.tpx.lv/WPuaiCOU"
                 }
-                // Paste the remaining hotels for this city from LUXURY_HOTELS_DB in index.html
             ]
         };
 
@@ -219,14 +264,12 @@
 
             document.title = `Top 5 Luxury Hotels in ${meta.name} | The Nocturne Key`;
 
-            // Highlight active city in top nav
             document.querySelectorAll(".city-nav-link").forEach(link => {
                 if (link.getAttribute("data-nav-city") === PAGE_CITY_KEY) {
                     link.className = "city-nav-link text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-gold border border-gold/30 bg-gold/5 transition-soft";
                 }
             });
 
-            // Render Editorial Header
             document.getElementById("articleHeader").innerHTML = `
                 <div class="flex flex-wrap items-center gap-3 text-xs font-mono uppercase tracking-[0.25em] text-gold mb-4">
                     <span>Editorial Monograph • Vol. VIII</span>
@@ -248,7 +291,6 @@
                 </div>
             `;
 
-            // Render Hotel Article Entries
             document.getElementById("articleHotelsContainer").innerHTML = hotels.map((h, i) => {
                 activePhotoMap[i] = 0;
                 const paragraphs = h.desc.split("\n\n").map((p, pIdx) => `
