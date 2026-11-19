@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top 5 Luxury Hotels | The Nocturne Key</title>
+    <title>Top 5 Luxury Hotels in Rome | The Nocturne Key</title>
+    <meta name="description" content="An editorial monograph of the top 5 luxury hotels in Rome, including Hotel de Russie, Hotel Hassler Roma, Hotel Eden, Six Senses Rome, and Palazzo Manfredi.">
     <meta name="robots" content="index, follow">
 
     <!-- Tailwind CSS Engine -->
@@ -122,71 +123,115 @@
     </footer>
 
     <script>
-        // 1. SET THIS KEY PER FILE: "paris" | "tokyo" | "london" | "new-york" | "rome" | "dubai"
         const PAGE_CITY_KEY = "rome";
 
         const CITY_EDITORIAL_META = {
-            "paris": {
-                name: "Paris",
-                country: "France",
-                subtitle: "Palace Distinctions, Place Vendôme Heritage & Haute Cuisine Sanctuaries",
-                intro: "From 18th-century neoclassical residences along Place de la Concorde to intimate salons on Rue du Faubourg Saint-Honoré, Paris sets the global standard for palace hospitality and nocturnal elegance."
-            },
-            "tokyo": {
-                name: "Tokyo",
-                country: "Japan",
-                subtitle: "Skyline Sanctuaries, Geothermal Onsens & Minimalist Craft",
-                intro: "High above Tokyo's imperial moats and financial towers, these five properties distill Japanese stillness and precision into sky-high retreats with basalt bathing rituals and intimate omakase dining."
-            },
-            "london": {
-                name: "London",
-                country: "United Kingdom",
-                subtitle: "Mayfair & Knightsbridge Landmarks, Classic Bars & Royal Heritage",
-                intro: "Anchored across Mayfair, St James's, and Knightsbridge, London's leading luxury addresses balance storied British provenance with contemporary design and iconic cocktail lounges."
-            },
-            "new-york": {
-                name: "New York",
-                country: "United States",
-                subtitle: "Upper East Side Icons, Crystal Salons & Downtown Craft",
-                intro: "Spanning Madison Avenue, Fifth Avenue, Midtown, and Tribeca, these five Manhattan sanctuaries capture New York's after-hours allure—from cabaret lounges to lantern-lit indoor pools."
-            },
             "rome": {
                 name: "Rome",
                 country: "Italy",
                 subtitle: "Terraced Gardens, Spanish Steps Vistas & Roman Palazzos",
                 intro: "Set among pine-shaded hills, Baroque piazzas, and ancient ruins, Rome's top five stays unite centuries of Italian artistry with panoramic rooftop dining and restorative Roman baths."
-            },
-            "dubai": {
-                name: "Dubai",
-                country: "United Arab Emirates",
-                subtitle: "Architectural Icons, Private Islands & Sky-High Retreats",
-                intro: "From private offshore islands and the Palm Jumeirah crescent to soaring towers overlooking Downtown Dubai, these five properties showcase dramatic architecture and full-scale luxury."
             }
         };
 
-        // 2. PASTE ONLY THIS CITY'S ARRAY (or the full LUXURY_HOTELS_DB object) FROM index.html HERE:
         const HOTELS_DATA = {
-            "paris": [
+            "rome": [
                 {
                     rank: "01",
-                    cityName: "Paris",
-                    name: "Hôtel de Crillon, A Rosewood Hotel",
-                    location: "Place de la Concorde • 8th Arrondissement",
-                    distinction: "Palace Distinction",
-                    desc: "An 18th-century architectural masterpiece originally commissioned by Louis XV, Hôtel de Crillon stands majestically at the foot of Place de la Concorde, embodying the pinnacle of neoclassical French elegance. Over the centuries, its storied limestone halls have welcomed royalty, statesmen, and cultural icons, preserving an unmatched legacy of Parisian prestige.\n\nBehind its historic Gabriel-designed facade, the palace seamlessly bridges classical heritage with contemporary flair, featuring bespoke suites designed by luminaries such as Karl Lagerfeld. Guests are enveloped in ultimate refinement, complete with custom Carrara marble bathrooms, hand-carved moldings, and private balconies framing the vibrant obelisk and fountains below.\n\nThe culinary and wellness programs further elevate the guest experience to extraordinary heights. Visitors can indulge in Michelin-starred gastronomic artistry at L'Écrin, unwind in the serene subterranean sanctuary of Rosewood Spa Sense, or experience signature treatments enhanced by French organic botanicals and bespoke butler services.",
-                    tags: ["Rosewood Spa Sense", "Michelin-starred L'Écrin", "Bespoke Butler Service"],
-                    rate: "€1,850",
-                    usdRate: "≈ $2,070 USD",
+                    cityName: "Rome",
+                    name: "Hotel de Russie, Rocco Forte",
+                    location: "Via del Babuino • Spanish Steps",
+                    distinction: "Secret Tiered Gardens",
+                    desc: "Tucked privately between Piazza del Popolo and the Spanish Steps, Hotel de Russie is an aristocratic urban sanctuary celebrated for its historic terraced secret gardens. Designed by Giuseppe Valadier in the 19th century, these lush, pine-shaded hillside gardens offer a tranquil Mediterranean oasis right in the heart of Rome.\n\nThe guest rooms combine classic Italian design with contemporary flair, featuring crisp color palettes, vibrant modern artworks, and serene views overlooking the courtyard gardens or historic Roman rooftops. Every space radiates effortless Italian elegance and quiet privacy.\n\nThe hotel is renowned for Le Jardin de Russie restaurant and the iconic Stravinskij Bar, where fashionable Romans and international travelers gather for evening aperitifs amidst lemon trees. Paired with hydrotherapy saltwater pools and holistic spa treatments, Hotel de Russie is Roman romance personified.",
+                    tags: ["Le Jardin de Russie", "Stravinskij Cocktail Bar", "Historic Terraced Gardens"],
+                    rate: "€1,350",
+                    usdRate: "≈ $1,512 USD",
                     images: [
-                        "Nocturne%20Key%20Photos/Paris/H%C3%B4tel%20de%20Crillon,%20A%20Rosewood%20Hotel/IMG_4334.JPG",
-                        "Nocturne%20Key%20Photos/Paris/H%C3%B4tel%20de%20Crillon,%20A%20Rosewood%20Hotel/IMG_4335.JPG",
-                        "Nocturne%20Key%20Photos/Paris/H%C3%B4tel%20de%20Crillon,%20A%20Rosewood%20Hotel/IMG_4336.JPG",
-                        "Nocturne%20Key%20Photos/Paris/H%C3%B4tel%20de%20Crillon,%20A%20Rosewood%20Hotel/IMG_4337.JPG",
-                        "Nocturne%20Key%20Photos/Paris/H%C3%B4tel%20de%20Crillon,%20A%20Rosewood%20Hotel/IMG_4338.JPG"
+                        "Nocturne%20Key%20Photos/Rome/Rocco%20Forte%20Hotel%20De%20Russie/IMG_4417.WEBP",
+                        "Nocturne%20Key%20Photos/Rome/Rocco%20Forte%20Hotel%20De%20Russie/IMG_4418.WEBP",
+                        "Nocturne%20Key%20Photos/Rome/Rocco%20Forte%20Hotel%20De%20Russie/IMG_4419.AVIF",
+                        "Nocturne%20Key%20Photos/Rome/Rocco%20Forte%20Hotel%20De%20Russie/IMG_4420.JPG",
+                        "Nocturne%20Key%20Photos/Rome/Rocco%20Forte%20Hotel%20De%20Russie/IMG_4421.JPG"
                     ],
-                    bookingUrl: "https://klook.tpx.lv/va75wRR8"
+                    bookingUrl: "https://klook.tpx.lv/WDS4ra7l"
+                },
+                {
+                    rank: "02",
+                    cityName: "Rome",
+                    name: "Hotel Hassler Roma",
+                    location: "Piazza Trinità dei Monti • Top of Spanish Steps",
+                    distinction: "Aristocratic Italian Flagship",
+                    desc: "Perched majestically atop the Spanish Steps, Hotel Hassler Roma is the ultimate aristocratic flagship of the Eternal City. Owned by the historic Wirth family, the hotel has commanded Rome's most prestigious panorama for generations, hosting royalty, heads of state, and cinematic icons.\n\nThe accommodations blend classic Italian antique furnishings with sumptuous silks, Murano glass chandeliers, and private balconies overlooking the terracotta domes and bell towers of historic Rome. The penthouse suites offer sweeping 360-degree vistas stretching from St. Peter's Basilica to the Colosseum.\n\nThe culinary crown jewel is Imàgo, the 1-star Michelin rooftop restaurant where gourmet Italian gastronomy meets hypnotic skyline views. Accompanied by the cozy Salone Eva and private Roman wellness facilities, the Hassler delivers timeless Italian prestige.",
+                    tags: ["Imàgo Panoramic Dining (1★)", "Trinità dei Monti Vista", "Salone Eva Salon"],
+                    rate: "€1,200",
+                    usdRate: "≈ $1,344 USD",
+                    images: [
+                        "Nocturne%20Key%20Photos/Rome/Hotel%20Hassler%20Roma/IMG_4438.JPG",
+                        "Nocturne%20Key%20Photos/Rome/Hotel%20Hassler%20Roma/IMG_4439.WEBP",
+                        "Nocturne%20Key%20Photos/Rome/Hotel%20Hassler%20Roma/IMG_4440.JPG",
+                        "Nocturne%20Key%20Photos/Rome/Hotel%20Hassler%20Roma/IMG_4441.JPG",
+                        "Nocturne%20Key%20Photos/Rome/Hotel%20Hassler%20Roma/IMG_4442.JPG"
+                    ],
+                    bookingUrl: "https://klook.tpx.lv/Ir7Cwzh6"
+                },
+                {
+                    rank: "03",
+                    cityName: "Rome",
+                    name: "Hotel Eden, Dorchester Collection",
+                    location: "Via Ludovisi • Villa Borghese",
+                    distinction: "Dolce Vita Heritage",
+                    desc: "An authentic Roman institution since 1889, Hotel Eden is perched on the verdant hillside near Villa Borghese, offering sweeping panoramas across the historic center of Rome. Part of the prestigious Dorchester Collection, the hotel embodies the refined essence of Italian Dolce Vita combined with peerless British-managed service.\n\nThe guest rooms and suites are dressed in soothing neutral tones, accented with classic Italian marble, polished hardwoods, and floor-to-ceiling windows that flood every room with golden Roman sunlight. Spacious marble bathrooms feature oversized soaking tubs and bespoke botanical amenities.\n\nThe hotel houses La Terrazza, its Michelin-starred rooftop restaurant where guests dine on exquisite Mediterranean creations while gazing across St. Peter's Dome. Paired with a sumptuous Roman bath spa, Hotel Eden is an architectural masterpiece.",
+                    tags: ["La Terrazza Rooftop", "Villa Borghese Panorama", "Bespoke Marble Baths"],
+                    rate: "€1,250",
+                    usdRate: "≈ $1,400 USD",
+                    images: [
+                        "Nocturne%20Key%20Photos/Rome/Hotel%20Eden,%20Dorchester%20Collection/IMG_4433.JPG",
+                        "Nocturne%20Key%20Photos/Rome/Hotel%20Eden,%20Dorchester%20Collection/IMG_4434.JPG",
+                        "Nocturne%20Key%20Photos/Rome/Hotel%20Eden,%20Dorchester%20Collection/IMG_4435.JPG",
+                        "Nocturne%20Key%20Photos/Rome/Hotel%20Eden,%20Dorchester%20Collection/IMG_4436.JPG",
+                        "Nocturne%20Key%20Photos/Rome/Hotel%20Eden,%20Dorchester%20Collection/IMG_4437.JPG"
+                    ],
+                    bookingUrl: "https://klook.tpx.lv/zd9Y6gxy"
+                },
+                {
+                    rank: "04",
+                    cityName: "Rome",
+                    name: "Six Senses Rome",
+                    location: "Piazza di San Marcello • Via del Corso",
+                    distinction: "Urban Wellness Palazzo",
+                    desc: "Housed within a meticulously restored UNESCO-protected palazzo just steps from the Trevi Fountain, Six Senses Rome merges rich architectural heritage with cutting-edge sustainable wellness. The property offers a serene oasis of calm amidst the vibrant, historic streets of the Italian capital.\n\nThe guest rooms and suites feature soaring ceilings, bespoke oak furnishings, and natural terracotta accents that pay homage to Roman antiquity while maintaining sleek modern luxury. Acoustic serenity and sustainable climate engineering ensure an optimal night's rest.\n\nThe hotel's centerpiece is its remarkable Roman bath circuit—featuring traditional caldarium, tepidarium, and frigidarium pools—recreating ancient wellness rituals. Crowning the palazzo is the NOTOS rooftop terrace, where organic farm-to-table dining is paired with panoramic views of Roman churches.",
+                    tags: ["Ancient Roman Baths", "San Marcello Courtyard", "NOTOS Rooftop Herb Garden"],
+                    rate: "€1,200",
+                    usdRate: "≈ $1,344 USD",
+                    images: [
+                        "Nocturne%20Key%20Photos/Rome/Six%20Senses%20Rome/IMG_4427.JPG",
+                        "Nocturne%20Key%20Photos/Rome/Six%20Senses%20Rome/IMG_4428.JPG",
+                        "Nocturne%20Key%20Photos/Rome/Six%20Senses%20Rome/IMG_4429.JPG",
+                        "Nocturne%20Key%20Photos/Rome/Six%20Senses%20Rome/IMG_4430.JPG",
+                        "Nocturne%20Key%20Photos/Rome/Six%20Senses%20Rome/IMG_4431.JPG",
+                        "Nocturne%20Key%20Photos/Rome/Six%20Senses%20Rome/IMG_4432.JPG"
+                    ],
+                    bookingUrl: "https://klook.tpx.lv/yKyUfH15"
+                },
+                {
+                    rank: "05",
+                    cityName: "Rome",
+                    name: "Palazzo Manfredi",
+                    location: "Via Labicana • Fronting the Colosseum",
+                    distinction: "Direct Colosseum Vista",
+                    desc: "Directly overlooking the ancient gladiatorial ruins of the Ludus Magnus and the majestic arches of the Colosseum, Palazzo Manfredi offers the most dramatic historical vista in all of Rome. Housed in a 17th-century patrician residence, the hotel immerses guests directly into the epic narrative of the Roman Empire.\n\nThe accommodations blend patrician heritage with sleek contemporary interior design, featuring bold color accents, plush velvets, and high-tech amenities. Several suites feature floor-to-ceiling glass walls framing direct, unobstructed views of the illuminated Colosseum just outside.\n\nThe culinary experience is anchored by Aroma, the 1-star Michelin rooftop restaurant where guests enjoy world-class Italian gastronomy suspended directly across from antiquity's greatest monument. Palazzo Manfredi is an unforgettable front-row seat to history.",
+                    tags: ["Aroma Restaurant (1★)", "Direct Colosseum Terraces", "Gladiator School Ruins"],
+                    rate: "€1,050",
+                    usdRate: "≈ $1,175 USD",
+                    images: [
+                        "Nocturne%20Key%20Photos/Rome/Palazzo%20Manfredi/IMG_4422.JPG",
+                        "Nocturne%20Key%20Photos/Rome/Palazzo%20Manfredi/IMG_4423.AVIF",
+                        "Nocturne%20Key%20Photos/Rome/Palazzo%20Manfredi/IMG_4424.JPG",
+                        "Nocturne%20Key%20Photos/Rome/Palazzo%20Manfredi/IMG_4425.JPG",
+                        "Nocturne%20Key%20Photos/Rome/Palazzo%20Manfredi/IMG_4426.JPG"
+                    ],
+                    bookingUrl: "https://klook.tpx.lv/sf58zy7P"
                 }
-                // Paste the remaining hotels for this city from LUXURY_HOTELS_DB in index.html
             ]
         };
 
@@ -219,14 +264,12 @@
 
             document.title = `Top 5 Luxury Hotels in ${meta.name} | The Nocturne Key`;
 
-            // Highlight active city in top nav
             document.querySelectorAll(".city-nav-link").forEach(link => {
                 if (link.getAttribute("data-nav-city") === PAGE_CITY_KEY) {
                     link.className = "city-nav-link text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-gold border border-gold/30 bg-gold/5 transition-soft";
                 }
             });
 
-            // Render Editorial Header
             document.getElementById("articleHeader").innerHTML = `
                 <div class="flex flex-wrap items-center gap-3 text-xs font-mono uppercase tracking-[0.25em] text-gold mb-4">
                     <span>Editorial Monograph • Vol. VIII</span>
@@ -248,7 +291,6 @@
                 </div>
             `;
 
-            // Render Hotel Article Entries
             document.getElementById("articleHotelsContainer").innerHTML = hotels.map((h, i) => {
                 activePhotoMap[i] = 0;
                 const paragraphs = h.desc.split("\n\n").map((p, pIdx) => `

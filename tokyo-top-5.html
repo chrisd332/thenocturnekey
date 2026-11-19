@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top 5 Luxury Hotels | The Nocturne Key</title>
+    <title>Top 5 Luxury Hotels in Tokyo | The Nocturne Key</title>
+    <meta name="description" content="An editorial monograph of the top 5 luxury hotels in Tokyo, including Aman Tokyo, Bvlgari Hotel Tokyo, Hoshinoya Tokyo, Palace Hotel Tokyo, and The Tokyo EDITION, Toranomon.">
     <meta name="robots" content="index, follow">
 
     <!-- Tailwind CSS Engine -->
@@ -122,71 +123,113 @@
     </footer>
 
     <script>
-        // 1. SET THIS KEY PER FILE: "paris" | "tokyo" | "london" | "new-york" | "rome" | "dubai"
         const PAGE_CITY_KEY = "tokyo";
 
         const CITY_EDITORIAL_META = {
-            "paris": {
-                name: "Paris",
-                country: "France",
-                subtitle: "Palace Distinctions, Place Vendôme Heritage & Haute Cuisine Sanctuaries",
-                intro: "From 18th-century neoclassical residences along Place de la Concorde to intimate salons on Rue du Faubourg Saint-Honoré, Paris sets the global standard for palace hospitality and nocturnal elegance."
-            },
             "tokyo": {
                 name: "Tokyo",
                 country: "Japan",
                 subtitle: "Skyline Sanctuaries, Geothermal Onsens & Minimalist Craft",
                 intro: "High above Tokyo's imperial moats and financial towers, these five properties distill Japanese stillness and precision into sky-high retreats with basalt bathing rituals and intimate omakase dining."
-            },
-            "london": {
-                name: "London",
-                country: "United Kingdom",
-                subtitle: "Mayfair & Knightsbridge Landmarks, Classic Bars & Royal Heritage",
-                intro: "Anchored across Mayfair, St James's, and Knightsbridge, London's leading luxury addresses balance storied British provenance with contemporary design and iconic cocktail lounges."
-            },
-            "new-york": {
-                name: "New York",
-                country: "United States",
-                subtitle: "Upper East Side Icons, Crystal Salons & Downtown Craft",
-                intro: "Spanning Madison Avenue, Fifth Avenue, Midtown, and Tribeca, these five Manhattan sanctuaries capture New York's after-hours allure—from cabaret lounges to lantern-lit indoor pools."
-            },
-            "rome": {
-                name: "Rome",
-                country: "Italy",
-                subtitle: "Terraced Gardens, Spanish Steps Vistas & Roman Palazzos",
-                intro: "Set among pine-shaded hills, Baroque piazzas, and ancient ruins, Rome's top five stays unite centuries of Italian artistry with panoramic rooftop dining and restorative Roman baths."
-            },
-            "dubai": {
-                name: "Dubai",
-                country: "United Arab Emirates",
-                subtitle: "Architectural Icons, Private Islands & Sky-High Retreats",
-                intro: "From private offshore islands and the Palm Jumeirah crescent to soaring towers overlooking Downtown Dubai, these five properties showcase dramatic architecture and full-scale luxury."
             }
         };
 
-        // 2. PASTE ONLY THIS CITY'S ARRAY (or the full LUXURY_HOTELS_DB object) FROM index.html HERE:
         const HOTELS_DATA = {
-            "paris": [
+            "tokyo": [
                 {
                     rank: "01",
-                    cityName: "Paris",
-                    name: "Hôtel de Crillon, A Rosewood Hotel",
-                    location: "Place de la Concorde • 8th Arrondissement",
-                    distinction: "Palace Distinction",
-                    desc: "An 18th-century architectural masterpiece originally commissioned by Louis XV, Hôtel de Crillon stands majestically at the foot of Place de la Concorde, embodying the pinnacle of neoclassical French elegance. Over the centuries, its storied limestone halls have welcomed royalty, statesmen, and cultural icons, preserving an unmatched legacy of Parisian prestige.\n\nBehind its historic Gabriel-designed facade, the palace seamlessly bridges classical heritage with contemporary flair, featuring bespoke suites designed by luminaries such as Karl Lagerfeld. Guests are enveloped in ultimate refinement, complete with custom Carrara marble bathrooms, hand-carved moldings, and private balconies framing the vibrant obelisk and fountains below.\n\nThe culinary and wellness programs further elevate the guest experience to extraordinary heights. Visitors can indulge in Michelin-starred gastronomic artistry at L'Écrin, unwind in the serene subterranean sanctuary of Rosewood Spa Sense, or experience signature treatments enhanced by French organic botanicals and bespoke butler services.",
-                    tags: ["Rosewood Spa Sense", "Michelin-starred L'Écrin", "Bespoke Butler Service"],
-                    rate: "€1,850",
-                    usdRate: "≈ $2,070 USD",
+                    cityName: "Tokyo",
+                    name: "Aman Tokyo",
+                    location: "Otemachi Tower • Imperial Palace Gardens",
+                    distinction: "Minimalist Masterpiece",
+                    desc: "Crowning the upper floors of the sleek Otemachi Tower, Aman Tokyo reinterprets traditional Japanese ryokan design through a sophisticated contemporary lens. Architect Kerry Hill utilized natural materials such as camphor wood, Washi paper, and basalt stone to create a serene sky-high sanctuary that floats quietly above the bustling metropolis.\n\nThe guest rooms and suites serve as peaceful minimalist retreats, featuring expansive floor-to-ceiling windows framing dramatic views of the Imperial Palace Gardens and Mount Fuji. Deep furo soaking tubs, crafted from traditional black basalt, invite guests to unwind while gazing out over the glittering evening skyline.\n\nAt the heart of the hotel lies a breathtaking 30-meter indoor pool surrounded by glass and stone, echoing the aesthetic of traditional Japanese hot springs. Combined with exquisite omakase dining at Musashi and holistic wellness treatments, Aman Tokyo offers an ethereal urban escape.",
+                    tags: ["30m Basalt Sky Pool", "Traditional Onsen", "Musashi Omakase"],
+                    rate: "¥220,000",
+                    usdRate: "≈ $1,385 USD",
                     images: [
-                        "Nocturne%20Key%20Photos/Paris/H%C3%B4tel%20de%20Crillon,%20A%20Rosewood%20Hotel/IMG_4334.JPG",
-                        "Nocturne%20Key%20Photos/Paris/H%C3%B4tel%20de%20Crillon,%20A%20Rosewood%20Hotel/IMG_4335.JPG",
-                        "Nocturne%20Key%20Photos/Paris/H%C3%B4tel%20de%20Crillon,%20A%20Rosewood%20Hotel/IMG_4336.JPG",
-                        "Nocturne%20Key%20Photos/Paris/H%C3%B4tel%20de%20Crillon,%20A%20Rosewood%20Hotel/IMG_4337.JPG",
-                        "Nocturne%20Key%20Photos/Paris/H%C3%B4tel%20de%20Crillon,%20A%20Rosewood%20Hotel/IMG_4338.JPG"
+                        "Nocturne%20Key%20Photos/Tokyo/Aman%20Tokyo/IMG_4339.JPG",
+                        "Nocturne%20Key%20Photos/Tokyo/Aman%20Tokyo/IMG_4340.JPG",
+                        "Nocturne%20Key%20Photos/Tokyo/Aman%20Tokyo/IMG_4341.JPG",
+                        "Nocturne%20Key%20Photos/Tokyo/Aman%20Tokyo/IMG_4342.JPG"
                     ],
-                    bookingUrl: "https://klook.tpx.lv/va75wRR8"
+                    bookingUrl: "https://klook.tpx.lv/YFhr9CF7"
+                },
+                {
+                    rank: "02",
+                    cityName: "Tokyo",
+                    name: "Bvlgari Hotel Tokyo",
+                    location: "Tokyo Midtown Yaesu • 40th-45th Floors",
+                    distinction: "Italian Haute Horlogerie",
+                    desc: "Occupying the top floors of Tokyo Midtown Yaesu, Bulgari Hotel Tokyo brings the vibrant glamour of Roman high jewelry directly to the heart of Japan's capital. Conceived by Italian architects ACPV, the hotel merges sleek Italian design with Japanese craftsmanship, creating an atmosphere of polished sophistication and timeless style.\n\nThe accommodations are dressed in rich color palettes, accented with Italian designer furnishings, bronze light fixtures, and luxurious silk wall coverings. Expansive windows provide breathtaking vistas stretching toward the Imperial Palace and the distant silhouette of Tokyo Tower.\n\nThe property features an exquisite 25-meter emerald mosaic indoor pool that sparkles like a precious gemstone, accompanied by a lavish Bulgari Spa offering gemstone-infused therapies. Dining at Il Ristorante by Niko Romito completes this sublime cross-cultural luxury journey.",
+                    tags: ["Il Ristorante Niko Romito", "25m Emerald Mosaic Pool", "Bulgari Suite"],
+                    rate: "¥250,000",
+                    usdRate: "≈ $1,575 USD",
+                    images: [
+                        "Nocturne%20Key%20Photos/Tokyo/Bulgari%20Hotel%20Tokyo/IMG_4343.AVIF",
+                        "Nocturne%20Key%20Photos/Tokyo/Bulgari%20Hotel%20Tokyo/IMG_4344.AVIF",
+                        "Nocturne%20Key%20Photos/Tokyo/Bulgari%20Hotel%20Tokyo/IMG_4345.AVIF",
+                        "Nocturne%20Key%20Photos/Tokyo/Bulgari%20Hotel%20Tokyo/IMG_4346.AVIF",
+                        "Nocturne%20Key%20Photos/Tokyo/Bulgari%20Hotel%20Tokyo/IMG_4347.AVIF"
+                    ],
+                    bookingUrl: "https://klook.tpx.lv/Dm37CFUt"
+                },
+                {
+                    rank: "03",
+                    cityName: "Tokyo",
+                    name: "Hoshinoya Tokyo",
+                    location: "Otemachi Business District",
+                    distinction: "Urban Luxury Ryokan",
+                    desc: "Hoshinoya Tokyo reimagines the traditional Japanese inn as a vertical 17-story luxury ryokan in the middle of Otemachi's financial district. From the moment guests step inside, shoes are removed to walk barefoot on fragrant tatami mats throughout the entire property, instantly disconnecting them from the frantic pace of the city.\n\nThe guest chambers blend classic sliding shoji screens, bamboo closets, and low-slung platform beds with modern comforts. Each floor operates as a private guest lounge where travelers gather to sip seasonal teas, sample artisanal sweets, and converse in quiet tranquility.\n\nThe crown jewel of the ryokan is its top-floor hot spring bathhouse, where natural mineral waters are pumped from 1,500 meters underground into open-air rooftop baths under the Tokyo night sky. Coupled with exquisite Nippon gastronomy, Hoshinoya is an authentic cultural haven.",
+                    tags: ["Subterranean Geothermal Onsen", "Tatami Living Salons", "Nippon Gastronomy"],
+                    rate: "¥140,000",
+                    usdRate: "≈ $880 USD",
+                    images: [
+                        "Nocturne%20Key%20Photos/Tokyo/Hoshinoya%20Tokyo/IMG_4348.JPG",
+                        "Nocturne%20Key%20Photos/Tokyo/Hoshinoya%20Tokyo/IMG_4349.JPG",
+                        "Nocturne%20Key%20Photos/Tokyo/Hoshinoya%20Tokyo/IMG_4350.JPG",
+                        "Nocturne%20Key%20Photos/Tokyo/Hoshinoya%20Tokyo/IMG_4351.JPG",
+                        "Nocturne%20Key%20Photos/Tokyo/Hoshinoya%20Tokyo/IMG_4352.JPG"
+                    ],
+                    bookingUrl: "https://klook.tpx.lv/Axy3PD9L"
+                },
+                {
+                    rank: "04",
+                    cityName: "Tokyo",
+                    name: "Palace Hotel Tokyo",
+                    location: "1-1-1 Marunouchi • Imperial Moat",
+                    distinction: "Japanese Grande Dame",
+                    desc: "Directly fronting the tranquil moats and pine-forested lawns of the Imperial Palace, Palace Hotel Tokyo is a legendary grande dame that has defined Japanese hospitality for decades. Known for offering a rare sense of spaciousness and serenity in Marunouchi, the hotel provides an immaculate blend of contemporary luxury and understated Japanese grace.\n\nThe interiors feature earthy tones, organic textures, and private open-air balconies—a prized rarity among Tokyo hotels—allowing guests to breathe in the fresh air of the surrounding imperial gardens. Floor-to-ceiling glass doors frame serene views of swans gliding across the historic moats below.\n\nWellness and dining are exceptional here, highlighted by Japan's only Evian Spa, where Alpine-inspired treatments soothe body and mind. Culinary offerings range from Esterre, created in collaboration with Alain Ducasse, to authentic Edomae sushi at Wadakura.",
+                    tags: ["Private Park Balconies", "Evian Spa Tokyo", "Amber Bar Club"],
+                    rate: "¥160,000",
+                    usdRate: "≈ $1,005 USD",
+                    images: [
+                        "Nocturne%20Key%20Photos/Tokyo/Palace%20Hotel%20Tokyo/IMG_4353.JPG",
+                        "Nocturne%20Key%20Photos/Tokyo/Palace%20Hotel%20Tokyo/IMG_4354.AVIF",
+                        "Nocturne%20Key%20Photos/Tokyo/Palace%20Hotel%20Tokyo/IMG_4355.AVIF",
+                        "Nocturne%20Key%20Photos/Tokyo/Palace%20Hotel%20Tokyo/IMG_4356.AVIF",
+                        "Nocturne%20Key%20Photos/Tokyo/Palace%20Hotel%20Tokyo/IMG_4357.WEBP"
+                    ],
+                    bookingUrl: "https://klook.tpx.lv/Gb6SGUZJ"
+                },
+                {
+                    rank: "05",
+                    cityName: "Tokyo",
+                    name: "The Tokyo EDITION, Toranomon",
+                    location: "Toranomon Hills • Minato City",
+                    distinction: "Botanical Design Oasis",
+                    desc: "Conceived by visionary hotelier Ian Schrager in collaboration with renowned Japanese architect Kengo Kuma, The Tokyo EDITION, Toranomon is a striking design hotel that redefines modern urban hospitality. The property merges sophisticated minimalist architecture with an exuberant botanical aesthetic that fills the soaring public spaces with lush greenery.\n\nThe sky-high lobby lounge serves as an indoor jungle overflowing with over 500 plants and trees, providing a dramatic contrast against the gleaming steel and glass of Toranomon Hills. Floor-to-ceiling windows frame hypnotic, close-up perspectives of the nearby Tokyo Tower glowing in the evening.\n\nThe guest rooms are bathed in warm walnut tones, faux-fur throws, and custom art pieces, creating a cozy residential cocoon high above the streets. Paired with world-class dining venues and holistic wellness facilities, the EDITION delivers an ultra-chic lifestyle experience.",
+                    tags: ["Kengo Kuma Architecture", "Lobby Botanical Garden", "Tokyo Tower Panorama"],
+                    rate: "¥130,000",
+                    usdRate: "≈ $818 USD",
+                    images: [
+                        "Nocturne%20Key%20Photos/Tokyo/The%20Tokyo%20EDITION,%20Toranomon/IMG_4358.AVIF",
+                        "Nocturne%20Key%20Photos/Tokyo/The%20Tokyo%20EDITION,%20Toranomon/IMG_4359.WEBP",
+                        "Nocturne%20Key%20Photos/Tokyo/The%20Tokyo%20EDITION,%20Toranomon/IMG_4360.AVIF",
+                        "Nocturne%20Key%20Photos/Tokyo/The%20Tokyo%20EDITION,%20Toranomon/IMG_4361.AVIF",
+                        "Nocturne%20Key%20Photos/Tokyo/The%20Tokyo%20EDITION,%20Toranomon/IMG_4362.AVIF"
+                    ],
+                    bookingUrl: "https://klook.tpx.lv/jntSFfAt"
                 }
-                // Paste the remaining hotels for this city from LUXURY_HOTELS_DB in index.html
             ]
         };
 
@@ -219,14 +262,12 @@
 
             document.title = `Top 5 Luxury Hotels in ${meta.name} | The Nocturne Key`;
 
-            // Highlight active city in top nav
             document.querySelectorAll(".city-nav-link").forEach(link => {
                 if (link.getAttribute("data-nav-city") === PAGE_CITY_KEY) {
                     link.className = "city-nav-link text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-gold border border-gold/30 bg-gold/5 transition-soft";
                 }
             });
 
-            // Render Editorial Header
             document.getElementById("articleHeader").innerHTML = `
                 <div class="flex flex-wrap items-center gap-3 text-xs font-mono uppercase tracking-[0.25em] text-gold mb-4">
                     <span>Editorial Monograph • Vol. VIII</span>
@@ -248,7 +289,6 @@
                 </div>
             `;
 
-            // Render Hotel Article Entries
             document.getElementById("articleHotelsContainer").innerHTML = hotels.map((h, i) => {
                 activePhotoMap[i] = 0;
                 const paragraphs = h.desc.split("\n\n").map((p, pIdx) => `
