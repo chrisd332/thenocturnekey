@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top 5 Luxury Hotels | The Nocturne Key</title>
+    <title>Top 5 Luxury Hotels in Dubai | The Nocturne Key</title>
+    <meta name="description" content="An editorial monograph of the top 5 luxury hotels in Dubai, including Burj Al Arab Jumeirah, Atlantis The Royal, The Lana, One&Only The Palm, and Armani Hotel Dubai.">
     <meta name="robots" content="index, follow">
 
     <!-- Tailwind CSS Engine -->
@@ -122,40 +123,9 @@
     </footer>
 
     <script>
-        // 1. SET THIS KEY PER FILE: "paris" | "tokyo" | "london" | "new-york" | "rome" | "dubai"
         const PAGE_CITY_KEY = "dubai";
 
         const CITY_EDITORIAL_META = {
-            "paris": {
-                name: "Paris",
-                country: "France",
-                subtitle: "Palace Distinctions, Place Vendôme Heritage & Haute Cuisine Sanctuaries",
-                intro: "From 18th-century neoclassical residences along Place de la Concorde to intimate salons on Rue du Faubourg Saint-Honoré, Paris sets the global standard for palace hospitality and nocturnal elegance."
-            },
-            "tokyo": {
-                name: "Tokyo",
-                country: "Japan",
-                subtitle: "Skyline Sanctuaries, Geothermal Onsens & Minimalist Craft",
-                intro: "High above Tokyo's imperial moats and financial towers, these five properties distill Japanese stillness and precision into sky-high retreats with basalt bathing rituals and intimate omakase dining."
-            },
-            "london": {
-                name: "London",
-                country: "United Kingdom",
-                subtitle: "Mayfair & Knightsbridge Landmarks, Classic Bars & Royal Heritage",
-                intro: "Anchored across Mayfair, St James's, and Knightsbridge, London's leading luxury addresses balance storied British provenance with contemporary design and iconic cocktail lounges."
-            },
-            "new-york": {
-                name: "New York",
-                country: "United States",
-                subtitle: "Upper East Side Icons, Crystal Salons & Downtown Craft",
-                intro: "Spanning Madison Avenue, Fifth Avenue, Midtown, and Tribeca, these five Manhattan sanctuaries capture New York's after-hours allure—from cabaret lounges to lantern-lit indoor pools."
-            },
-            "rome": {
-                name: "Rome",
-                country: "Italy",
-                subtitle: "Terraced Gardens, Spanish Steps Vistas & Roman Palazzos",
-                intro: "Set among pine-shaded hills, Baroque piazzas, and ancient ruins, Rome's top five stays unite centuries of Italian artistry with panoramic rooftop dining and restorative Roman baths."
-            },
             "dubai": {
                 name: "Dubai",
                 country: "United Arab Emirates",
@@ -164,29 +134,105 @@
             }
         };
 
-        // 2. PASTE ONLY THIS CITY'S ARRAY (or the full LUXURY_HOTELS_DB object) FROM index.html HERE:
         const HOTELS_DATA = {
-            "paris": [
+            "dubai": [
                 {
                     rank: "01",
-                    cityName: "Paris",
-                    name: "Hôtel de Crillon, A Rosewood Hotel",
-                    location: "Place de la Concorde • 8th Arrondissement",
-                    distinction: "Palace Distinction",
-                    desc: "An 18th-century architectural masterpiece originally commissioned by Louis XV, Hôtel de Crillon stands majestically at the foot of Place de la Concorde, embodying the pinnacle of neoclassical French elegance. Over the centuries, its storied limestone halls have welcomed royalty, statesmen, and cultural icons, preserving an unmatched legacy of Parisian prestige.\n\nBehind its historic Gabriel-designed facade, the palace seamlessly bridges classical heritage with contemporary flair, featuring bespoke suites designed by luminaries such as Karl Lagerfeld. Guests are enveloped in ultimate refinement, complete with custom Carrara marble bathrooms, hand-carved moldings, and private balconies framing the vibrant obelisk and fountains below.\n\nThe culinary and wellness programs further elevate the guest experience to extraordinary heights. Visitors can indulge in Michelin-starred gastronomic artistry at L'Écrin, unwind in the serene subterranean sanctuary of Rosewood Spa Sense, or experience signature treatments enhanced by French organic botanicals and bespoke butler services.",
-                    tags: ["Rosewood Spa Sense", "Michelin-starred L'Écrin", "Bespoke Butler Service"],
-                    rate: "€1,850",
-                    usdRate: "≈ $2,070 USD",
+                    cityName: "Dubai",
+                    name: "Burj Al Arab Jumeirah",
+                    location: "Umm Suqeim • Private Island",
+                    distinction: "7-Star Global Icon",
+                    desc: "Rising 321 meters on its own dedicated offshore island, the Burj Al Arab Jumeirah is globally celebrated as the world's most luxurious architectural icon. Shaped like a billowing Arabian dhow sail, this legendary landmark redefines ultra-luxury with its daring engineering and flamboyant opulence.\n\nThe interior features duplex-only suites adorned with 24-karat gold leaf staircases, mirrored ceilings, mosaic jacuzzis, and Hermes bath amenities. Every floor is serviced by dedicated private butler teams ensuring round-the-clock bespoke attention.\n\nGuests can relax on the expansive outdoor luxury terrace featuring infinity pools and cabanas stretching over the Persian Gulf, or arrive in style via the hotel's private helipad and Rolls-Royce fleet. The Burj Al Arab remains the undisputed pinnacle of Arabian hospitality.",
+                    tags: ["Duplex Only Suites", "24K Gold Leaf Details", "Helipad & Rolls-Royce Fleet"],
+                    rate: "AED 6,500",
+                    usdRate: "≈ $1,770 USD",
                     images: [
-                        "Nocturne%20Key%20Photos/Paris/H%C3%B4tel%20de%20Crillon,%20A%20Rosewood%20Hotel/IMG_4334.JPG",
-                        "Nocturne%20Key%20Photos/Paris/H%C3%B4tel%20de%20Crillon,%20A%20Rosewood%20Hotel/IMG_4335.JPG",
-                        "Nocturne%20Key%20Photos/Paris/H%C3%B4tel%20de%20Crillon,%20A%20Rosewood%20Hotel/IMG_4336.JPG",
-                        "Nocturne%20Key%20Photos/Paris/H%C3%B4tel%20de%20Crillon,%20A%20Rosewood%20Hotel/IMG_4337.JPG",
-                        "Nocturne%20Key%20Photos/Paris/H%C3%B4tel%20de%20Crillon,%20A%20Rosewood%20Hotel/IMG_4338.JPG"
+                        "Nocturne%20Key%20Photos/Dubai/Burj%20Al%20Arab%20Jumeirah/IMG_4443.JPG",
+                        "Nocturne%20Key%20Photos/Dubai/Burj%20Al%20Arab%20Jumeirah/IMG_4444.JPG",
+                        "Nocturne%20Key%20Photos/Dubai/Burj%20Al%20Arab%20Jumeirah/IMG_4445.JPG",
+                        "Nocturne%20Key%20Photos/Dubai/Burj%20Al%20Arab%20Jumeirah/IMG_4446.AVIF",
+                        "Nocturne%20Key%20Photos/Dubai/Burj%20Al%20Arab%20Jumeirah/IMG_4447.JPG",
+                        "Nocturne%20Key%20Photos/Dubai/Burj%20Al%20Arab%20Jumeirah/IMG_4448.JPG",
+                        "Nocturne%20Key%20Photos/Dubai/Burj%20Al%20Arab%20Jumeirah/IMG_4449.JPG"
                     ],
-                    bookingUrl: "https://klook.tpx.lv/va75wRR8"
+                    bookingUrl: "https://klook.tpx.lv/Iwwnqdpk"
+                },
+                {
+                    rank: "02",
+                    cityName: "Dubai",
+                    name: "Atlantis The Royal",
+                    location: "Palm Jumeirah Crescent",
+                    distinction: "Ultra-Luxury Monument",
+                    desc: "Crowning the crescent of the Palm Jumeirah, Atlantis The Royal is a breathtaking deconstructed architectural masterpiece that has transformed Dubai's skyline. The resort is designed as a series of stacked sky-high blocks, creating an awe-inspiring visual statement of contemporary engineering and avant-garde luxury.\n\nThe guest rooms and suites feature bespoke coral-inspired art pieces, plush designer furnishings, and private outdoor sky terraces complete with private plunge pools overlooking the Arabian Gulf. Every architectural line is meticulously crafted to maximize both dramatic vistas and absolute privacy.\n\nThe resort is crowned by Cloud 22, an extraordinary rooftop infinity sky pool floating 96 meters above the Palm, and hosts world-renowned celebrity dining including Dinner by Heston Blumenthal. Atlantis The Royal is a playground for the global elite.",
+                    tags: ["Cloud 22 Sky Pool", "Heston Blumenthal Dining", "Private Sky Plunge Pools"],
+                    rate: "AED 4,500",
+                    usdRate: "≈ $1,225 USD",
+                    images: [
+                        "Nocturne%20Key%20Photos/Dubai/Atlantis%20The%20Royal/IMG_4465.JPG",
+                        "Nocturne%20Key%20Photos/Dubai/Atlantis%20The%20Royal/IMG_4466.JPG",
+                        "Nocturne%20Key%20Photos/Dubai/Atlantis%20The%20Royal/IMG_4467.JPG",
+                        "Nocturne%20Key%20Photos/Dubai/Atlantis%20The%20Royal/IMG_4468.JPG",
+                        "Nocturne%20Key%20Photos/Dubai/Atlantis%20The%20Royal/IMG_4469.JPG"
+                    ],
+                    bookingUrl: "https://klook.tpx.lv/ySq6Tm1l"
+                },
+                {
+                    rank: "03",
+                    cityName: "Dubai",
+                    name: "The Lana, Dorchester Collection",
+                    location: "Business Bay • Marasi Bay Marina",
+                    distinction: "Canal-Front Architectural Landmark",
+                    desc: "Designed by visionary architects Foster + Partners with opulent interiors by Gilles & Boissier, The Lana is a stunning canal-front architectural landmark overlooking the Marasi Bay Marina. Bringing legendary Dorchester Collection service to the Middle East, the hotel offers a serene urban sanctuary infused with contemporary elegance.\n\nThe guest rooms and suites are flooded with natural desert light through floor-to-ceiling glass walls, accented with rich textured fabrics, bronze detailing, and bespoke marble furnishings. Expansive balconies provide hypnotic vistas of the sparkling Dubai skyline and the soaring Burj Khalifa.\n\nThe hotel features stellar culinary destinations helmed by Michelin-starred chefs, including rooftop dining by Jean Imbert, alongside an ultra-luxurious Dior Spa. The Lana represents the absolute vanguard of Business Bay sophistication.",
+                    tags: ["Foster + Partners Design", "Dior Spa at The Lana", "High Society Rooftop Pool"],
+                    rate: "AED 3,200",
+                    usdRate: "≈ $870 USD",
+                    images: [
+                        "Nocturne%20Key%20Photos/Dubai/The%20Lana,%20Dorchester%20Collection/IMG_4459.AVIF",
+                        "Nocturne%20Key%20Photos/Dubai/The%20Lana,%20Dorchester%20Collection/IMG_4460.AVIF",
+                        "Nocturne%20Key%20Photos/Dubai/The%20Lana,%20Dorchester%20Collection/IMG_4461.AVIF",
+                        "Nocturne%20Key%20Photos/Dubai/The%20Lana,%20Dorchester%20Collection/IMG_4462.AVIF",
+                        "Nocturne%20Key%20Photos/Dubai/The%20Lana,%20Dorchester%20Collection/IMG_4463.WEBP",
+                        "Nocturne%20Key%20Photos/Dubai/The%20Lana,%20Dorchester%20Collection/IMG_4464.JPG"
+                    ],
+                    bookingUrl: "https://klook.tpx.lv/tg65I95L"
+                },
+                {
+                    rank: "04",
+                    cityName: "Dubai",
+                    name: "One&Only The Palm",
+                    location: "West Crescent • Palm Jumeirah",
+                    distinction: "Private Beach Sanctuary",
+                    desc: "Tucked away on the secluded West Crescent of the Palm Jumeirah, One&Only The Palm is an intimate Moorish-Andalusian palatial estate offering an exclusive beach sanctuary. Surrounded by lush landscaped gardens, trickling fountains, and private white-sand beachfronts, the resort feels worlds away from the city's energetic pulse.\n\nThe accommodations comprise low-rise mansion rooms and private beachfront villas featuring arched doorways, hand-tufted rugs, and expansive outdoor terraces. Guests enjoy total seclusion paired with personalized butler service and ultra-luxurious amenities.\n\nThe resort is home to world-class dining by 3-Michelin-star chef Yannick Alléno and the tranquil Guerlain Spa nestled among fragrant gardens. Arriving via private water taxi completes this magical Arabian peninsula retreat.",
+                    tags: ["Yannick Alléno Cuisine", "Guerlain Spa Gardens", "Private Water Taxi Access"],
+                    rate: "AED 4,200",
+                    usdRate: "≈ $1,145 USD",
+                    images: [
+                        "Nocturne%20Key%20Photos/Dubai/One&Only%20The%20Palm/IMG_4455.JPG",
+                        "Nocturne%20Key%20Photos/Dubai/One&Only%20The%20Palm/IMG_4456.AVIF",
+                        "Nocturne%20Key%20Photos/Dubai/One&Only%20The%20Palm/IMG_4457.JPG",
+                        "Nocturne%20Key%20Photos/Dubai/One&Only%20The%20Palm/IMG_4458.JPG"
+                    ],
+                    bookingUrl: "https://klook.tpx.lv/ne1bPqBO"
+                },
+                {
+                    rank: "05",
+                    cityName: "Dubai",
+                    name: "Armani Hotel Dubai",
+                    location: "Burj Khalifa • Downtown Dubai",
+                    distinction: "Inside the World's Tallest Tower",
+                    desc: "Occupying 11 dedicated floors inside the iconic Burj Khalifa, Armani Hotel Dubai is personally designed by fashion legend Giorgio Armani. The hotel reflects his signature minimalist aesthetic, utilizing muted grey tones, curved tatami-textured walls, Japanese stone, and luxurious raw silks.\n\nThe guest rooms and suites showcase seamless, handleless cabinetry, hidden technological marvels, and sweeping floor-to-ceiling glass perspectives looking out over Downtown Dubai and the mesmerizing Dubai Fountain shows below.\n\nGuests enjoy direct indoor access to The Dubai Mall, alongside high-end Italian dining venues and a serene Armani Spa offering holistic wellness treatments. Armani Hotel Dubai is a triumph of haute couture interior architecture.",
+                    tags: ["Inside Burj Khalifa", "Giorgio Armani Design", "Fountain Show Views"],
+                    rate: "AED 2,800",
+                    usdRate: "≈ $762 USD",
+                    images: [
+                        "Nocturne%20Key%20Photos/Dubai/Armani%20Hotel%20Dubai/IMG_4450.JPG",
+                        "Nocturne%20Key%20Photos/Dubai/Armani%20Hotel%20Dubai/IMG_4451.JPG",
+                        "Nocturne%20Key%20Photos/Dubai/Armani%20Hotel%20Dubai/IMG_4452.JPG",
+                        "Nocturne%20Key%20Photos/Dubai/Armani%20Hotel%20Dubai/IMG_4453.JPG",
+                        "Nocturne%20Key%20Photos/Dubai/Armani%20Hotel%20Dubai/IMG_4454.JPG"
+                    ],
+                    bookingUrl: "https://klook.tpx.lv/EiBl07Va"
                 }
-                // Paste the remaining hotels for this city from LUXURY_HOTELS_DB in index.html
             ]
         };
 
@@ -219,14 +265,12 @@
 
             document.title = `Top 5 Luxury Hotels in ${meta.name} | The Nocturne Key`;
 
-            // Highlight active city in top nav
             document.querySelectorAll(".city-nav-link").forEach(link => {
                 if (link.getAttribute("data-nav-city") === PAGE_CITY_KEY) {
                     link.className = "city-nav-link text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-gold border border-gold/30 bg-gold/5 transition-soft";
                 }
             });
 
-            // Render Editorial Header
             document.getElementById("articleHeader").innerHTML = `
                 <div class="flex flex-wrap items-center gap-3 text-xs font-mono uppercase tracking-[0.25em] text-gold mb-4">
                     <span>Editorial Monograph • Vol. VIII</span>
@@ -248,7 +292,6 @@
                 </div>
             `;
 
-            // Render Hotel Article Entries
             document.getElementById("articleHotelsContainer").innerHTML = hotels.map((h, i) => {
                 activePhotoMap[i] = 0;
                 const paragraphs = h.desc.split("\n\n").map((p, pIdx) => `

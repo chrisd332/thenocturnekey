@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top 5 Luxury Hotels | The Nocturne Key</title>
+    <title>Top 5 Luxury Hotels in Paris | The Nocturne Key</title>
+    <meta name="description" content="An editorial monograph of the top 5 luxury hotels in Paris, including Hôtel de Crillon, Ritz Paris, Le Bristol Paris, Cheval Blanc Paris, and Four Seasons Hotel George V.">
     <meta name="robots" content="index, follow">
 
     <!-- Tailwind CSS Engine -->
@@ -122,7 +123,6 @@
     </footer>
 
     <script>
-        // 1. SET THIS KEY PER FILE: "paris" | "tokyo" | "london" | "new-york" | "rome" | "dubai"
         const PAGE_CITY_KEY = "paris";
 
         const CITY_EDITORIAL_META = {
@@ -131,40 +131,9 @@
                 country: "France",
                 subtitle: "Palace Distinctions, Place Vendôme Heritage & Haute Cuisine Sanctuaries",
                 intro: "From 18th-century neoclassical residences along Place de la Concorde to intimate salons on Rue du Faubourg Saint-Honoré, Paris sets the global standard for palace hospitality and nocturnal elegance."
-            },
-            "tokyo": {
-                name: "Tokyo",
-                country: "Japan",
-                subtitle: "Skyline Sanctuaries, Geothermal Onsens & Minimalist Craft",
-                intro: "High above Tokyo's imperial moats and financial towers, these five properties distill Japanese stillness and precision into sky-high retreats with basalt bathing rituals and intimate omakase dining."
-            },
-            "london": {
-                name: "London",
-                country: "United Kingdom",
-                subtitle: "Mayfair & Knightsbridge Landmarks, Classic Bars & Royal Heritage",
-                intro: "Anchored across Mayfair, St James's, and Knightsbridge, London's leading luxury addresses balance storied British provenance with contemporary design and iconic cocktail lounges."
-            },
-            "new-york": {
-                name: "New York",
-                country: "United States",
-                subtitle: "Upper East Side Icons, Crystal Salons & Downtown Craft",
-                intro: "Spanning Madison Avenue, Fifth Avenue, Midtown, and Tribeca, these five Manhattan sanctuaries capture New York's after-hours allure—from cabaret lounges to lantern-lit indoor pools."
-            },
-            "rome": {
-                name: "Rome",
-                country: "Italy",
-                subtitle: "Terraced Gardens, Spanish Steps Vistas & Roman Palazzos",
-                intro: "Set among pine-shaded hills, Baroque piazzas, and ancient ruins, Rome's top five stays unite centuries of Italian artistry with panoramic rooftop dining and restorative Roman baths."
-            },
-            "dubai": {
-                name: "Dubai",
-                country: "United Arab Emirates",
-                subtitle: "Architectural Icons, Private Islands & Sky-High Retreats",
-                intro: "From private offshore islands and the Palm Jumeirah crescent to soaring towers overlooking Downtown Dubai, these five properties showcase dramatic architecture and full-scale luxury."
             }
         };
 
-        // 2. PASTE ONLY THIS CITY'S ARRAY (or the full LUXURY_HOTELS_DB object) FROM index.html HERE:
         const HOTELS_DATA = {
             "paris": [
                 {
@@ -185,8 +154,79 @@
                         "Nocturne%20Key%20Photos/Paris/H%C3%B4tel%20de%20Crillon,%20A%20Rosewood%20Hotel/IMG_4338.JPG"
                     ],
                     bookingUrl: "https://klook.tpx.lv/va75wRR8"
+                },
+                {
+                    rank: "02",
+                    cityName: "Paris",
+                    name: "Ritz Paris",
+                    location: "15 Place Vendôme • 1st Arrondissement",
+                    distinction: "Historic Icon",
+                    desc: "The quintessential Parisian palace hotel, the Ritz Paris has reigned over the prestigious Place Vendôme since 1898 as a legendary sanctuary of art de vivre. Founded by César Ritz, the property became the favored second home of international aristocracy, literary giants, and fashion royalty, including Coco Chanel and Ernest Hemingway.\n\nThe interiors present an exquisite showcase of Belle Époque splendor, featuring gilded antique furnishings, crystal chandeliers, priceless oil paintings, and richly draped velvet fabrics. Every guest room and suite is a masterclass in classical French luxury, offering plush comforts paired with state-of-the-art technological amenities discreetly integrated into historical grandeur.\n\nNights at the Ritz are legendary, anchored by the iconic Bar Hemingway where master mixologists craft historical cocktails amidst vintage leather and hunting trophies. Guests can also savor delicate pastries at Salon Proust, or rejuvenate in the subterranean Roman pool lined with mesmerizing azure mosaics alongside the world's first Chanel Spa.",
+                    tags: ["Bar Hemingway", "Chanel Spa Paris", "Place Vendôme Terrace"],
+                    rate: "€1,900",
+                    usdRate: "≈ $2,125 USD",
+                    images: [
+                        "Nocturne%20Key%20Photos/Paris/Ritz%20Paris/IMG_4329.JPG",
+                        "Nocturne%20Key%20Photos/Paris/Ritz%20Paris/IMG_4331.WEBP",
+                        "Nocturne%20Key%20Photos/Paris/Ritz%20Paris/IMG_4332.WEBP",
+                        "Nocturne%20Key%20Photos/Paris/Ritz%20Paris/IMG_4333.PNG"
+                    ],
+                    bookingUrl: "https://klook.tpx.lv/J7pVyR8r"
+                },
+                {
+                    rank: "03",
+                    cityName: "Paris",
+                    name: "Le Bristol Paris",
+                    location: "112 Rue du Faubourg Saint-Honoré",
+                    distinction: "Oetker Collection Palace",
+                    desc: "A beacon of classic French hospitality on the elite Rue du Faubourg Saint-Honoré, Le Bristol Paris offers an ambiance of sophisticated aristocratic intimacy. Since opening in 1925, this Oetker Collection masterpiece has cultivated an atmosphere of peerless discretion, welcoming discerning travelers who seek authentic Parisian domestic warmth combined with grand palace splendor.\n\nThe accommodations are styled in authentic 18th-century Louis XV and Louis XVI periods, featuring precious woods, floral Toile de Jouy fabrics, and large light-filled windows overlooking peaceful courtyards. The hotel's crown jewel is its magnificent 1,200-square-meter inner courtyard garden—a rare, tranquil green oasis nestled right in the pulsing heart of the French capital.\n\nGastronomy reaches its zenith at Epicure, the legendary 3-star Michelin restaurant helmed by chef Eric Frechon, where seasonal French cuisine is elevated to an absolute art form. Guests can also relax at the spectacular yacht-styled indoor rooftop pool, which affords panoramic views across Montmartre and the Sacré-Cœur.",
+                    tags: ["Epicure (3★ Michelin)", "Yacht-style Pool", "Private 1,200m² Garden"],
+                    rate: "€1,750",
+                    usdRate: "≈ $1,960 USD",
+                    images: [
+                        "Nocturne%20Key%20Photos/Paris/Le%20Bristol%20Paris/IMG_4325.JPG",
+                        "Nocturne%20Key%20Photos/Paris/Le%20Bristol%20Paris/IMG_4326.JPG",
+                        "Nocturne%20Key%20Photos/Paris/Le%20Bristol%20Paris/IMG_4327.JPG",
+                        "Nocturne%20Key%20Photos/Paris/Le%20Bristol%20Paris/IMG_4328.JPG"
+                    ],
+                    bookingUrl: "https://klook.tpx.lv/vYpBwY4N"
+                },
+                {
+                    rank: "04",
+                    cityName: "Paris",
+                    name: "Cheval Blanc Paris",
+                    location: "8 Quai du Louvre • 1st Arrondissement",
+                    distinction: "LVMH Hospitality",
+                    desc: "Perched gracefully along the banks of the Seine within the brilliantly revitalized La Samaritaine department store building, Cheval Blanc Paris represents the zenith of modern LVMH luxury. The hotel merges historic Art Deco architecture with sleek, contemporary interior design conceived by premier contemporary architects and interior visionaries.\n\nFloor-to-ceiling glass walls flood the expansive suites with natural light, offering hypnotic, uninterrupted vistas of the flowing river, Pont Neuf, and Notre-Dame cathedral. Every room functions as a private art gallery, adorned with bespoke contemporary installations, custom lacquer finishes, and intuitive smart-room engineering tailored for ultimate comfort.\n\nThe culinary landscape is anchored by Plénitude, where visionary chef Arnaud Donckele commands 3 Michelin stars with extraordinary sauces that redefine French gastronomy. Paired with the world's most opulent Dior Spa and an indoor infinity lap pool mirroring the Seine, Cheval Blanc is an unmatched modern icon.",
+                    tags: ["Plénitude (3★ Michelin)", "Dior Spa Cheval Blanc", "Seine River Panoramas"],
+                    rate: "€2,100",
+                    usdRate: "≈ $2,350 USD",
+                    images: [
+                        "Nocturne%20Key%20Photos/Paris/Cheval%20Blanc%20Paris/IMG_4321.JPG",
+                        "Nocturne%20Key%20Photos/Paris/Cheval%20Blanc%20Paris/IMG_4322.JPG",
+                        "Nocturne%20Key%20Photos/Paris/Cheval%20Blanc%20Paris/IMG_4323.JPG",
+                        "Nocturne%20Key%20Photos/Paris/Cheval%20Blanc%20Paris/IMG_4324.JPG"
+                    ],
+                    bookingUrl: "https://klook.tpx.lv/G1uxxEfA"
+                },
+                {
+                    rank: "05",
+                    cityName: "Paris",
+                    name: "Four Seasons Hotel George V",
+                    location: "31 Avenue George V • 8th Arrondissement",
+                    distinction: "Palace Distinction",
+                    desc: "An architectural masterpiece of Art Deco style reigning over the illustrious Golden Triangle of Paris since 1928, Four Seasons Hotel George V is a legendary palace of uncompromising grandeur. Stepping inside reveals a breathtaking floral wonderland curated by artistic director Jeff Leatham, whose monumental, fragrant installations transform the marble lobby into a living gallery.\n\nThe accommodations combine classic Louis XVI aesthetics with sumptuous modern fabrics, crystal chandeliers, and private terraces overlooking Parisian rooftops. Guests enjoy world-class pampering in spacious suites outfitted with deep soaking tubs, fresh orchids, and personalized touches that ensure every stay feels intimately tailored.\n\nThe hotel is globally renowned as a gastronomic temple, housing a staggering 5 Michelin stars across three distinct dining venues, including the legendary 3-star Le Cinq. Accompanied by a subterranean spa sanctuary and marble courtyard dining, the George V delivers an immortal Parisian experience.",
+                    tags: ["Le Cinq (3★ Michelin)", "Jeff Leatham Florals", "Marble Courtyard"],
+                    rate: "€1,800",
+                    usdRate: "≈ $2,015 USD",
+                    images: [
+                        "Nocturne%20Key%20Photos/Paris/Four%20Seasons%20Hotel%20George%20V/IMG_4317.JPG",
+                        "Nocturne%20Key%20Photos/Paris/Four%20Seasons%20Hotel%20George%20V/IMG_4318.JPG",
+                        "Nocturne%20Key%20Photos/Paris/Four%20Seasons%20Hotel%20George%20V/IMG_4319.WEBP",
+                        "Nocturne%20Key%20Photos/Paris/Four%20Seasons%20Hotel%20George%20V/IMG_4320.AVIF"
+                    ],
+                    bookingUrl: "https://klook.tpx.lv/zPt086xk"
                 }
-                // Paste the remaining hotels for this city from LUXURY_HOTELS_DB in index.html
             ]
         };
 
@@ -219,14 +259,12 @@
 
             document.title = `Top 5 Luxury Hotels in ${meta.name} | The Nocturne Key`;
 
-            // Highlight active city in top nav
             document.querySelectorAll(".city-nav-link").forEach(link => {
                 if (link.getAttribute("data-nav-city") === PAGE_CITY_KEY) {
                     link.className = "city-nav-link text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-gold border border-gold/30 bg-gold/5 transition-soft";
                 }
             });
 
-            // Render Editorial Header
             document.getElementById("articleHeader").innerHTML = `
                 <div class="flex flex-wrap items-center gap-3 text-xs font-mono uppercase tracking-[0.25em] text-gold mb-4">
                     <span>Editorial Monograph • Vol. VIII</span>
@@ -248,7 +286,6 @@
                 </div>
             `;
 
-            // Render Hotel Article Entries
             document.getElementById("articleHotelsContainer").innerHTML = hotels.map((h, i) => {
                 activePhotoMap[i] = 0;
                 const paragraphs = h.desc.split("\n\n").map((p, pIdx) => `
