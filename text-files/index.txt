@@ -290,7 +290,7 @@
                         "Nocturne%20Key%20Photos/Paris/H%C3%B4tel%20de%20Crillon,%20A%20Rosewood%20Hotel/IMG_4337.JPG",
                         "Nocturne%20Key%20Photos/Paris/H%C3%B4tel%20de%20Crillon,%20A%20Rosewood%20Hotel/IMG_4338.JPG"
                     ],
-                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/29322-hotel-de-crillon-a-rosewood-hotel/"
+                    bookingUrl: "https://klook.tpx.lv/va75wRR8"
                 },
                 {
                     rank: "02",
@@ -308,7 +308,7 @@
                         "Nocturne%20Key%20Photos/Paris/Ritz%20Paris/IMG_4332.WEBP",
                         "Nocturne%20Key%20Photos/Paris/Ritz%20Paris/IMG_4333.PNG"
                     ],
-                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/29324-ritz-paris/"
+                    bookingUrl: "https://klook.tpx.lv/J7pVyR8r"
                 },
                 {
                     rank: "03",
@@ -326,7 +326,7 @@
                         "Nocturne%20Key%20Photos/Paris/Le%20Bristol%20Paris/IMG_4327.JPG",
                         "Nocturne%20Key%20Photos/Paris/Le%20Bristol%20Paris/IMG_4328.JPG"
                     ],
-                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/29321-le-bristol-paris-an-oetker-collection-hotel/"
+                    bookingUrl: "https://klook.tpx.lv/vYpBwY4N"
                 },
                 {
                     rank: "04",
@@ -344,7 +344,7 @@
                         "Nocturne%20Key%20Photos/Paris/Cheval%20Blanc%20Paris/IMG_4323.JPG",
                         "Nocturne%20Key%20Photos/Paris/Cheval%20Blanc%20Paris/IMG_4324.JPG"
                     ],
-                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/858482-cheval-blanc-paris/"
+                    bookingUrl: "https://klook.tpx.lv/G1uxxEfA"
                 },
                 {
                     rank: "05",
@@ -362,7 +362,7 @@
                         "Nocturne%20Key%20Photos/Paris/Four%20Seasons%20Hotel%20George%20V/IMG_4319.WEBP",
                         "Nocturne%20Key%20Photos/Paris/Four%20Seasons%20Hotel%20George%20V/IMG_4320.AVIF"
                     ],
-                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/29320-four-seasons-hotel-george-v-paris/"
+                    bookingUrl: "https://klook.tpx.lv/zPt086xk"
                 }
             ],
             "tokyo": [
@@ -382,12 +382,12 @@
                         "Nocturne%20Key%20Photos/Tokyo/Aman%20Tokyo/IMG_4341.JPG",
                         "Nocturne%20Key%20Photos/Tokyo/Aman%20Tokyo/IMG_4342.JPG"
                     ],
-                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/28419-aman-tokyo/"
+                    bookingUrl: "https://klook.tpx.lv/YFhr9CF7"
                 },
                 {
                     rank: "02",
                     cityName: "Tokyo",
-                    name: "Bulgari Hotel Tokyo",
+                    name: "Bvlgari Hotel Tokyo",
                     location: "Tokyo Midtown Yaesu • 40th-45th Floors",
                     distinction: "Italian Haute Horlogerie",
                     desc: "Occupying the top floors of Tokyo Midtown Yaesu, Bulgari Hotel Tokyo brings the vibrant glamour of Roman high jewelry directly to the heart of Japan's capital. Conceived by Italian architects ACPV, the hotel merges sleek Italian design with Japanese craftsmanship, creating an atmosphere of polished sophistication and timeless style.\n\nThe accommodations are dressed in rich color palettes, accented with Italian designer furnishings, bronze light fixtures, and luxurious silk wall coverings. Expansive windows provide breathtaking vistas stretching toward the Imperial Palace and the distant silhouette of Tokyo Tower.\n\nThe property features an exquisite 25-meter emerald mosaic indoor pool that sparkles like a precious gemstone, accompanied by a lavish Bulgari Spa offering gemstone-infused therapies. Dining at Il Ristorante by Niko Romito completes this sublime cross-cultural luxury journey.",
@@ -401,7 +401,7 @@
                         "Nocturne%20Key%20Photos/Tokyo/Bulgari%20Hotel%20Tokyo/IMG_4346.AVIF",
                         "Nocturne%20Key%20Photos/Tokyo/Bulgari%20Hotel%20Tokyo/IMG_4347.AVIF"
                     ],
-                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/916301-bulgari-hotel-tokyo/"
+                    bookingUrl: "https://klook.tpx.lv/Dm37CFUt"
                 },
                 {
                     rank: "03",
@@ -420,7 +420,7 @@
                         "Nocturne%20Key%20Photos/Tokyo/Hoshinoya%20Tokyo/IMG_4351.JPG",
                         "Nocturne%20Key%20Photos/Tokyo/Hoshinoya%20Tokyo/IMG_4352.JPG"
                     ],
-                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/28420-hoshinoya-tokyo/"
+                    bookingUrl: "https://klook.tpx.lv/Axy3PD9L"
                 },
                 {
                     rank: "04",
@@ -439,7 +439,7 @@
                         "Nocturne%20Key%20Photos/Tokyo/Palace%20Hotel%20Tokyo/IMG_4356.AVIF",
                         "Nocturne%20Key%20Photos/Tokyo/Palace%20Hotel%20Tokyo/IMG_4357.WEBP"
                     ],
-                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/28418-palace-hotel-tokyo/"
+                    bookingUrl: "https://klook.tpx.lv/Gb6SGUZJ"
                 },
                 {
                     rank: "05",
@@ -458,7 +458,7 @@
                         "Nocturne%20Key%20Photos/Tokyo/The%20Tokyo%20EDITION,%20Toranomon/IMG_4361.AVIF",
                         "Nocturne%20Key%20Photos/Tokyo/The%20Tokyo%20EDITION,%20Toranomon/IMG_4362.AVIF"
                     ],
-                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/479102-the-tokyo-edition-toranomon/"
+                    bookingUrl: "https://klook.tpx.lv/jntSFfAt"
                 }
             ],
             "london": [
@@ -479,7 +479,7 @@
                         "Nocturne%20Key%20Photos/London/The%20Connaught/IMG_4368.JPG",
                         "Nocturne%20Key%20Photos/London/The%20Connaught/IMG_4369.JPG"
                     ],
-                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/43304-the-connaught-maybourne/"
+                    bookingUrl: "https://klook.tpx.lv/sFXZxzfo"
                 },
                 {
                     rank: "02",
@@ -498,7 +498,7 @@
                         "Nocturne%20Key%20Photos/London/Claridge_s/IMG_4373.JPG",
                         "Nocturne%20Key%20Photos/London/Claridge_s/IMG_4374.JPG"
                     ],
-                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/43292-claridges-maybourne/"
+                    bookingUrl: "https://klook.tpx.lv/rkgGeo4J"
                 },
                 {
                     rank: "03",
@@ -517,7 +517,7 @@
                         "Nocturne%20Key%20Photos/London/The%20Ritz%20London/IMG_4378.JPG",
                         "Nocturne%20Key%20Photos/London/The%20Ritz%20London/IMG_4379.JPG"
                     ],
-                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/43307-the-ritz-london/"
+                    bookingUrl: "https://klook.tpx.lv/GRXNdFnl"
                 },
                 {
                     rank: "04",
@@ -537,7 +537,7 @@
                         "Nocturne%20Key%20Photos/London/The%20Dorchester/IMG_4384.JPG",
                         "Nocturne%20Key%20Photos/London/The%20Dorchester/IMG_4385.JPG"
                     ],
-                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/43310-the-dorchester-dorchester-collection/"
+                    bookingUrl: "https://klook.tpx.lv/xGFngg8V"
                 },
                 {
                     rank: "05",
@@ -556,7 +556,7 @@
                         "Nocturne%20Key%20Photos/London/The%20Berkeley/IMG_4389.AVIF",
                         "Nocturne%20Key%20Photos/London/The%20Berkeley/IMG_4390.AVIF"
                     ],
-                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/43293-the-berkeley-maybourne/"
+                    bookingUrl: "https://klook.tpx.lv/WPuaiCOU"
                 }
             ],
             "new-york": [
@@ -577,7 +577,7 @@
                         "Nocturne%20Key%20Photos/New%20York/The%20Carlyle,%20A%20Rosewood%20Hotel/IMG_4394.JPG",
                         "Nocturne%20Key%20Photos/New%20York/The%20Carlyle,%20A%20Rosewood%20Hotel/IMG_4395.JPG"
                     ],
-                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/29517-the-carlyle-a-rosewood-hotel/"
+                    bookingUrl: "https://klook.tpx.lv/uqaZGZEJ"
                 },
                 {
                     rank: "02",
@@ -597,7 +597,7 @@
                         "Nocturne%20Key%20Photos/New%20York/The%20Mark%20Hotel/IMG_4400.JPG",
                         "Nocturne%20Key%20Photos/New%20York/The%20Mark%20Hotel/IMG_4401.JPG"
                     ],
-                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/29514-the-mark/"
+                    bookingUrl: "https://klook.tpx.lv/7lhPcYVY"
                 },
                 {
                     rank: "03",
@@ -617,7 +617,7 @@
                         "Nocturne%20Key%20Photos/New%20York/Baccarat%20Hotel%20New%20York/IMG_4407.JPG",
                         "Nocturne%20Key%20Photos/New%20York/Baccarat%20Hotel%20New%20York/IMG_4408.JPG"
                     ],
-                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/29505-baccarat-hotel-and-residences-new-york/"
+                    bookingUrl: "https://klook.tpx.lv/fJEAJba0"
                 },
                 {
                     rank: "04",
@@ -635,7 +635,7 @@
                         "Nocturne%20Key%20Photos/New%20York/The%20Greenwich%20Hotel/IMG_4411.JPG",
                         "Nocturne%20Key%20Photos/New%20York/The%20Greenwich%20Hotel/IMG_4412.JPG"
                     ],
-                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/29516-the-greenwich-hotel/"
+                    bookingUrl: "https://klook.tpx.lv/2dVl4PZc"
                 },
                 {
                     rank: "05",
@@ -653,7 +653,7 @@
                         "Nocturne%20Key%20Photos/New%20York/The%20St.%20Regis%20New%20York/IMG_4415.WEBP",
                         "Nocturne%20Key%20Photos/New%20York/The%20St.%20Regis%20New%20York/IMG_4416.AVIF"
                     ],
-                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/29512-the-st-regis-new-york/"
+                    bookingUrl: "https://klook.tpx.lv/AqrTmAG8"
                 }
             ],
             "rome": [
@@ -674,7 +674,7 @@
                         "Nocturne%20Key%20Photos/Rome/Rocco%20Forte%20Hotel%20De%20Russie/IMG_4420.JPG",
                         "Nocturne%20Key%20Photos/Rome/Rocco%20Forte%20Hotel%20De%20Russie/IMG_4421.JPG"
                     ],
-                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/441104-rocco-forte-hotel-de-russie/"
+                    bookingUrl: "https://klook.tpx.lv/WDS4ra7l"
                 },
                 {
                     rank: "02",
@@ -693,7 +693,7 @@
                         "Nocturne%20Key%20Photos/Rome/Hotel%20Hassler%20Roma/IMG_4441.JPG",
                         "Nocturne%20Key%20Photos/Rome/Hotel%20Hassler%20Roma/IMG_4442.JPG"
                     ],
-                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/441103-hotel-hassler-roma/"
+                    bookingUrl: "https://klook.tpx.lv/Ir7Cwzh6"
                 },
                 {
                     rank: "03",
@@ -712,7 +712,7 @@
                         "Nocturne%20Key%20Photos/Rome/Hotel%20Eden,%20Dorchester%20Collection/IMG_4436.JPG",
                         "Nocturne%20Key%20Photos/Rome/Hotel%20Eden,%20Dorchester%20Collection/IMG_4437.JPG"
                     ],
-                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/441101-hotel-eden-dorchester-collection/"
+                    bookingUrl: "https://klook.tpx.lv/zd9Y6gxy"
                 },
                 {
                     rank: "04",
@@ -732,7 +732,7 @@
                         "Nocturne%20Key%20Photos/Rome/Six%20Senses%20Rome/IMG_4431.JPG",
                         "Nocturne%20Key%20Photos/Rome/Six%20Senses%20Rome/IMG_4432.JPG"
                     ],
-                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/441112-six-senses-rome/"
+                    bookingUrl: "https://klook.tpx.lv/yKyUfH15"
                 },
                 {
                     rank: "05",
@@ -751,7 +751,7 @@
                         "Nocturne%20Key%20Photos/Rome/Palazzo%20Manfredi/IMG_4425.JPG",
                         "Nocturne%20Key%20Photos/Rome/Palazzo%20Manfredi/IMG_4426.JPG"
                     ],
-                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/441106-palazzo-manfredi-small-luxury-hotels-of-the-world/"
+                    bookingUrl: "https://klook.tpx.lv/sf58zy7P"
                 }
             ],
             "dubai": [
@@ -774,7 +774,7 @@
                         "Nocturne%20Key%20Photos/Dubai/Burj%20Al%20Arab%20Jumeirah/IMG_4448.JPG",
                         "Nocturne%20Key%20Photos/Dubai/Burj%20Al%20Arab%20Jumeirah/IMG_4449.JPG"
                     ],
-                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/37841-burj-al-arab-jumeirah/"
+                    bookingUrl: "https://klook.tpx.lv/Iwwnqdpk"
                 },
                 {
                     rank: "02",
@@ -793,7 +793,7 @@
                         "Nocturne%20Key%20Photos/Dubai/Atlantis%20The%20Royal/IMG_4468.JPG",
                         "Nocturne%20Key%20Photos/Dubai/Atlantis%20The%20Royal/IMG_4469.JPG"
                     ],
-                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/916568-atlantis-the-royal/"
+                    bookingUrl: "https://klook.tpx.lv/ySq6Tm1l"
                 },
                 {
                     rank: "03",
@@ -813,7 +813,7 @@
                         "Nocturne%20Key%20Photos/Dubai/The%20Lana,%20Dorchester%20Collection/IMG_4463.WEBP",
                         "Nocturne%20Key%20Photos/Dubai/The%20Lana,%20Dorchester%20Collection/IMG_4464.JPG"
                     ],
-                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/932402-the-lana-dorchester-collection/"
+                    bookingUrl: "https://klook.tpx.lv/tg65I95L"
                 },
                 {
                     rank: "04",
@@ -831,7 +831,7 @@
                         "Nocturne%20Key%20Photos/Dubai/One&Only%20The%20Palm/IMG_4457.JPG",
                         "Nocturne%20Key%20Photos/Dubai/One&Only%20The%20Palm/IMG_4458.JPG"
                     ],
-                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/37848-one-only-the-palm/"
+                    bookingUrl: "https://klook.tpx.lv/ne1bPqBO"
                 },
                 {
                     rank: "05",
@@ -850,7 +850,7 @@
                         "Nocturne%20Key%20Photos/Dubai/Armani%20Hotel%20Dubai/IMG_4453.JPG",
                         "Nocturne%20Key%20Photos/Dubai/Armani%20Hotel%20Dubai/IMG_4454.JPG"
                     ],
-                    bookingUrl: "https://www.klook.com/en-US/hotels/detail/37839-armani-hotel-dubai/"
+                    bookingUrl: "https://klook.tpx.lv/EiBl07Va"
                 }
             ]
         };

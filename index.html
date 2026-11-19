@@ -117,7 +117,7 @@
     <header id="mainNav" class="sticky top-0 z-50 bg-obsidian/90 backdrop-blur-md border-b border-borderMuted/60 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
-                <a href="index.html" class="flex flex-col text-left group focus:outline-none">
+                <a href="index.html" onclick="handleCityNav(null); return false;" class="flex flex-col text-left group focus:outline-none">
                     <div class="flex items-center gap-2">
                         <span class="text-gold text-lg tracking-widest font-serif">❖</span>
                         <span class="text-xl sm:text-2xl font-serif tracking-widest uppercase text-ivory group-hover:text-gold-light transition-soft">
@@ -130,7 +130,7 @@
                 </a>
 
                 <nav class="hidden md:flex items-center gap-1 lg:gap-2">
-                    <a href="index.html" class="nav-link-btn text-xs uppercase tracking-widest px-3 py-1.5 rounded-full text-pearl hover:text-ivory border border-transparent hover:border-borderMuted transition-soft">Home</a>
+                    <a href="index.html" onclick="handleCityNav(null); return false;" class="nav-link-btn home-nav-btn text-xs uppercase tracking-widest px-3 py-1.5 rounded-full text-gold border border-gold/30 bg-gold/5 transition-soft">Home</a>
                     <a href="capitols.html" class="nav-link-btn text-xs uppercase tracking-widest px-4 py-1.5 rounded-full text-gold bg-gold/10 border border-gold/40 hover:bg-gold hover:text-obsidian transition-soft font-medium shadow-sm flex items-center gap-1.5">
                         <span>All Capitols</span>
                     </a>
@@ -159,6 +159,7 @@
         <div id="mobileDrawer" class="hidden md:hidden bg-cardSurface/95 border-b border-borderMuted px-6 py-4 space-y-3">
             <p class="text-[10px] uppercase tracking-widest text-gold font-mono">Curated Top 5 Compendiums</p>
             <div class="grid grid-cols-2 gap-2">
+                <button type="button" onclick="handleCityNav(null); toggleMobileNav();" class="text-left py-2.5 px-3 text-sm text-ivory bg-obsidian hover:text-gold rounded border border-borderMuted font-medium">✨ Home Compendium</button>
                 <a href="capitols.html" class="text-left py-2.5 px-3 text-sm text-gold bg-gold/10 rounded border border-gold/30 font-medium">🏛️ All Capitols</a>
                 <button type="button" onclick="handleCityNav('paris'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Top 5 Paris</button>
                 <button type="button" onclick="handleCityNav('tokyo'); toggleMobileNav();" class="text-left py-2 px-3 text-sm text-pearl hover:text-gold rounded border border-borderMuted">Top 5 Tokyo</button>
@@ -170,8 +171,8 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="relative min-h-[72vh] flex items-center justify-center overflow-hidden">
+    <!-- Hero Section (Home Tab Only) -->
+    <section id="heroSection" class="relative min-h-[72vh] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
             <img src="Nocturne%20Key%20Photos/Paris/Four%20Seasons%20Hotel%20George%20V/IMG_4317.JPG" 
                  alt="Luxury Grand Hotel Exterior" 
@@ -871,6 +872,18 @@
 
         // Renderer for hotel entries
         function renderCityCategory(cityKey) {
+            const heroSection = document.getElementById('heroSection');
+            const isCitySelected = Boolean(cityKey && LUXURY_HOTELS_DB[cityKey]);
+
+            // Show the hero ("Sanctuaries for the Discerning Night") only on the Home view
+            if (heroSection) {
+                if (isCitySelected) {
+                    heroSection.classList.add('hidden');
+                } else {
+                    heroSection.classList.remove('hidden');
+                }
+            }
+
             let hotelsToRender = [];
             let displayTitle = "The Global Sanctuaries Compendium";
             let subLabel = "Curated Dossier";
@@ -884,7 +897,7 @@
                 "dubai": "Dubai"
             };
 
-            if (cityKey && LUXURY_HOTELS_DB[cityKey]) {
+            if (isCitySelected) {
                 hotelsToRender = [...LUXURY_HOTELS_DB[cityKey]];
                 displayTitle = `The Top 5 Luxury Hotels of ${cityNamesDisplay[cityKey]}`;
                 subLabel = `${cityNamesDisplay[cityKey]} Curated Dossier`;
@@ -996,10 +1009,19 @@
             `;
             }).join('');
 
+            // Highlight Home button when on Home view
+            document.querySelectorAll('.home-nav-btn').forEach(btn => {
+                if (!isCitySelected) {
+                    btn.className = "nav-link-btn home-nav-btn text-xs uppercase tracking-widest px-3 py-1.5 rounded-full text-gold border border-gold/30 bg-gold/5 transition-soft";
+                } else {
+                    btn.className = "nav-link-btn home-nav-btn text-xs uppercase tracking-widest px-3 py-1.5 rounded-full text-pearl hover:text-ivory border border-transparent hover:border-borderMuted transition-soft";
+                }
+            });
+
             // Highlight corresponding nav filter buttons
             document.querySelectorAll('.city-filter-btn').forEach(btn => {
                 const btnCity = btn.getAttribute('data-city');
-                if (btnCity === cityKey) {
+                if (isCitySelected && btnCity === cityKey) {
                     btn.className = "city-filter-btn text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-gold border border-gold/30 bg-gold/5 transition-soft";
                 } else {
                     btn.className = "city-filter-btn text-xs uppercase tracking-widest px-2.5 py-1.5 rounded-full text-pearl hover:text-ivory border border-transparent hover:border-borderMuted transition-soft";
@@ -1009,12 +1031,13 @@
 
         // Top navigation button click handler (scrolls to top & switches category)
         function handleCityNav(cityKey) {
-            renderCityCategory(cityKey);
+            const validCity = cityKey && LUXURY_HOTELS_DB[cityKey] ? cityKey : null;
+            renderCityCategory(validCity);
             window.scrollTo({ top: 0, behavior: 'smooth' });
             
             // Update URL search query without reloading page
-            const newUrl = cityKey ? `?city=${cityKey}` : window.location.pathname;
-            window.history.pushState({ city: cityKey }, '', newUrl);
+            const newUrl = validCity ? `?city=${validCity}` : window.location.pathname;
+            window.history.pushState({ city: validCity }, '', newUrl);
         }
 
         // Carousel Slide Management Functions (Direct update without page reload or scrolling)
